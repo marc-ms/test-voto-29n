@@ -1,0 +1,462 @@
+{
+  "metadata": {
+    "elecciones": "Elecciones Generales 29N 2026 - Circunscripción Illes Balears",
+    "ultima_actualizacion": "2026-11-09",
+    "version": "1.0.0",
+    "partidos": [
+      { "id": "PP", "siglas": "PP", "nombre": "Partido Popular", "candidato_baleares": "José Vicente Marí Bosó", "color": "#0056A7" },
+      { "id": "PSIB", "siglas": "PSIB-PSOE", "nombre": "Partit dels Socialistes de les Illes Balears", "candidato_baleares": "Francina Armengol", "color": "#E30613" },
+      { "id": "VOX", "siglas": "VOX", "nombre": "Vox", "candidato_baleares": "Maribel Cerezo", "color": "#63BE21" },
+      { "id": "ARAMES", "siglas": "ARA MÉS - FRONT AMPLI", "nombre": "Ara Més - Front Ampli", "candidato_baleares": "Carme Gomila", "color": "#E51C55" },
+      { "id": "FO", "siglas": "FO", "nombre": "Frente Obrero", "candidato_baleares": "Selva Lucía Belmaña", "color": "#B91C1C" },
+      { "id": "PACMA", "siglas": "PACMA", "nombre": "Partido Animalista con el Medio Ambiente", "candidato_baleares": "María Remedios García", "color": "#84CC16" },
+      { "id": "PCTE", "siglas": "PCTE", "nombre": "Partido Comunista de los Trabajadores de España", "candidato_baleares": "Joan Luna", "color": "#7F1D1D" },
+      { "id": "SALF", "siglas": "SALF", "nombre": "Se Acabó la Fiesta", "candidato_baleares": "Daniel Rodríguez", "color": "#4B5563" }
+    ],
+    "bloques": [
+      { "id": "vivienda", "nombre": "Vivienda y Alquiler", "icono": "Home" },
+      { "id": "turismo", "nombre": "Turismo y Modelo Balear", "icono": "Palmtree" },
+      { "id": "inmigracion", "nombre": "Inmigración y Fronteras", "icono": "Globe" },
+      { "id": "medio_ambiente", "nombre": "Medio Ambiente y Territorio", "icono": "Leaf" },
+      { "id": "economia", "nombre": "Economía, Impuestos y REB", "icono": "TrendingUp" },
+      { "id": "trabajo", "nombre": "Trabajo y Pensiones", "icono": "Briefcase" },
+      { "id": "modelo_estado", "nombre": "Modelo Territorial y Lengua", "icono": "Landmark" },
+      { "id": "servicios_seguridad", "nombre": "Servicios Públicos y Seguridad", "icono": "Shield" }
+    ]
+  },
+  "preguntas": [
+    {
+      "id": "viv_01",
+      "tanda": 1,
+      "bloque": "vivienda",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe declarar Illes Balears como zona de mercado residencial tensionado para aplicar topes obligatorios por ley al precio de los alquileres.",
+      "contexto_opcional": "La Ley Estatal de Vivienda permite limitar las rentas del alquiler en áreas declaradas tensionadas, pero el Govern balear del PP ha rechazado aplicarla argumentando que reduce la oferta.",
+      "posturas": {
+        "PP": { "valor": -2, "cita": "Rechazo a la intervención de precios de alquiler por generar caída de la oferta e inseguridad jurídica; apuesta por incentivos fiscales y programa Alquiler Seguro.", "fuente": "Programa PP Balears / Congreso" },
+        "PSIB": { "valor": 2, "cita": "Aplicación inmediata de la Ley de Vivienda en todas las Islas Baleares para declarar zonas tensionadas y topar el precio del alquiler.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": -2, "cita": "Derogación total de la Ley de Vivienda estatal y defensa absoluta de la propiedad privada frente al control de precios.", "fuente": "Programa Nacional VOX" },
+        "ARAMES": { "valor": 2, "cita": "Tope estricto e indefinido a los precios del alquiler en todo el archipiélago y transferencia de competencias plenas en vivienda.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Control estatal de precios de alquiler frente a fondos buitre y creación de un parque público masivo para trabajadores.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Regulación de los precios del alquiler en zonas saturadas y protección del derecho al acceso a una vivienda digna.", "fuente": "Programa PACMA Justicia Social" },
+        "PCTE": { "valor": 2, "cita": "Limitación drástica del coste de la vivienda a un máximo del 10 % del salario obrero y expropiación de pisos de bancos y fondos.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Oposición frontal al control estatal de precios de alquiler y desprotección de los propietarios.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "tur_01",
+      "tanda": 1,
+      "bloque": "turismo",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe prohibir la creación de nuevas plazas de alquiler turístico en las Islas Baleares y reducir progresivamente las existentes para destinarlas a vivienda residencial.",
+      "contexto_opcional": "En Baleares la presión de las viviendas vacacionales sobre el mercado residencial es uno de los ejes centrales del debate insular.",
+      "posturas": {
+        "PP": { "valor": -1, "cita": "Defensa de la seguridad jurídica de los propietarios, lucha contra la oferta ilegal pero rechazo al decrecimiento turístico forzoso.", "fuente": "Ejes programáticos PP Balears" },
+        "PSIB": { "valor": 1, "cita": "Tope estricto a las plazas turísticas y reversión de viviendas turísticas hacia el mercado residencial habitual.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": -2, "cita": "Libertad de propiedad privada para alquilar sin prohibiciones ni intervencionismo sobre el sector turístico.", "fuente": "Programa Marco VOX" },
+        "ARAMES": { "valor": 2, "cita": "Decrecimiento turístico inmediato, moratoria total y prohibición de pisos turísticos en zonas tensionadas.", "fuente": "Propuestas Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Planificación estatal frente a la turistificación masiva que expulsa a los trabajadores de sus barrios.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Freno a la masificación turística por su impacto ambiental, hídrico y sobre el territorio insular.", "fuente": "Programa PACMA Medio Ambiente y Turismo" },
+        "PCTE": { "valor": 2, "cita": "Expropiación de grandes tenedores y fondos turísticos para garantizar vivienda pública obrera.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Defensa absoluta de la propiedad privada y rechazo a las restricciones estatales sobre el uso de la vivienda.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "inm_01",
+      "tanda": 1,
+      "bloque": "inmigracion",
+      "tipo": "programa_29n",
+      "enunciado": "Ante el aumento de llegadas en patera por la ruta argelina hacia Baleares, se debe priorizar el bloqueo marítimo y la devolución inmediata frente a los programas de acogida y reparto.",
+      "contexto_opcional": "La ruta migratoria desde Argelia hacia Mallorca, Ibiza, Formentera y Cabrera ha registrado cifras récord en los últimos años, tensionando los recursos insulares.",
+      "posturas": {
+        "PP": { "valor": 1, "cita": "Exigencia al Gobierno central de despliegue de Frontex en Baleares, más efectivos de Guardia Civil, restablecimiento de relaciones con Argelia y control estricto de fronteras.", "fuente": "Propuestas PP Balears en materia migratoria" },
+        "PSIB": { "valor": -1, "cita": "Gestión humanitaria ordenada, refuerzo de medios de Salvamento y solidaridad interterritorial para la acogida digna.", "fuente": "Programa PSOE Migraciones y Derechos Humanos" },
+        "VOX": { "valor": 2, "cita": "Bloqueo naval inmediato, expulsión de todos los inmigrantes ilegales y cierre de centros de acogida en las islas.", "fuente": "Programa VOX Fronteras Seguras" },
+        "ARAMES": { "valor": -2, "cita": "Defensa de los derechos humanos, vías legales y seguras, acogida digna y rechazo a la militarización de fronteras.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Freno a la inmigración ilegal masiva y control férreo de las fronteras nacionales para evitar el dumping laboral.", "fuente": "Programa Frente Obrero Inmigración" },
+        "PACMA": { "valor": -2, "cita": "Política migratoria basada en los derechos humanos, vías seguras y rechazo a las devoluciones en caliente.", "fuente": "Programa PACMA Derechos Humanos" },
+        "PCTE": { "valor": -2, "cita": "Regularización plena de todos los trabajadores migrantes, derogación de la Ley de Extranjería y unidad de la clase obrera.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Deportación inmediata de inmigrantes en situación irregular y blindaje militar de las costas españolas.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "med_01",
+      "tanda": 1,
+      "bloque": "medio_ambiente",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe prohibir cualquier legalización o amnistía urbanística de construcciones ilegales en suelo rústico en las Islas Baleares.",
+      "contexto_opcional": "La regulación y legalización extraordinaria de edificaciones fuera de ordenación en suelo rústico balear ha generado un intenso debate sobre protección territorial.",
+      "posturas": {
+        "PP": { "valor": -2, "cita": "Defensa de la regularización extraordinaria en suelo rústico a cambio de penalizaciones económicas y mejoras de eficiencia energética e hídrica.", "fuente": "Política Territorial PP Balears" },
+        "PSIB": { "valor": 2, "cita": "Derogación de las amnistías urbanísticas en suelo rústico y protección estricta del territorio insular frente a la especulación.", "fuente": "Compromisos PSIB-PSOE Territorio" },
+        "VOX": { "valor": -2, "cita": "Apoyo a la legalización de edificaciones existentes en suelo rústico y flexibilización de las trabas urbanísticas a propietarios.", "fuente": "Acuerdos parlamentarios VOX Balears" },
+        "ARAMES": { "valor": 2, "cita": "Tolerancia cero con el urbanismo a la carta en suelo rústico, consumo cero de territorio y demolición de infracciones.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Persecución de la especulación urbanística de grandes fortunas y rentistas sobre el suelo agrario.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Protección absoluta del suelo rústico, espacios naturales y biodiversidad frente a cualquier amnistía urbanística.", "fuente": "Programa PACMA Territorio" },
+        "PCTE": { "valor": 2, "cita": "Oposición a las amnistías urbanísticas para terratenientes y especuladores inmobiliarios.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -1, "cita": "Defensa del derecho de los propietarios a edificar y regularizar sus propiedades sin hiperregulación administrativa.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "eco_01",
+      "tanda": 1,
+      "bloque": "economia",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe suprimir el Impuesto de Sucesiones y Donaciones y el Impuesto de Patrimonio para todas las rentas en Baleares y en el resto del Estado.",
+      "contexto_opcional": "En Baleares se bonificó el Impuesto de Sucesiones entre familiares directos y se elevó el mínimo exento de Patrimonio, mientras la izquierda defiende mantener el impuesto estatal a las grandes fortunas.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Eliminación del Impuesto de Sucesiones entre padres, hijos y nietos y rechazo al Impuesto estatal a las Grandes Fortunas por invadir la autonomía fiscal balear.", "fuente": "Programa Fiscal PP Balears" },
+        "PSIB": { "valor": -2, "cita": "Mantenimiento del impuesto a los grandes patrimonios y sucesiones millonarias para financiar la sanidad, educación y vivienda pública.", "fuente": "Programa Fiscal PSIB-PSOE" },
+        "VOX": { "valor": 2, "cita": "Supresión total e inmediata del Impuesto de Sucesiones, Donaciones y Patrimonio por considerarlo una doble imposición confiscatoria.", "fuente": "Programa Económico VOX" },
+        "ARAMES": { "valor": -2, "cita": "Justicia fiscal progresiva: que paguen más quienes más tienen, reforzando Patrimonio y Sucesiones para las grandes herencias.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": -1, "cita": "Exención para la vivienda familiar obrera pero fuerte imposición a las grandes fortunas, rentistas y oligarquías.", "fuente": "Programa Económico Frente Obrero" },
+        "PACMA": { "valor": -1, "cita": "Fiscalidad progresiva y ecológica que grave las grandes riquezas para sostener los servicios públicos y la transición verde.", "fuente": "Programa PACMA Economía" },
+        "PCTE": { "valor": -2, "cita": "Impuestos fuertemente progresivos sobre el gran capital, las herencias burguesas y los beneficios empresariales.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Eliminación total del Impuesto de Sucesiones, Donaciones y Patrimonio en toda España.", "fuente": "Ideario Fiscal SALF" }
+      }
+    },
+    {
+      "id": "tra_01",
+      "tanda": 1,
+      "bloque": "trabajo",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe aprobar por ley la reducción de la jornada laboral máxima a 37,5 horas semanales (o menos) sin reducción salarial.",
+      "contexto_opcional": "En sectores intensivos en mano de obra como la hostelería y los servicios en Baleares, la reducción legal de la jornada laboral es objeto de fuerte disputa entre sindicatos y patronales.",
+      "posturas": {
+        "PP": { "valor": -1, "cita": "La jornada laboral debe pactarse en la negociación colectiva sector a sector con acuerdo entre empresas y trabajadores, no imponerse por decreto.", "fuente": "Programa Laboral PP" },
+        "PSIB": { "valor": 2, "cita": "Reducción por ley de la jornada laboral a 37,5 horas semanales sin pérdida de salario para mejorar la conciliación.", "fuente": "Programa Electoral PSOE" },
+        "VOX": { "valor": -2, "cita": "Rechazo a la imposición legal de reducción de jornada porque perjudica a pymes y autónomos sin aumentar la productividad.", "fuente": "Programa Económico VOX" },
+        "ARAMES": { "valor": 2, "cita": "Reducción inmediata hacia las 35 y 32 horas semanales sin merma salarial para repartir el trabajo y el tiempo de vida.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Mejora de las condiciones materiales de los trabajadores y persecución real de las horas extras impagadas en la hostelería.", "fuente": "Programa Laboral Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Apoyo a la reducción de la jornada laboral hacia las 35 horas semanales sin reducción salarial para fomentar la conciliación.", "fuente": "Programa PACMA Trabajo" },
+        "PCTE": { "valor": 2, "cita": "Reducción drástica de la jornada laboral a 35 horas semanales sin reducción salarial y prohibición de horas extraordinarias.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Rechazo al intervencionismo laboral estatal sobre pymes y autónomos.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "est_01",
+      "tanda": 1,
+      "bloque": "modelo_estado",
+      "tipo": "programa_29n",
+      "enunciado": "El catalán debe ser requisito obligatorio para acceder a cualquier puesto de la función pública y de la sanidad pública en las Islas Baleares.",
+      "contexto_opcional": "El requisito frente al mérito del conocimiento del catalán en la administración y en el IB-Salut es uno de los debates identitarios y de gestión pública más recurrentes en Baleares.",
+      "posturas": {
+        "PP": { "valor": -1, "cita": "Eliminación del requisito excluyente de catalán para médicos y personal sanitario deficitario, pasando a valorarse como mérito para priorizar la atención médica.", "fuente": "Programa PP Balears Sanidad y Función Pública" },
+        "PSIB": { "valor": 1, "cita": "Defensa de la capacitación lingüística en catalán en la función pública balear con plazos de adaptación para profesionales sanitarios.", "fuente": "Programa PSIB-PSOE" },
+        "VOX": { "valor": -2, "cita": "Eliminación total del requisito del catalán en toda la administración pública por discriminar a los castellanohablantes.", "fuente": "Programa VOX Libertad Lingüística" },
+        "ARAMES": { "valor": 2, "cita": "Exigencia plena del requisito de catalán en toda la administración pública y sanidad para garantizar los derechos lingüísticos de los ciudadanos.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": -2, "cita": "Oposición a las barreras lingüísticas autonómicas que dividen a los trabajadores del Estado español.", "fuente": "Programa Frente Obrero Modelo de Estado" },
+        "PACMA": { "valor": 0, "cita": "Respeto a la cooficialidad lingüística buscando el equilibrio con la cobertura efectiva de las plazas sanitarias públicas.", "fuente": "Posicionamientos PACMA" },
+        "PCTE": { "valor": 0, "cita": "Defensa de los derechos lingüísticos en la enseñanza y servicios públicos sin utilizar la lengua para enfrentar a la clase trabajadora.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Supresión de cualquier requisito de lenguas cooficiales en el acceso al empleo público en España.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "ser_01",
+      "tanda": 1,
+      "bloque": "servicios_seguridad",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe equiparar el plus de insularidad de todos los funcionarios del Estado en Baleares (Policía, Guardia Civil, Justicia, Hacienda) con el de Canarias, Ceuta y Melilla.",
+      "contexto_opcional": "El sobrecoste de la vivienda en Mallorca, Menorca, Ibiza y Formentera deja desiertas numerosas plazas estatales de seguridad, justicia y administración periférica.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Actualización inmediata y digna de la indemnización por residencia del personal del Estado en Baleares para cubrir las plantillas de seguridad y justicia.", "fuente": "Iniciativas PP Balears en el Congreso" },
+        "PSIB": { "valor": 2, "cita": "Incremento del complemento de insularidad y creación de vivienda pública en régimen de alquiler para empleados públicos desplazados a las islas.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": 2, "cita": "Equiparación urgente del plus de insularidad especialmente para Policía Nacional, Guardia Civil y funcionarios de Justicia en Baleares.", "fuente": "Programa VOX Interior y Justicia" },
+        "ARAMES": { "valor": 2, "cita": "Dignificación del plus de insularidad estatal y traspaso de competencias y recursos a las instituciones propias de las Illes Balears.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Aumento salarial y compensación real por el coste de vida insular para todos los trabajadores y empleados públicos.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 1, "cita": "Refuerzo de las dotaciones económicas para garantizar la cobertura de servicios públicos esenciales en territorios insulares.", "fuente": "Programa PACMA Servicios Públicos" },
+        "PCTE": { "valor": 1, "cita": "Incremento salarial generalizado acorde a la carestía de la vida y garantía de vivienda pública para los trabajadores.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Aumento inmediato de las retribuciones y plus de destino para Fuerzas y Cuerpos de Seguridad del Estado en las islas.", "fuente": "Ideario SALF Seguridad" }
+      }
+    },
+    {
+      "id": "viv_02",
+      "tanda": 2,
+      "bloque": "vivienda",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe restringir o prohibir la compra de viviendas en las Islas Baleares a ciudadanos e inversores no residentes (o con menos de 5 años de residencia en el archipiélago).",
+      "contexto_opcional": "Más del 30 % de las compraventas de vivienda en Baleares son realizadas por compradores extranjeros o no residentes, lo que ha abierto el debate sobre su encaje en el derecho europeo.",
+      "posturas": {
+        "PP": { "valor": -2, "cita": "Rechazo a prohibir la compraventa a europeos por ser contrario a los tratados de la UE y ahuyentar la inversión; apuesta por construir más vivienda para residentes.", "fuente": "Posicionamiento PP Balears" },
+        "PSIB": { "valor": 1, "cita": "Impulso en España y en la Unión Europea de excepciones insulares y gravámenes fiscales para frenar la compra especulativa por no residentes.", "fuente": "Programa PSIB-PSOE Vivienda" },
+        "VOX": { "valor": -1, "cita": "Defensa de la propiedad privada y del libre mercado inmobiliario para ciudadanos comunitarios, rechazando prohibiciones intervencionistas.", "fuente": "Programa VOX" },
+        "ARAMES": { "valor": 2, "cita": "Prohibición de compra de vivienda a no residentes sin un mínimo de 5 años de arraigo en las Illes Balears mediante excepción insular europea.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Prohibición de la compra especulativa de viviendas por fondos extranjeros y rentistas foráneos que expulsan a los españoles.", "fuente": "Programa Frente Obrero Vivienda" },
+        "PACMA": { "valor": 1, "cita": "Limitación de la compra especulativa de viviendas en territorios insulares saturados para priorizar el uso residencial.", "fuente": "Programa PACMA" },
+        "PCTE": { "valor": 2, "cita": "Prohibición absoluta de la especulación inmobiliaria nacional o extranjera; la vivienda es un derecho de uso, no una mercancía.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -1, "cita": "Defensa de la libre transmisión de la propiedad privada y reducción de impuestos en la compra de primera vivienda para españoles.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "tur_02",
+      "tanda": 2,
+      "bloque": "turismo",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe duplicar el Impuesto de Turismo Sostenible (Ecotasa) en temporada alta y crear una tasa específica a los megacruceros que atraquen en puertos de Baleares.",
+      "contexto_opcional": "El Impuesto de Turismo Sostenible recauda fondos para proyectos ambientales e hídricos, pero existe debate sobre si debe usarse también como freno disuasorio a la saturación estival.",
+      "posturas": {
+        "PP": { "valor": 0, "cita": "Modulación del ITS para destinar el 100 % a inversiones en ciclo del agua y entorno sin criminalizar ni penalizar la competitividad del sector turístico.", "fuente": "Pacto por la Sostenibilidad PP Balears" },
+        "PSIB": { "valor": 2, "cita": "Incremento del Impuesto de Turismo Sostenible en los meses de máxima saturación y mayor gravamen a los cruceros.", "fuente": "Compromisos PSIB-PSOE Turismo" },
+        "VOX": { "valor": -2, "cita": "Supresión total de la ecotasa por ser un impuesto confiscatorio que encarece las vacaciones y daña la principal industria balear.", "fuente": "Programa VOX Balears" },
+        "ARAMES": { "valor": 2, "cita": "Subida del ITS hasta los 12-15 euros diarios en temporada punta y limitación drástica de megacruceros en Palma e Ibiza.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Fuerte imposición a las grandes multinacionales hoteleras, navieras y turoperadores que explotan las islas.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Aumento de las tasas ecológicas al turismo masivo y prohibición progresiva de megacruceros altamente contaminantes.", "fuente": "Programa PACMA Turismo y Clima" },
+        "PCTE": { "valor": 1, "cita": "Gravamen directo sobre los beneficios de los monopolios turísticos y hoteleros en lugar de políticas de lavado verde.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Rechazo a la creación o subida de tasas e impuestos verdes sobre el turismo y el consumo.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "inm_02",
+      "tanda": 2,
+      "bloque": "inmigracion",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe llevar a cabo una regularización extraordinaria de las personas migrantes que ya residen y trabajan sin papeles en España para incorporarlas plenamente a la Seguridad Social.",
+      "contexto_opcional": "En el Congreso se ha debatido la Iniciativa Legislativa Popular (ILP) para regularizar a cerca de 500.000 extranjeros en situación administrativa irregular en España.",
+      "posturas": {
+        "PP": { "valor": 0, "cita": "Apoyo a la tramitación inicial pero exigencia de vincular cualquier permiso al contrato laboral efectivo, ausencia de antecedentes y rechazo al efecto llamada generalizado.", "fuente": "Posicionamiento PP en el Congreso" },
+        "PSIB": { "valor": 2, "cita": "Aprobación de la regularización para garantizar derechos laborales, evitar la economía sumergida y sumar cotizantes a la Seguridad Social.", "fuente": "Programa PSOE" },
+        "VOX": { "valor": -2, "cita": "Rechazo absoluto a cualquier regularización de inmigrantes ilegales: quien entra ilegalmente nunca debe poder ser regularizado.", "fuente": "Programa VOX" },
+        "ARAMES": { "valor": 2, "cita": "Regularización inmediata e incondicional para acabar con la explotación laboral y reconocer plenos derechos de ciudadanía.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": -2, "cita": "Oposición frontal a las regularizaciones masivas porque sirven a la patronal para abaratar salarios y precarizar a la clase obrera.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Apoyo total a la ILP de regularización extraordinaria por justicia social y defensa de los derechos humanos.", "fuente": "Programa PACMA" },
+        "PCTE": { "valor": 2, "cita": "Regularización inmediata de todos los trabajadores migrantes con plenos derechos laborales, sindicales y políticos.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Rechazo radical a las regularizaciones masivas y exigencia de expulsión de quienes hayan entrado de forma ilegal.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "med_02",
+      "tanda": 2,
+      "bloque": "medio_ambiente",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe limitar por ley la entrada y circulación de vehículos de alquiler y de no residentes en todas las islas (extendiendo el modelo de Formentera e Ibiza a Mallorca y Menorca).",
+      "contexto_opcional": "En verano las carreteras de Baleares sufren graves atascos por la llegada de decenas de miles de coches de alquiler y vehículos en ferry.",
+      "posturas": {
+        "PP": { "valor": 1, "cita": "Impulso a la regulación de techos de vehículos por parte de cada Consell Insular junto con mejoras en la red viaria y el transporte público.", "fuente": "Programa PP Balears Movilidad" },
+        "PSIB": { "valor": 2, "cita": "Limitación estricta de la entrada de vehículos y de las flotas de rent a car en todas las islas acompañada de gratuidad del transporte público.", "fuente": "Programa PSIB-PSOE Movilidad Sostenible" },
+        "VOX": { "valor": -2, "cita": "Oposición a las prohibiciones a la libre circulación de vehículos privados y a las restricciones climáticas ideológicas.", "fuente": "Programa VOX Balears" },
+        "ARAMES": { "valor": 2, "cita": "Tope inmediato a la entrada de coches en puertos y reducción drástica de las flotas de alquiler en Mallorca, Menorca, Ibiza y Formentera.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 0, "cita": "Prioridad al transporte público para los trabajadores residentes sin penalizar con tasas ecológicas a las familias trabajadoras que necesitan su coche.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Restricción severa del tráfico rodado turístico y apuesta decidida por el ferrocarril y el transporte colectivo eléctrico.", "fuente": "Programa PACMA Movilidad" },
+        "PCTE": { "valor": 1, "cita": "Transporte público estatal 100 % gratuito y limitación de las grandes empresas de alquiler turístico.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Rechazo a cualquier restricción a la libre circulación de vehículos y a las Zonas de Bajas Emisiones.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "eco_02",
+      "tanda": 2,
+      "bloque": "economia",
+      "tipo": "programa_29n",
+      "enunciado": "El Estado debe ampliar las bonificaciones del Régimen Especial de Baleares (REB) y hacer permanente la gratuidad del transporte público terrestre en las islas.",
+      "contexto_opcional": "El REB busca compensar las desventajas estructurales de la insularidad para empresas, autónomos y ciudadanos mediante deducciones fiscales y subvenciones al transporte de mercancías y pasajeros.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Exigencia del desarrollo íntegro y permanente del factor de insularidad del REB y financiación estatal estable para la gratuidad del transporte en Baleares.", "fuente": "Programa PP Balears Congreso" },
+        "PSIB": { "valor": 2, "cita": "Consolidación de las deducciones fiscales del REB aprobadas y mantenimiento de los abonos gratuitos de tren y autobús en las islas.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": 1, "cita": "Apoyo a las rebajas fiscales y compensaciones al transporte insular frente al abandono presupuestario del Gobierno central.", "fuente": "Programa VOX Balears" },
+        "ARAMES": { "valor": 2, "cita": "Ampliación máxima del REB, gratuidad permanente del transporte público y compensación del 100 % del sobrecoste del transporte de mercancías.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 1, "cita": "Transporte público barato y garantizado por el Estado para los trabajadores insulares y reindustrialización.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Gratuidad permanente del transporte colectivo insular como medida clave de justicia social y reducción de emisiones.", "fuente": "Programa PACMA" },
+        "PCTE": { "valor": 1, "cita": "Gratuidad total del transporte público para la clase trabajadora, pero rechazo a las subvenciones del REB dirigidas a aumentar el lucro patronal.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 1, "cita": "Bajada generalizada de impuestos y compensación de los costes de insularidad eliminando el gasto político superfluo.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "tra_02",
+      "tanda": 2,
+      "bloque": "trabajo",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe crear un Salario Mínimo Interprofesional (SMI) diferenciado o complementado en Baleares que sea superior a la media estatal para compensar el coste de vida insular.",
+      "contexto_opcional": "Aunque la inflación y la vivienda en Baleares están entre las más caras de España, el SMI se fija de manera uniforme para todo el territorio nacional.",
+      "posturas": {
+        "PP": { "valor": -1, "cita": "Las subidas salariales en Baleares deben lograrse mediante convenios colectivos de hostelería y comercio y bajadas del IRPF, sin romper la unidad del mercado laboral.", "fuente": "Programa Económico PP" },
+        "PSIB": { "valor": 1, "cita": "Subida continuada del SMI al 60 % del salario medio y refuerzo de los salarios en los convenios autonómicos de Baleares.", "fuente": "Programa PSIB-PSOE" },
+        "VOX": { "valor": -1, "cita": "Alivio del coste de vida mediante bajadas drásticas de impuestos y cotizaciones sociales en lugar de subidas artificiales que destruyen empleo en pymes.", "fuente": "Programa Económico VOX" },
+        "ARAMES": { "valor": 2, "cita": "Establecimiento de un Salario Mínimo Balear propio ajustado al coste real de la vida y de la vivienda en el archipiélago (mínimo 1.500 €).", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Subida real de los salarios acorde al coste de la vida y la vivienda para que ningún trabajador sea pobre trabajando.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 1, "cita": "Incremento del Salario Mínimo y políticas de rentas que garanticen condiciones de vida dignas frente a la carestía insular.", "fuente": "Programa PACMA" },
+        "PCTE": { "valor": 2, "cita": "Aumento inmediato del SMI y escala móvil de salarios vinculada automáticamente al incremento del coste de la vida.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -1, "cita": "Aumento del salario neto real eliminando impuestos y cuotas a los trabajadores en vez de imponer costes inasumibles a autónomos.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "est_02",
+      "tanda": 2,
+      "bloque": "modelo_estado",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe reformar el sistema de financiación autonómica garantizando el 'principio de ordinalidad', para que Baleares no pierda posiciones en recursos por habitante tras aportar a la solidaridad estatal.",
+      "contexto_opcional": "Baleares es una de las comunidades que más aporta por habitante al sistema común pero históricamente ha recibido recursos por debajo de la media tras el reparto.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Reforma urgente del sistema de financiación que reconozca el crecimiento poblacional real de Baleares, la población flotante y el principio de ordinalidad sin privilegios bilaterales.", "fuente": "Programa PP Balears Financiación" },
+        "PSIB": { "valor": 2, "cita": "Nuevo modelo de financiación justa para las Illes Balears que respete el principio de ordinalidad y condone deuda autonómica.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": -2, "cita": "Rechazo al Estado de las Autonomías y a los sistemas de cupo o financiación asimétrica; defensa de un presupuesto único nacional que garantice la igualdad de todos los españoles.", "fuente": "Programa VOX Unidad Nacional" },
+        "ARAMES": { "valor": 2, "cita": "Concierto económico propio y soberanía fiscal para las Illes Balears para acabar con el expolio fiscal histórico del Estado.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": -2, "cita": "Centralización de las competencias esenciales para garantizar servicios públicos iguales en toda España sin privilegios territoriales.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 1, "cita": "Financiación justa y suficiente para los servicios públicos y la protección ambiental de los territorios insulares.", "fuente": "Posicionamientos PACMA" },
+        "PCTE": { "valor": -2, "cita": "Planificación económica centralizada al servicio de la clase obrera frente a las disputas fiscales entre burguesías regionales.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Supresión de los parlamentos autonómicos y centralización del gasto para acabar con las duplicidades territoriales.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "ser_02",
+      "tanda": 2,
+      "bloque": "servicios_seguridad",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe endurecer el Código Penal para permitir el desalojo policial exprés en 24-48 horas ante cualquier caso de ocupación ilegal de viviendas.",
+      "contexto_opcional": "Los partidos conservadores proponen reformas penales para desalojos inmediatos sin esperar meses de proceso judicial, mientras la izquierda pide distinguir entre allanamiento de morada y familias vulnerables.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Ley Antiokupación con desalojo en 24 horas, endurecimiento de penas, prohibición de empadronamiento ilegal y oficinas de apoyo a propietarios.", "fuente": "Programa PP Seguridad y Vivienda" },
+        "PSIB": { "valor": 0, "cita": "Agilización judicial frente a mafias y allanamientos, pero manteniendo las garantías judiciales y la protección habitacional a familias vulnerables.", "fuente": "Programa PSOE Justicia" },
+        "VOX": { "valor": 2, "cita": "Desalojo policial inmediato con patada en la puerta en menos de 24 horas, penas de prisión severas y exención de impuestos al propietario afectado.", "fuente": "Programa VOX Seguridad" },
+        "ARAMES": { "valor": -2, "cita": "Rechazo al discurso punitivista de la derecha; el verdadero problema en Baleares es la especulación rentista, no las familias sin recursos.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Mano dura y desalojo inmediato contra la delincuencia, las mafias de la ocupación y los narcopisos que degradan los barrios obreros.", "fuente": "Programa Frente Obrero Seguridad" },
+        "PACMA": { "valor": -1, "cita": "Prioridad a las soluciones habitacionales y servicios sociales frente a las medidas meramente punitivas.", "fuente": "Programa PACMA" },
+        "PCTE": { "valor": -2, "cita": "Paralización de todos los desahucios de familias trabajadoras y expropiación de las viviendas vacías en manos de la banca y fondos buitre.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Desalojo inmediato por las fuerzas policiales en el acto y penas de cárcel efectivas para los okupas.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "viv_03",
+      "tanda": 3,
+      "bloque": "vivienda",
+      "tipo": "programa_29n",
+      "enunciado": "Para bajar el precio de la vivienda en Baleares, se debe permitir construir a mayor altura y recalificar suelo urbanizable mediante colaboración público-privada con promotores.",
+      "contexto_opcional": "El decreto de emergencia habitacional en Baleares apuesta por aumentar densidades, alturas, reconvertir locales y ceder suelo público a promotores privados para edificar vivienda a precio limitado.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Aumento de oferta mediante el programa 'Construir para Alquilar', aprovechamiento de plantas adicionales y colaboración público-privada para viviendas a precio tasado para residentes.", "fuente": "Decreto de Emergencia Habitacional PP Balears" },
+        "PSIB": { "valor": -1, "cita": "Apuesta por vivienda 100 % pública de titularidad permanente y movilización de pisos vacíos, rechazando pelotazos urbanísticos privados.", "fuente": "Programa PSIB-PSOE Vivienda" },
+        "VOX": { "valor": 2, "cita": "Liberalización de suelo, reducción de burocracia urbanística e incentivos a la promoción privada para multiplicar la oferta de vivienda.", "fuente": "Programa VOX Vivienda" },
+        "ARAMES": { "valor": -2, "cita": "Oposición total a consumir más territorio o regalar suelo público a constructoras privadas; hay que movilizar las decenas de miles de casas vacías y turísticas.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 0, "cita": "Construcción masiva de vivienda pública por una empresa estatal de vivienda, sin enriquecer a promotores privados ni fondos.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": -2, "cita": "Rechazo a la recalificación de suelos y al crecimiento urbanístico en unas islas ya saturadas; apuesta por rehabilitación de vivienda vacía.", "fuente": "Programa PACMA Territorio y Vivienda" },
+        "PCTE": { "valor": -2, "cita": "Rechazo absoluto a la colaboración público-privada que subvenciona a la patronal constructora; nacionalización del suelo y del sector inmobiliario.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Liberalización del suelo urbanizable y eliminación de impuestos y trabas municipales a la construcción de vivienda.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "tur_03",
+      "tanda": 3,
+      "bloque": "turismo",
+      "tipo": "programa_29n",
+      "enunciado": "El Estado y AENA deben limitar por ley el número máximo de vuelos y pasajeros en los aeropuertos de Palma, Ibiza y Menorca durante los meses de verano, además de cogestionar los aeropuertos con el Govern balear.",
+      "contexto_opcional": "El aeropuerto de Son Sant Joan supera los 33 millones de pasajeros anuales y la competencia exclusiva sobre su capacidad operativa reside hoy en AENA y el Estado.",
+      "posturas": {
+        "PP": { "valor": 0, "cita": "Reclamación de la cogestión aeroportuaria de AENA con el Govern balear, pero rechazo a fijar prohibiciones arbitrarias de vuelos que dañen la conectividad.", "fuente": "Programa PP Balears Conectividad" },
+        "PSIB": { "valor": 1, "cita": "Participación autonómica determinante en la gestión de AENA y regulación de los flujos turísticos en punta estival.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": -2, "cita": "Rechazo a limitar vuelos o turistas en los aeropuertos baleares y defensa de la gestión estatal única de las infraestructuras estratégicas.", "fuente": "Programa VOX" },
+        "ARAMES": { "valor": 2, "cita": "Traspaso integral de la gestión de puertos y aeropuertos a las Illes Balears para reducir slots aéreos, prohibir jets privados y decrecer en número de turistas.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 0, "cita": "Mantenimiento de la soberanía estatal sobre los aeropuertos regulando el turismo de borrachera que degrada la convivencia.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Reducción de vuelos comerciales en temporada alta y prohibición de vuelos en jet privado por su enorme huella climática.", "fuente": "Programa PACMA Clima y Transporte" },
+        "PCTE": { "valor": 1, "cita": "Nacionalización 100 % pública de AENA (eliminando accionistas privados) y planificación del transporte según las necesidades populares.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Oposición a cualquier restricción de vuelos y rechazo a ceder competencias estatales a los gobiernos autonómicos.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "inm_03",
+      "tanda": 3,
+      "bloque": "inmigracion",
+      "tipo": "programa_29n",
+      "enunciado": "Las ayudas sociales autonómicas y municipales (renta social, ayudas al alquiler y comedores) deben exigir un mínimo de años de residencia legal previa en las islas.",
+      "contexto_opcional": "Diversas formaciones plantean vincular el acceso a prestaciones no contributivas y vivienda social a un periodo mínimo de empadronamiento legal continuado.",
+      "posturas": {
+        "PP": { "valor": 1, "cita": "Exigencia de residencia legal y acreditación de arraigo continuado en Baleares para el acceso a vivienda protegida y ayudas autonómicas.", "fuente": "Normativa autonómica PP Balears" },
+        "PSIB": { "valor": -1, "cita": "Las ayudas sociales de emergencia y comedores infantiles deben atender la vulnerabilidad real sin discriminar por origen o antigüedad.", "fuente": "Programa PSIB-PSOE Derechos Sociales" },
+        "VOX": { "valor": 2, "cita": "Prioridad nacional en todas las ayudas sociales y viviendas públicas, y supresión total de subvenciones a inmigrantes ilegales y ONGs.", "fuente": "Programa VOX" },
+        "ARAMES": { "valor": -2, "cita": "Defensa de la universalidad de los servicios públicos y prestaciones sociales para todas las personas vulnerables que viven en nuestras islas.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Prioridad para los trabajadores españoles y residentes legales frente al asistencialismo que fomenta el efecto llamada.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": -2, "cita": "Defensa de derechos sociales universales sin discriminación por origen o situación administrativa.", "fuente": "Programa PACMA Justicia Social" },
+        "PCTE": { "valor": -2, "cita": "Igualdad absoluta de derechos sociales y laborales para todos los trabajadores sin divisiones por nacionalidad.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Eliminación inmediata de cualquier ayuda social pública a personas en situación irregular y prioridad para los españoles.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "med_03",
+      "tanda": 3,
+      "bloque": "medio_ambiente",
+      "tipo": "programa_29n",
+      "enunciado": "Se deben prohibir definitivamente los espectáculos taurinos y el uso de perros de caza sin las mismas garantías de la Ley de Bienestar Animal en todo el Estado y en Baleares.",
+      "contexto_opcional": "En Baleares la tauromaquia y ciertas modalidades tradicionales de caza generan enfrentamientos legales entre la normativa estatal y las competencias autonómicas.",
+      "posturas": {
+        "PP": { "valor": -2, "cita": "Defensa de la caza, del mundo rural tradicional balear y de la tauromaquia como patrimonio cultural frente al prohibicionismo.", "fuente": "Programa PP Medio Rural y Cultura" },
+        "PSIB": { "valor": 1, "cita": "Avance en la protección y bienestar animal, aunque a nivel estatal el PSOE mantuvo la exclusión de los perros de caza en la ley estatal.", "fuente": "Programa PSOE / PSIB" },
+        "VOX": { "valor": -2, "cita": "Derogación inmediata de la Ley de Bienestar Animal y blindaje de la caza, la pesca y la tauromaquia en las Islas Baleares.", "fuente": "Programa VOX Mundo Rural" },
+        "ARAMES": { "valor": 2, "cita": "Abolición total de las corridas de toros ('Baleares libres de maltrato animal') y máxima protección legal para todos los animales.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": -1, "cita": "Crítica al animalismo urbanita posmoderno que perjudica al sector primario, ganadero y rural de España.", "fuente": "Posicionamientos Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Prohibición total e inmediata de la tauromaquia, de la caza y inclusión sin excepciones de los perros de caza en la ley de protección animal.", "fuente": "Programa Electoral PACMA" },
+        "PCTE": { "valor": 1, "cita": "Fin de las subvenciones públicas a la tauromaquia y a los negocios privados basados en el maltrato animal.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -2, "cita": "Derogación de la Ley de Bienestar Animal y defensa de la caza y las tradiciones españolas.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "eco_03",
+      "tanda": 3,
+      "bloque": "economia",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe establecer una cuota cero o tarifa plana superreducida para los autónomos con ingresos bajos y eximir del pago de IVA a los autónomos que facturen menos de 85.000 euros anuales.",
+      "contexto_opcional": "Baleares cuenta con una de las tasas más altas de trabajadores autónomos de España, muy marcada además por la estacionalidad de la actividad económica.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Tarifa cero para nuevos autónomos, exención de declarar el IVA por debajo de 85.000 euros de facturación (directiva europea) y rebaja de cargas burocráticas.", "fuente": "Plan de Autónomos PP" },
+        "PSIB": { "valor": 0, "cita": "Defensa del sistema de cotización por ingresos reales para que los autónomos con menores rendimientos paguen menos mejorando sus prestaciones.", "fuente": "Programa PSOE Autónomos" },
+        "VOX": { "valor": 2, "cita": "Cuota cero para autónomos cuyos ingresos no alcancen el Salario Mínimo y eliminación de impuestos asfixiantes para pymes.", "fuente": "Programa Económico VOX" },
+        "ARAMES": { "valor": 1, "cita": "Cuotas justas progresivas según ingresos reales y ayudas específicas para pequeños comercios locales y autónomos estacionales de Baleares.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Supresión de la cuota de autónomos para quienes no lleguen al SMI; el Estado debe gravar a las multinacionales y no asfixiar al pequeño trabajador por cuenta propia.", "fuente": "Programa Económico Frente Obrero" },
+        "PACMA": { "valor": 1, "cita": "Apoyo a cuotas progresivas adaptadas a los ingresos reales y fomento de los pequeños productores locales y ecológicos.", "fuente": "Programa PACMA Economía" },
+        "PCTE": { "valor": 1, "cita": "Exención de cuotas para falsos autónomos y pequeños trabajadores por cuenta propia con bajos ingresos, integrándolos en el régimen general.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Eliminación de la cuota fija de autónomos para quienes facturen por debajo del SMI y drástica bajada del IVA e IRPF.", "fuente": "Ideario Fiscal SALF" }
+      }
+    },
+    {
+      "id": "tra_03",
+      "tanda": 3,
+      "bloque": "trabajo",
+      "tipo": "programa_29n",
+      "enunciado": "Se debe blindar por ley la revalorización anual de las pensiones conforme al IPC y volver a fijar la edad ordinaria de jubilación en los 65 años (o antes en profesiones penosas como las camareras de piso).",
+      "contexto_opcional": "En Baleares el colectivo de las 'Kellys' (camareras de piso) reclama coeficientes reductores para anticipar la jubilación por el desgaste físico de su trabajo.",
+      "posturas": {
+        "PP": { "valor": 1, "cita": "Garantía de revalorización de las pensiones en el marco del Pacto de Toledo y estudio técnico de coeficientes para profesiones de especial penosidad.", "fuente": "Programa PP Pensiones" },
+        "PSIB": { "valor": 2, "cita": "Blindaje constitucional y legal de la subida de las pensiones con el IPC y reconocimiento de enfermedades profesionales y jubilación anticipada para camareras de piso.", "fuente": "Compromisos PSIB-PSOE 29N" },
+        "VOX": { "valor": 1, "cita": "Defensa del poder adquisitivo de las pensiones recortando el gasto político autonómico e incentivando la natalidad para sostener el sistema.", "fuente": "Programa VOX Familia y Pensiones" },
+        "ARAMES": { "valor": 2, "cita": "Revalorización según el IPC real, jubilación a los 65 años y jubilación anticipada al 100 % para las camareras de piso (Kellys).", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Retorno de la edad de jubilación a los 65 años y pensiones públicas dignas garantizadas por los Presupuestos del Estado.", "fuente": "Programa Frente Obrero" },
+        "PACMA": { "valor": 2, "cita": "Blindaje de las pensiones públicas conforme al IPC y mejora de las pensiones mínimas y no contributivas.", "fuente": "Programa PACMA Justicia Social" },
+        "PCTE": { "valor": 2, "cita": "Edad máxima de jubilación a los 60 años (55 en trabajos penosos) con el 100 % del salario real.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 1, "cita": "Exención de IRPF para las pensiones y sostenibilidad del sistema eliminando ministerios, subvenciones a partidos y gasto superfluo.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "est_03",
+      "tanda": 3,
+      "bloque": "modelo_estado",
+      "tipo": "programa_29n",
+      "enunciado": "En los colegios de Baleares las familias deben poder elegir libremente el castellano o el catalán como lengua vehicular en todas las etapas educativas, eliminando el mínimo obligatorio del 50 % en catalán.",
+      "contexto_opcional": "El modelo lingüístico escolar en Baleares contrapone el Decreto de Mínimos (al menos 50 % de enseñanza en catalán) con el plan de libre elección de lengua en la enseñanza.",
+      "posturas": {
+        "PP": { "valor": 2, "cita": "Implantación de la libre elección de lengua en todas las etapas educativas dentro de un marco de bilingüismo cordial y respeto al Decreto de Mínimos.", "fuente": "Programa Educativo PP Balears" },
+        "PSIB": { "valor": -2, "cita": "Defensa del modelo de conjunción lingüística y del Decreto de Mínimos sin segregar al alumnado por razón de lengua.", "fuente": "Programa PSIB-PSOE Educación" },
+        "VOX": { "valor": 2, "cita": "Libertad total de elección de lengua vehicular en todas las etapas y derogación del Decreto de Mínimos y de la inmersión obligatoria en catalán.", "fuente": "Programa VOX Balears Educación" },
+        "ARAMES": { "valor": -2, "cita": "Defensa de la escuela en catalán como lengua vehicular y de cohesión social en las Illes Balears, rechazando la segregación lingüística.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Garantía del derecho a estudiar íntegramente en español en cualquier punto del territorio nacional sin imposiciones nacionalistas.", "fuente": "Programa Frente Obrero Educación" },
+        "PACMA": { "valor": -1, "cita": "Apoyo a un modelo educativo integrador que garantice el dominio de ambas lenguas oficiales y proteja la lengua propia.", "fuente": "Posicionamientos PACMA" },
+        "PCTE": { "valor": -1, "cita": "Escuela pública, única y laica que garantice el aprendizaje de las lenguas cooficiales sin segregar a los hijos de la clase obrera.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": 2, "cita": "Derecho garantizado por el Estado a recibir toda la enseñanza en español en todas las comunidades autónomas.", "fuente": "Ideario SALF" }
+      }
+    },
+    {
+      "id": "ser_03",
+      "tanda": 3,
+      "bloque": "servicios_seguridad",
+      "tipo": "programa_29n",
+      "enunciado": "Para reducir las listas de espera del IB-Salut en Baleares, se debe prohibir derivar pacientes a clínicas privadas y destinar todos esos fondos exclusivamente a la sanidad pública.",
+      "contexto_opcional": "El uso de conciertos con la sanidad privada para aliviar listas de espera quirúrgicas y de especialistas es un punto de choque directo entre los bloques políticos en Baleares.",
+      "posturas": {
+        "PP": { "valor": -2, "cita": "Utilización de todos los recursos disponibles, públicos y concertados, mediante el Plan de Choque para reducir el tiempo de espera de los pacientes baleares.", "fuente": "Programa Sanitario PP Balears" },
+        "PSIB": { "valor": 2, "cita": "Blindaje de la sanidad 100 % pública, reversión de privatizaciones y refuerzo de la atención primaria y hospitalaria del IB-Salut.", "fuente": "Programa PSIB-PSOE Sanidad" },
+        "VOX": { "valor": -2, "cita": "Colaboración público-privada sin complejos para eliminar las listas de espera y libertad de elección de centro médico por el paciente.", "fuente": "Programa VOX Sanidad" },
+        "ARAMES": { "valor": 2, "cita": "Fin de las derivaciones millonarias a clínicas privadas y destinación íntegra del presupuesto sanitario a reforzar las plantillas del IB-Salut.", "fuente": "Programa Ara Més - Front Ampli" },
+        "FO": { "valor": 2, "cita": "Sanidad 100 % pública y estatal, poniendo fin al negocio de las mutuas y aseguradoras privadas con la salud de los trabajadores.", "fuente": "Programa Frente Obrero Sanidad" },
+        "PACMA": { "valor": 2, "cita": "Defensa de una sanidad pública universal, de calidad y libre de privatizaciones encubiertas.", "fuente": "Programa PACMA Servicios Públicos" },
+        "PCTE": { "valor": 2, "cita": "Nacionalización de todos los hospitales y clínicas privadas e integración en un sistema sanitario 100 % público y gratuito.", "fuente": "Programa Electoral PCTE" },
+        "SALF": { "valor": -1, "cita": "Uso eficiente de conciertos privados cuando la sanidad pública no dé abasto para reducir las listas de espera.", "fuente": "Ideario SALF" }
+      }
+    }
+  ]
+}
+
