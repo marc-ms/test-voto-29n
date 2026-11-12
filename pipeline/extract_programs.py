@@ -214,8 +214,8 @@ def main() -> None:
     parser.add_argument(
         "--model",
         type=str,
-        default="gemini-2.5-flash",
-        help="Modelo de Gemini a utilizar (por defecto: gemini-2.5-flash). Usa gemini-2.5-pro para mayor precision.",
+        default="gemini-4-hydrogen",
+        help="Modelo de Gemini a utilizar (por defecto: gemini-4-hydrogen). Usa gemini-4-argon para mayor precision.",
     )
     parser.add_argument(
         "--preserve-fallback",

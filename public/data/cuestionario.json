@@ -1,7 +1,7 @@
 {
   "metadata": {
     "elecciones": "Elecciones Generales 29N 2026 - Circunscripción Illes Balears",
-    "ultima_actualizacion": "2026-11-09",
+    "ultima_actualizacion": "2026-11-12",
     "version": "1.1.0",
     "partidos": [
       {
@@ -115,8 +115,8 @@
       "posturas": {
         "PP": {
           "valor": -2,
-          "cita": "Rechazo a declarar zonas tensionadas y propuesta de derogar el índice de precios del alquiler para aumentar la oferta.",
-          "fuente": "Contrato con España PP (Oct 2026)"
+          "cita": "Rechaza la declaración de zonas tensionadas y los índices de precios del alquiler al plantear su eliminación. \"Eliminaremos las zonas tensionadas y el índice de precios, que han introducido más intervención, más incertidumbre y menos oferta en el mercado del alquiler.\"",
+          "fuente": "Programa PP 29N, pag. 53"
         },
         "PSIB": {
           "valor": 2,
@@ -214,9 +214,9 @@
       "contexto_opcional": "El debate enfrenta la agilización inmediata del desalojo policial frente a la exigencia de informe previo de vulnerabilidad y alternativa habitacional.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Compromiso de aprobar en los primeros 100 días una ley contra la okupación con desalojo en 24-48 horas.",
-          "fuente": "Anuncio Feijóo (21 Oct 2026)"
+          "valor": 1,
+          "cita": "Propone aprobar una ley para recuperar la vivienda ocupada en 48 horas y reformar la Ley de Propiedad Horizontal para que las comunidades pidan el desalojo al juez. \"Aprobaremos una ley para que el propietario pueda recuperar su vivienda en 48 horas desde el primer día. Reformaremos la Ley de Propiedad Horizontal para que las comunidades de propietarios puedan pedir al juez el desalojo.\"",
+          "fuente": "Programa PP 29N, pag. 55"
         },
         "PSIB": {
           "valor": -1,
@@ -415,8 +415,8 @@
       "posturas": {
         "PP": {
           "valor": -1,
-          "cita": "Pide mayor inversión de AENA en las islas, pero rechaza poner topes artificiales a la llegada de vuelos comerciales.",
-          "fuente": "Programa PP Balears"
+          "cita": "Plantea adecuar los aeropuertos insulares a la demanda e impulsar mejoras en infraestructuras para garantizar los suministros. \"Adecuaremos los aeropuertos insulares a la demanda e impulsaremos mejoras en las infraestructuras de agua, energía y telecomunicaciones para garantizar los suministros.\"",
+          "fuente": "Programa PP 29N, pag. 42"
         },
         "PSIB": {
           "valor": 1,
@@ -514,9 +514,9 @@
       "contexto_opcional": "La regularización extraordinaria impulsada en 2026 para unos 500.000 extranjeros en situación administrativa irregular es uno de los choques centrales de la campaña.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Rechazo a la regularización masiva de 2026 por efecto llamada; solo regularización individual vinculada a contrato laboral.",
-          "fuente": "Postura PP Inmigración (2026)"
+          "valor": 1,
+          "cita": "Propone reformar la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y limitar el arraigo a un reconocimiento individual excepcional. \"Reformaremos la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y para que el arraigo sea un reconocimiento individual excepcional, no una vía generalizada de regularización.\"",
+          "fuente": "Programa PP 29N, pag. 22"
         },
         "PSIB": {
           "valor": -2,
@@ -565,8 +565,8 @@
       "posturas": {
         "PP": {
           "valor": 1,
-          "cita": "Refuerzo urgente de Guardia Civil del Mar, Frontex en la ruta balear y presión diplomática con Argelia para devoluciones.",
-          "fuente": "Propuestas PP Balears"
+          "cita": "Plantea que las Fuerzas Armadas apoyen en la frontera cuando lo exija la seguridad nacional, con cobertura jurídica, reglas claras y medios. \"Las Fuerzas Armadas apoyarán en la frontera cuando lo exija la seguridad nacional, con cobertura jurídica, reglas claras y medios.\"",
+          "fuente": "Programa PP 29N, pag. 21"
         },
         "PSIB": {
           "valor": -1,
@@ -615,8 +615,8 @@
       "posturas": {
         "PP": {
           "valor": -2,
-          "cita": "Rechazo al reparto forzoso hacia Baleares por estar los recursos de los Consells Insulars ya sobrepasados por la ruta argelina.",
-          "fuente": "Posición PP Balears (2026)"
+          "cita": "Rechaza la atribución automática de tutela a las comunidades autónomas y plantea sustituir el reparto de menores por un modelo estatal con retorno. \"El Estado asumirá la atención inicial, la identificación y la determinación de edad, y revisaremos el régimen de tutela para evitar su atribución automática a las Comunidades Autónomas. Sustituiremos el reparto como respuesta principal por un modelo de protección individualizada con retorno.\"",
+          "fuente": "Programa PP 29N, pag. 24"
         },
         "PSIB": {
           "valor": 2,
@@ -665,8 +665,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Endurecimiento penal para que la multirreincidencia y los delitos graves conlleven la expulsión efectiva e inmediata.",
-          "fuente": "Plan de Seguridad PP (2026)"
+          "cita": "Propone establecer la expulsión como regla para extranjeros condenados por delitos sexuales, delitos de sangre y multirreincidencia, con prohibición de entrada permanente en casos de riesgo para la seguridad. \"La expulsión será la regla para los extranjeros condenados por delitos sexuales, delitos de sangre y multirreincidencia. Tener causas pendientes en varios juzgados no servirá para frenar una expulsión. La prohibición de entrada será permanente para quien suponga un riesgo para la seguridad, y retiraremos el permiso de residencia a quien tenga vínculos con el crimen organizado o con la radicalización violenta.\"",
+          "fuente": "Programa PP 29N, pag. 23"
         },
         "PSIB": {
           "valor": 0,
@@ -765,8 +765,8 @@
       "posturas": {
         "PP": {
           "valor": -2,
-          "cita": "Defensa de la tauromaquia como patrimonio cultural, recuperación del Premio Nacional y rechazo a su prohibición.",
-          "fuente": "Proposición Congreso PP (2024/2026)"
+          "cita": "Rechaza eliminar el apoyo estatal a la tauromaquia y propone restituir el Premio Nacional de Tauromaquia para promover tradiciones culturales. \"Recuperaremos el respeto y la promoción de las expresiones que mejor combinan tradición y futuro, empezando por la restitución del Premio Nacional de Tauromaquia, y fortaleceremos la presencia y proyección de estas manifestaciones dentro y fuera de España.\"",
+          "fuente": "Programa PP 29N, pag. 48"
         },
         "PSIB": {
           "valor": 1,
@@ -815,8 +815,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Reversión inmediata del calendario de cierre nuclear para extender la vida de las centrales y bajar el precio de la energía.",
-          "fuente": "Programa Energético PP (2026)"
+          "cita": "Propone eliminar el calendario de cierre de varias centrales nucleares y tramitar la extensión de su vida útil en los primeros cien días de Gobierno. \"Eliminaremos el calendario de cierre de Almaraz, Ascó, Vandellós, Cofrentes y Trillo. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil con el visto bueno del Consejo de Seguridad Nuclear, garantizando la seguridad de las instalaciones.\"",
+          "fuente": "Programa PP 29N, pag. 71"
         },
         "PSIB": {
           "valor": -2,
@@ -915,8 +915,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Compromiso central del Plan de Choque: eximir del IVA trimestral a los autónomos con ingresos inferiores a 85.000 €/año.",
-          "fuente": "Plan de Choque Fiscal PP (Sept 2026)"
+          "cita": "Propone eximir de cobrar y declarar el IVA a los autónomos que facturen menos de 85.000 euros. \"Si eres autónomo y facturas menos de 85.000 euros, no tendrás que cobrar ni declarar el IVA.\"",
+          "fuente": "Programa PP 29N, pag. 59"
         },
         "PSIB": {
           "valor": 0,
@@ -1014,9 +1014,9 @@
       "contexto_opcional": "El Govern balear del PP elevó en esta legislatura el mínimo exento del Impuesto de Patrimonio hasta los 3 millones de euros.",
       "posturas": {
         "PP": {
-          "valor": -2,
-          "cita": "Defensa de la rebaja del Impuesto de Patrimonio aprobada en Baleares y supresión del Impuesto de Sucesiones y Donaciones.",
-          "fuente": "Reforma Fiscal PP Balears"
+          "valor": -1,
+          "cita": "Plantea garantizar que ningún Gobierno obligue a una comunidad a subir impuestos y mantener su libertad para bajar los propios y cedidos. \"Ningún Gobierno obligará a una comunidad a subir impuestos. Las Comunidades Autónomas seguirán decidiendo con libertad sobre sus impuestos propios y cedidos, dentro de sus competencias, y podrán bajarlos cuanto quieran.\"",
+          "fuente": "Programa PP 29N, pag. 61"
         },
         "PSIB": {
           "valor": 2,
@@ -1065,8 +1065,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Rebajar la tarifa del IRPF en función de la inflación y duplicar el mínimo exento por hijos a cargo.",
-          "fuente": "Plan de Choque PP (24 Sept 2026)"
+          "cita": "Propone deflactar la tarifa del IRPF y actualizar los parámetros del impuesto para evitar subidas fiscales provocadas por la inflación. \"Deflactaremos la tarifa y actualizaremos los principales parámetros del impuesto para impedir que la inflación vuelva a utilizarse como una subida encubierta de impuestos.\"",
+          "fuente": "Programa PP 29N, pag. 60"
         },
         "PSIB": {
           "valor": -1,
@@ -1164,9 +1164,9 @@
       "contexto_opcional": "Baleares sufre un déficit crónico de policías nacionales, guardias civiles, médicos y funcionarios judiciales por el elevado coste del alquiler insular.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Equiparación inmediata de la indemnización por residencia de los funcionarios del Estado en Baleares al coste real de vida.",
-          "fuente": "Programa PP Balears (Oct 2026)"
+          "valor": 1,
+          "cita": "Propone establecer incentivos para atraer y retener empleados públicos en destinos insulares de difícil cobertura según el coste de la vida y la lejanía. \"Estableceremos incentivos para atraer y retener empleados públicos en destinos insulares y ultraperiféricos de difícil cobertura, atendiendo al coste de la vida y la lejanía.\"",
+          "fuente": "Programa PP 29N, pag. 42"
         },
         "PSIB": {
           "valor": 2,
@@ -1214,9 +1214,9 @@
       "contexto_opcional": "Con la reforma de 2011, la edad ordinaria de jubilación en España está subiendo progresivamente hasta alcanzar los 67 años en 2027.",
       "posturas": {
         "PP": {
-          "valor": 0,
-          "cita": "Mantenimiento de la revalorización según el IPC dentro del Pacto de Toledo, incentivando la jubilación demorada voluntaria.",
-          "fuente": "Programa PP Pensiones (2026)"
+          "valor": 1,
+          "cita": "Propone asegurar que las pensiones mantengan su poder adquisitivo y suban cada año conforme al IPC. \"Aseguraremos que mantengan su poder adquisitivo y suban cada año con el IPC. Aseguraremos a los más jóvenes que sus futuras pensiones también mantendrán su poder adquisitivo.\"",
+          "fuente": "Programa PP 29N, pag. 42"
         },
         "PSIB": {
           "valor": 1,
@@ -1314,9 +1314,9 @@
       "contexto_opcional": "En la actual legislatura autonómica, el Govern del PP con apoyo de Vox eliminó el requisito general del catalán para médicos y enfermeros del IB-Salut.",
       "posturas": {
         "PP": {
-          "valor": -2,
-          "cita": "El catalán debe ser un mérito y no una barrera excluyente en la sanidad pública para poder atraer médicos a las islas.",
-          "fuente": "Decreto Sanidad PP Balears"
+          "valor": 0,
+          "cita": "Plantea que los requisitos lingüísticos respeten los derechos fundamentales y que las Administraciones se dirijan a los ciudadanos en la lengua oficial o cooficial que elijan. \"Los requisitos lingüísticos respetarán las libertades y los derechos fundamentales de todos. Aseguraremos que las Administraciones de los territorios con cooficialidad se dirijan a los ciudadanos en la lengua oficial o en la cooficial, a elección del ciudadano.\"",
+          "fuente": "Programa PP 29N, pag. 39"
         },
         "PSIB": {
           "valor": 1,
@@ -1415,8 +1415,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Derogación de la amnistía, prohibición de indultos por sedición o corrupción y rechazo total al cupo independentista.",
-          "fuente": "Contrato con España PP (Oct 2026)"
+          "cita": "Propone derogar la Ley de Amnistía, prohibir el uso del derecho de gracia como contraprestación política y aprobar una nueva Ley del Indulto. \"Derogaremos la Ley de Amnistía y prohibiremos que el derecho de gracia se utilice como contraprestación política para formar o mantener un Gobierno. Aprobaremos una nueva Ley del Indulto con criterios objetivos y transparentes.\"",
+          "fuente": "Programa PP 29N, pag. 29"
         },
         "PSIB": {
           "valor": -2,
@@ -1614,9 +1614,9 @@
       "contexto_opcional": "El debate enfrenta el modelo de conjunción lingüística (mínimo del 50 % en catalán estipulado en el Decreto de Mínimos) frente al plan piloto de libre elección de lengua.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Implantación de la libre elección de primera lengua de enseñanza y bilingüismo cordial respetando el Decreto de Mínimos.",
-          "fuente": "Programa Educativo PP Balears"
+          "valor": 1,
+          "cita": "Propone garantizar el derecho a recibir enseñanza en castellano en todas las etapas educativas y en todo el país, respetando las lenguas cooficiales. \"Garantizaremos el derecho constitucional de recibir enseñanza en castellano en todas las etapas del sistema educativo y en toda la Nación, desde el respeto a las lenguas cooficiales de cada una de las Comunidades y en cumplimiento de las sentencias judiciales.\"",
+          "fuente": "Programa PP 29N, pag. 39"
         },
         "PSIB": {
           "valor": -2,
@@ -1715,9 +1715,9 @@
       "contexto_opcional": "El Govern balear ya aplica exenciones de ITP a menores de 30 años y avales del IBAVI, y se debate extenderlo a nivel estatal.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone avales públicos de hasta el 100 % de la hipoteca y bonificación total del ITP para jóvenes en la compra de primera vivienda.",
-          "fuente": "Plan Vivienda PP (2026)"
+          "valor": 1,
+          "cita": "Propone ampliar el aval público de hasta el 20 % del valor de la vivienda a menores de 40 años para que la hipoteca cubra la entrada. \"Ampliaremos el aval público, que cubre hasta el 20% del valor de la vivienda, a los compradores menores de 40 años, con la posibilidad de ampliar el límite de edad hasta los 50, para que tener unos padres con ahorros deje de ser condición para comprar una vivienda. El aval público facilitará que la hipoteca cubra también la entrada que hoy muchos jóvenes no pueden reunir.\"",
+          "fuente": "Programa PP 29N, pag. 55"
         },
         "PSIB": {
           "valor": 0,
@@ -1766,9 +1766,9 @@
       "contexto_opcional": "La Ley autonómica de Vivienda de Baleares contemplaba la cesión obligatoria de pisos vacíos de grandes tenedores, medida que el PP derogó.",
       "posturas": {
         "PP": {
-          "valor": -2,
-          "cita": "Rechaza la expropiación de uso de pisos vacíos y propone incentivos fiscales y seguros antiimpago para que salgan al mercado.",
-          "fuente": "Programa Vivienda PP Balears"
+          "valor": -1,
+          "cita": "Plantea fomentar la rehabilitación para que las viviendas vacías o deterioradas vuelvan a ser hogares y aprovechar mejor el parque ya existente. \"Fomentaremos la rehabilitación para que cada vivienda vacía o deteriorada vuelva a ser un hogar. Queremos aprovechar mejor la vivienda que ya existe, recuperar edificios degradados y devolver vida a barrios y cascos históricos.\"",
+          "fuente": "Programa PP 29N, pag. 54"
         },
         "PSIB": {
           "valor": 2,
@@ -1817,9 +1817,9 @@
       "contexto_opcional": "El debate enfrenta la simplificación administrativa y ampliación de alturas frente a la contención del crecimiento urbanístico insular.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone una Ley del Suelo que agilice licencias en 3 meses con silencio positivo y libere suelo para vivienda asequible.",
-          "fuente": "Contrato con España PP (Oct 2026)"
+          "valor": 1,
+          "cita": "Propone movilizar suelo público y privado y aprobar una nueva Ley del Suelo para agilizar el planeamiento urbanístico y reforzar su seguridad jurídica. \"Movilizaremos suelo público y privado en colaboración con las Comunidades Autónomas y las entidades locales. Aprobaremos una nueva Ley del Suelo para agilizar el planeamiento urbanístico y reforzar su seguridad jurídica.\"",
+          "fuente": "Programa PP 29N, pag. 53"
         },
         "PSIB": {
           "valor": -1,
@@ -1868,9 +1868,9 @@
       "contexto_opcional": "La legislación estatal bonifica entre el 50 % y el 90 % en zonas tensionadas, mientras el PP propone llegar al 100 % sin declarar zonas tensionadas.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone una deducción del 100 % en el IRPF para propietarios que alquilen viviendas a jóvenes menores de 35 años.",
-          "fuente": "Plan Vivienda PP (2026)"
+          "valor": 1,
+          "cita": "Propone otorgar una deducción en el IRPF o crédito fiscal al propietario particular que renueve el contrato de alquiler tres años subiendo la renta por debajo del IPC. \"El propietario particular que, al vencer el contrato de una vivienda habitual, lo renueve a su inquilino por tres años más subiendo la renta por debajo del IPC tendrá una deducción en el IRPF o un crédito fiscal que compense ese esfuerzo.\"",
+          "fuente": "Programa PP 29N, pag. 55"
         },
         "PSIB": {
           "valor": 1,
@@ -2021,9 +2021,9 @@
       "contexto_opcional": "El debate cuestiona si unas islas con récords de 18 millones de turistas anuales necesitan seguir invirtiendo dinero público en promoción.",
       "posturas": {
         "PP": {
-          "valor": -2,
-          "cita": "Rechaza eliminar la promoción y propone enfocarla en turismo cultural, deportivo y de temporada baja para desestacionalizar.",
-          "fuente": "Programa Turismo PP Balears"
+          "valor": -1,
+          "cita": "Plantea impulsar la promoción exterior del turismo junto con la cultura, el patrimonio, la gastronomía y el deporte para aumentar la presencia internacional de España. \"Impulsaremos la promoción exterior de nuestra cultura, nuestro patrimonio, el turismo, las universidades, la gastronomía y el deporte para aumentar la presencia y la influencia de España en el mundo.\"",
+          "fuente": "Programa PP 29N, pag. 49"
         },
         "PSIB": {
           "valor": 0,
@@ -2124,8 +2124,8 @@
       "posturas": {
         "PP": {
           "valor": 1,
-          "cita": "Propone exigir más años de empadronamiento efectivo en Baleares para acceder a vivienda pública del IBAVI y ayudas vinculadas a inserción.",
-          "fuente": "Programa PP Balears"
+          "cita": "Propone fijar criterios de prioridad en determinadas ayudas y recursos públicos según un arraigo verificable, incluyendo empadronamiento, cotización, permanencia y contribución al sistema. \"Estableceremos criterios de prioridad en el acceso a determinadas ayudas, prestaciones y recursos públicos para procurar la asignación prioritaria a quienes mantengan un arraigo real, duradero y verificable con España. Se tendrán en cuenta, entre otros elementos, el empadronamiento, la trayectoria de cotización, permanencia y contribución al sistema.\"",
+          "fuente": "Programa PP 29N, pag. 40"
         },
         "PSIB": {
           "valor": -2,
@@ -2174,9 +2174,9 @@
       "contexto_opcional": "Las patronales baleares reclaman ampliar la migración circular en origen, mientras los sindicatos piden subir salarios para atraer trabajadores locales.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone impulsar una migración legal, circular y contratada en origen vinculada a las vacantes reales del mercado laboral.",
-          "fuente": "Plan Inmigración PP (2026)"
+          "valor": 1,
+          "cita": "Propone habilitar la contratación con contrato firmado en origen o visado temporal sujeto a controles para trabajar en sectores donde falten trabajadores. \"Para venir a trabajar en sectores donde falten trabajadores habrá dos vías: llegar con un contrato firmado en origen o con un visado temporal para buscar empleo, sujeto a controles y plazos definidos.\"",
+          "fuente": "Programa PP 29N, pag. 22"
         },
         "PSIB": {
           "valor": 2,
@@ -2225,9 +2225,9 @@
       "contexto_opcional": "Actualmente el Código Civil exige 10 años de residencia general (2 años para países iberoamericanos) y superar las pruebas del Instituto Cervantes.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone reforzar las exigencias de integración, lengua y carencia de antecedentes para adquirir la nacionalidad española.",
-          "fuente": "Programa PP (2026)"
+          "valor": 1,
+          "cita": "Propone endurecer las consecuencias por fraude y regular la pérdida de nacionalidad para no españoles de origen condenados en firme por delitos graves, evitando la apatridia. \"Endureceremos las consecuencias legales para quienes hayan adquirido la nacionalidad española mediante fraude, falsedad u ocultación. Además, regularemos la pérdida de la nacionalidad de quienes no sean españoles de origen cuando exista condena firme por determinados delitos graves contra la vida, la libertad sexual, la seguridad nacional, la integridad del Estado o la comunidad internacional, evitando en todo caso situaciones de apatridia.\"",
+          "fuente": "Programa PP 29N, pag. 50"
         },
         "PSIB": {
           "valor": -1,
@@ -2429,9 +2429,9 @@
       "contexto_opcional": "Las protestas del sector primario y de las cofradías de pescadores de Baleares denuncian el exceso de burocracia ambiental y reducción de días de pesca de la UE.",
       "posturas": {
         "PP": {
-          "valor": 1,
-          "cita": "Propone flexibilizar el Pacto Verde Europeo, reducir burocracia agraria, ampliar días de pesca de arrastre y rebajar el IVA a insumos.",
-          "fuente": "Programa Rural PP (2026)"
+          "valor": 0,
+          "cita": "Plantea mantener los objetivos europeos de descarbonización y lucha contra el cambio climático, revisando los ritmos por sector según la tecnología, la demanda y el contexto mundial. \"La lucha contra el cambio climático y la descarbonización son objetivos irrenunciables para Europa por razones ambientales, geoestratégicas y económicas. Pero ha llegado el momento de revisar los ritmos de cada sector atendiendo a tres factores: lo que está ocurriendo en el resto del mundo, la tecnología realmente disponible y la evolución de la demanda.\"",
+          "fuente": "Programa PP 29N, pag. 72"
         },
         "PSIB": {
           "valor": -2,
@@ -2582,9 +2582,9 @@
       "contexto_opcional": "La cesta de la compra en Baleares es la más cara de España debido a los costes de transporte e insularidad.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone rebajar el IVA de la carne, el pescado y las conservas y suprimir el impuesto a la generación eléctrica en la factura de la luz.",
-          "fuente": "Plan de Choque Fiscal PP (Sept 2026)"
+          "valor": 1,
+          "cita": "Propone aplicar un IVA del 0 % a los alimentos básicos, incluidos carne, pescado y conservas, mientras persista la crisis de inflación y poder adquisitivo. \"Mientras persista la actual crisis de inflación y de poder adquisitivo, aplicaremos un IVA del 0% a los alimentos básicos, incluidos la carne, el pescado y las conservas.\"",
+          "fuente": "Programa PP 29N, pag. 61"
         },
         "PSIB": {
           "valor": 0,
@@ -2787,8 +2787,8 @@
       "posturas": {
         "PP": {
           "valor": 1,
-          "cita": "Propone duplicar la deducción por hijo en el IRPF, ampliar permisos a familias monoparentales y gratuidad de guarderías 0-3 años.",
-          "fuente": "Plan Familia PP (Sept 2026)"
+          "cita": "Propone refundir las deducciones familiares del IRPF en una ayuda reembolsable de abono mensual accesible a todas las familias, incluso sin cuota suficiente. \"Refundiremos las deducciones familiares del IRPF en una sola, reembolsable, con un único trámite y abono mensual. Ampliaremos su acceso para que llegue a todas las familias, también a las que no tengan cuota suficiente en el IRPF.\"",
+          "fuente": "Programa PP 29N, pag. 56"
         },
         "PSIB": {
           "valor": 2,
@@ -2837,9 +2837,9 @@
       "contexto_opcional": "Baleares es una de las comunidades con mayor peso de trabajadores autónomos sobre el total de afiliados a la Seguridad Social.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone congelar los tramos de cotización, aplicar tarifa cero los dos primeros años y eximir de cuota por enfermedad o maternidad.",
-          "fuente": "Plan Autónomos PP (2026)"
+          "valor": 1,
+          "cita": "Propone eximir de la cuota a la Seguridad Social a los nuevos autónomos en su primer año y en el segundo si sus ingresos no alcanzan el salario mínimo. \"Los nuevos autónomos no pagarán cuota a la Seguridad Social durante su primer año, ni durante el segundo si sus ingresos no llegan al salario mínimo.\"",
+          "fuente": "Programa PP 29N, pag. 59"
         },
         "PSIB": {
           "valor": -1,
@@ -2940,8 +2940,8 @@
       "posturas": {
         "PP": {
           "valor": 2,
-          "cita": "Propone reformar la Ley Orgánica del Poder Judicial para que los jueces elijan directamente a los 12 vocales judiciales del CGPJ.",
-          "fuente": "Plan Regeneración PP (2026)"
+          "cita": "Propone que los jueces y magistrados de todas las categorías elijan directamente a los doce vocales judiciales del Consejo General del Poder Judicial. \"Los jueces y magistrados de todas las categorías elegirán a los doce vocales judiciales del Consejo General del Poder Judicial.\"",
+          "fuente": "Programa PP 29N, pag. 32"
         },
         "PSIB": {
           "valor": -2,
@@ -3092,9 +3092,9 @@
       "contexto_opcional": "El aumento del gasto en defensa ha sido uno de los principales motivos de ruptura entre los socios de la izquierda estatal.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone cumplir íntegramente el compromiso de alcanzar y superar el 2 % del PIB en gasto de defensa dentro de la OTAN.",
-          "fuente": "Programa Defensa PP (2026)"
+          "valor": 1,
+          "cita": "Propone aprobar una ley de programación y financiación de la defensa con inversión plurianual para cumplir los compromisos internacionales. \"La Defensa será una verdadera política de Estado y contará con una inversión plurianual que permita conocer fehacientemente y cumplir nuestros compromisos internacionales. Aprobaremos una ley de programación y financiación de la defensa, con objetivos de personal y material a medio y largo plazo.\"",
+          "fuente": "Programa PP 29N, pag. 26"
         },
         "PSIB": {
           "valor": 1,
@@ -3144,8 +3144,8 @@
       "posturas": {
         "PP": {
           "valor": 1,
-          "cita": "Propone un Plan Nacional de Salud Mental y prevención del suicidio y cheques o conciertos para agilizar la atención bucodental infantil.",
-          "fuente": "Programa Sanidad PP (2026)"
+          "cita": "Propone aumentar los profesionales de salud mental y mejorar el acceso a la atención psicológica y psiquiátrica desde Atención Primaria. \"Aumentaremos el número de profesionales dedicados a la salud mental y mejoraremos la prevención, la detección precoz y el acceso a la atención psicológica y psiquiátrica desde Atención Primaria, con especial prioridad para la infancia y la adolescencia, la prevención del suicidio y los trastornos mentales graves.\"",
+          "fuente": "Programa PP 29N, pag. 70"
         },
         "PSIB": {
           "valor": 2,
@@ -3195,8 +3195,8 @@
       "posturas": {
         "PP": {
           "valor": -2,
-          "cita": "Defiende de forma blindada la red de educación concertada y la libertad de las familias para elegir el colegio de sus hijos.",
-          "fuente": "Programa Educación PP (2026)"
+          "cita": "Rechaza eliminar los conciertos educativos y plantea mantenerlos al menos seis años cubriendo su coste real según la demanda de las familias. \"La demanda de las familias volverá a contar para programar las plazas, y se podrá elegir centro en todo el municipio de residencia, con criterios públicos. Los conciertos durarán al menos seis años en todas las etapas, con módulos que cubran el coste real, para que la plaza concertada sea gratuita de verdad.\"",
+          "fuente": "Programa PP 29N, pag. 67"
         },
         "PSIB": {
           "valor": 0,
@@ -3246,8 +3246,8 @@
       "posturas": {
         "PP": {
           "valor": -1,
-          "cita": "Defiende mantener el Pacto de Estado contra la Violencia de Género, corrigiendo fallos técnicos como los de la ley del solo sí es sí.",
-          "fuente": "Programa Igualdad PP (2026)"
+          "cita": "Plantea rendir cuentas anualmente del Pacto de Estado contra la Violencia de Género y dotar de más medios y especialización a las secciones judiciales de violencia sobre la mujer. \"Cada año rendiremos cuentas del cumplimiento del Pacto de Estado contra la Violencia de Género. Dotaremos de más medios y mayor especialización a las secciones de violencia sobre la mujer de los tribunales.\"",
+          "fuente": "Programa PP 29N, pag. 19"
         },
         "PSIB": {
           "valor": -2,
@@ -3296,9 +3296,9 @@
       "contexto_opcional": "El aumento de hurtos reincidentes en zonas turísticas como la Playa de Palma, Magaluf o Ibiza ha llevado este debate al Congreso.",
       "posturas": {
         "PP": {
-          "valor": 2,
-          "cita": "Propone endurecer las penas contra la multirreincidencia y ampliar la prisión permanente revisable a nuevos delitos graves.",
-          "fuente": "Plan Seguridad PP (2026)"
+          "valor": 1,
+          "cita": "Propone ampliar la prisión permanente revisable al asesino que oculte el cadáver de su víctima y a depredadores sexuales, pederastas y violadores reincidentes. \"Ampliaremos la prisión permanente revisable a quien haga desaparecer a su víctima y a los depredadores sexuales. Se aplicará al asesino que oculte el cadáver o se niegue a revelar dónde está, y a los depredadores sexuales, pederastas y violadores reincidentes.\"",
+          "fuente": "Programa PP 29N, pag. 20"
         },
         "PSIB": {
           "valor": 0,
