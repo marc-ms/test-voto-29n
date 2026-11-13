@@ -1,6 +1,7 @@
 import {
   AffinityReport,
   BlockId,
+  CompassCoordinates,
   LikertValue,
   PartyBlockScore,
   PartyMeta,
@@ -9,6 +10,114 @@ import {
   QuestionnaireData,
   UserAnswer,
 } from '../types';
+
+/**
+ * Polaridades para el Eje Económico (-1 = Izquierda, +1 = Derecha cuando se responde a favor).
+ */
+const ECONOMIC_POLARITY: Record<string, -1 | 1> = {
+  viv_01: -1,
+  viv_02: -1,
+  viv_04: -1,
+  viv_06: -1,
+  tur_01: -1,
+  tur_02: -1,
+  tur_04: -1,
+  tur_07: -1,
+  tur_08: -1,
+  eco_03: -1,
+  eco_05: -1,
+  tra_01: -1,
+  tra_03: -1,
+  tra_04: -1,
+  tra_05: -1,
+  tra_06: -1,
+  ser_01: -1,
+  ser_05: -1,
+  ser_06: -1,
+  viv_05: 1,
+  viv_07: 1,
+  viv_08: 1,
+  eco_01: 1,
+  eco_04: 1,
+  eco_06: 1,
+  eco_08: 1,
+  tra_07: 1,
+  tra_08: 1,
+};
+
+/**
+ * Polaridades para el Eje Social (+1 = Conservador, -1 = Progresista cuando se responde a favor).
+ */
+const SOCIAL_POLARITY: Record<string, -1 | 1> = {
+  viv_03: 1,
+  inm_01: 1,
+  inm_02: 1,
+  inm_04: 1,
+  inm_05: 1,
+  inm_07: 1,
+  inm_08: 1,
+  med_03: 1,
+  med_07: 1,
+  tra_08: 1,
+  ser_07: 1,
+  ser_08: 1,
+  inm_03: -1,
+  med_01: -1,
+  med_02: -1,
+  med_04: -1,
+  med_05: -1,
+  med_06: -1,
+  med_08: -1,
+  mod_06: -1,
+};
+
+/**
+ * Calcula las coordenadas normalizadas (-100 a +100) en los ejes económico y social
+ * a partir de una lista de respuestas o posturas ponderadas.
+ */
+export function calculateCompassCoordinates(
+  entries: { questionId: string; value: LikertValue | null; weight: number }[]
+): CompassCoordinates {
+  let ecoWeightedSum = 0;
+  let ecoMaxSum = 0;
+  let economicoCount = 0;
+
+  let socWeightedSum = 0;
+  let socMaxSum = 0;
+  let socialCount = 0;
+
+  for (const { questionId, value, weight } of entries) {
+    if (value === null || value === undefined || weight <= 0) {
+      continue;
+    }
+
+    const ecoPol = ECONOMIC_POLARITY[questionId];
+    if (ecoPol !== undefined) {
+      ecoWeightedSum += value * ecoPol * weight;
+      ecoMaxSum += 2 * weight;
+      economicoCount++;
+    }
+
+    const socPol = SOCIAL_POLARITY[questionId];
+    if (socPol !== undefined) {
+      socWeightedSum += value * socPol * weight;
+      socMaxSum += 2 * weight;
+      socialCount++;
+    }
+  }
+
+  const economico =
+    ecoMaxSum > 0 ? Math.round((ecoWeightedSum / ecoMaxSum) * 1000) / 10 : 0;
+  const social =
+    socMaxSum > 0 ? Math.round((socWeightedSum / socMaxSum) * 1000) / 10 : 0;
+
+  return {
+    economico,
+    social,
+    economicoCount,
+    socialCount,
+  };
+}
 
 /**
  * Calcula la afinidad de una sola pregunta entre el usuario (U_i) y un partido (P_i),
@@ -35,8 +144,8 @@ export function calculateSingleQuestionMatchPercent(
 }
 
 /**
- * Motor matemático determinista que calcula el ranking general, cobertura programática
- * y desglose por bloques temáticos según SPEC.md (Sección 5).
+ * Motor matemático determinista que calcula el ranking general, cobertura programática,
+ * brújula política 2D y desglose por bloques temáticos según SPEC.md (Sección 5).
  */
 export function calculateAffinityReport(
   data: QuestionnaireData,
@@ -69,6 +178,14 @@ export function calculateAffinityReport(
 
   const totalAnsweredQuestions = validAnsweredQuestions.length;
 
+  const userCompass = calculateCompassCoordinates(
+    validAnsweredQuestions.map(({ question, answer }) => ({
+      questionId: question.id,
+      value: answer.value,
+      weight: answer.weight,
+    }))
+  );
+
   const rankings: PartyResult[] = data.metadata.partidos.map((party: PartyMeta) => {
     let sumaAfinidad = 0;
     let sumaPesosValidos = 0;
@@ -95,6 +212,12 @@ export function calculateAffinityReport(
       servicios_seguridad: { sumaAfinidad: 0, sumaPesosValidos: 0, answeredCount: 0, definedCount: 0 },
     };
 
+    const partyCompassEntries: {
+      questionId: string;
+      value: LikertValue | null;
+      weight: number;
+    }[] = [];
+
     for (const { question, answer } of validAnsweredQuestions) {
       const userVal = answer.value as LikertValue;
       const weight = answer.weight;
@@ -113,6 +236,12 @@ export function calculateAffinityReport(
         blockAcc.sumaAfinidad += afinidadPregunta;
         blockAcc.sumaPesosValidos += weight;
         blockAcc.definedCount++;
+
+        partyCompassEntries.push({
+          questionId: question.id,
+          value: partyVal,
+          weight,
+        });
       } else {
         questionsWithoutPosition++;
       }
@@ -149,6 +278,8 @@ export function calculateAffinityReport(
       };
     }
 
+    const compass = calculateCompassCoordinates(partyCompassEntries);
+
     return {
       party,
       finalPercentage: Math.round(finalPercentage * 10) / 10,
@@ -159,6 +290,7 @@ export function calculateAffinityReport(
       questionsWithoutPosition,
       totalAnsweredByUser: totalAnsweredQuestions,
       blockScores,
+      compass,
     };
   });
 
@@ -191,10 +323,10 @@ export function calculateAffinityReport(
   return {
     rankings,
     topPartyByBlock,
+    userCompass,
     totalAnsweredQuestions,
     totalSkippedQuestions,
     totalKeyQuestions,
     completedTandasCount,
   };
 }
-

@@ -76,6 +76,13 @@ export interface PartyBlockScore {
   definedPositionsCount: number;
 }
 
+export interface CompassCoordinates {
+  economico: number; // -100 (Izquierda) a +100 (Derecha)
+  social: number; // -100 (Progresista) a +100 (Conservador)
+  economicoCount: number;
+  socialCount: number;
+}
+
 export interface PartyResult {
   party: PartyMeta;
   finalPercentage: number;
@@ -86,11 +93,13 @@ export interface PartyResult {
   questionsWithoutPosition: number;
   totalAnsweredByUser: number;
   blockScores: Record<BlockId, PartyBlockScore>;
+  compass: CompassCoordinates;
 }
 
 export interface AffinityReport {
   rankings: PartyResult[];
   topPartyByBlock: Record<BlockId, { party: PartyMeta; percentage: number }[]>;
+  userCompass: CompassCoordinates;
   totalAnsweredQuestions: number;
   totalSkippedQuestions: number;
   totalKeyQuestions: number;

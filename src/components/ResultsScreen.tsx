@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import {
   AffinityReport,
   BlockId,
+  BlockMeta,
+  PartyResult,
   QuestionnaireData,
   TandaNumber,
   UserAnswer,
 } from '../types';
 import { BlockIcon } from './BlockIcon';
 import { AuditAccordion } from './AuditAccordion';
+import { PoliticalCompass } from './PoliticalCompass';
 import {
+  AlertTriangle,
   Award,
   CheckCircle2,
   ChevronRight,
@@ -20,6 +24,50 @@ import {
   RotateCcw,
   ShieldCheck,
 } from 'lucide-react';
+
+function getPartyBlockHighlights(
+  item: PartyResult,
+  bloques: BlockMeta[]
+): { closest: BlockMeta[]; farthest: BlockMeta } | null {
+  const evaluated = bloques
+    .map((b, idx) => ({
+      block: b,
+      score: item.blockScores[b.id],
+      idx,
+    }))
+    .filter((entry) => entry.score && entry.score.answeredQuestionsCount > 0);
+
+  if (evaluated.length < 2) return null;
+
+  const sorted = [...evaluated].sort((a, b) => {
+    if (b.score.affinityPercentage !== a.score.affinityPercentage) {
+      return b.score.affinityPercentage - a.score.affinityPercentage;
+    }
+    if (b.score.definedPositionsCount !== a.score.definedPositionsCount) {
+      return b.score.definedPositionsCount - a.score.definedPositionsCount;
+    }
+    return a.idx - b.idx;
+  });
+
+  const highest = sorted[0];
+  const farthest = sorted[sorted.length - 1];
+
+  if (highest.score.affinityPercentage <= farthest.score.affinityPercentage) {
+    return null;
+  }
+
+  const candidates = sorted.slice(0, -1);
+  const closest =
+    candidates.length >= 2 &&
+    candidates[1].score.affinityPercentage > farthest.score.affinityPercentage
+      ? [candidates[0].block, candidates[1].block]
+      : [candidates[0].block];
+
+  return {
+    closest,
+    farthest: farthest.block,
+  };
+}
 
 interface ResultsScreenProps {
   data: QuestionnaireData;
@@ -47,6 +95,14 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
   const [expandedBlock, setExpandedBlock] = useState<BlockId | null>(null);
 
   const topWinner = report.rankings[0];
+  const secondWinner = report.rankings[1];
+  const topGap =
+    topWinner && secondWinner
+      ? Math.round(
+          (topWinner.finalPercentage - secondWinner.finalPercentage) * 10
+        ) / 10
+      : null;
+
   const nextTanda: TandaNumber | null = !completedTandas.includes(1)
     ? 1
     : !completedTandas.includes(2)
@@ -62,6 +118,13 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
           (selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque))
       ).length
     : 0;
+
+  const hasTechnicalTie =
+    topGap !== null &&
+    report.totalAnsweredQuestions > 0 &&
+    topGap < 4 &&
+    nextTanda !== null &&
+    nextTandaQuestionsCount > 0;
 
   const relevantQuestions = data.preguntas.filter(
     (q) => selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque)
@@ -166,6 +229,37 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
         </section>
       )}
 
+      {/* Aviso de Empate Técnico (< 4 puntos porcentuales) */}
+      {hasTechnicalTie && topWinner && secondWinner && nextTanda && (
+        <section className="bg-amber-50 border-2 border-amber-300 text-amber-950 rounded-3xl p-5 shadow-sm flex flex-col gap-3">
+          <div className="flex items-start gap-2.5">
+            <div className="p-2 rounded-xl bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">
+              <AlertTriangle className="w-4 h-4" />
+            </div>
+            <p className="text-xs font-semibold leading-relaxed">
+              <strong className="font-extrabold">
+                {topWinner.party.siglas}
+              </strong>{' '}
+              y{' '}
+              <strong className="font-extrabold">
+                {secondWinner.party.siglas}
+              </strong>{' '}
+              están prácticamente empatados (diferencia de{' '}
+              <strong className="font-extrabold">{topGap.toFixed(1)}%</strong>).
+              Juega la siguiente tanda para desempatar.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => onStartNextTanda(nextTanda)}
+            className="w-full py-3 px-4 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-2xl shadow-sm flex items-center justify-center gap-2 transition active:scale-[0.99] cursor-pointer text-xs"
+          >
+            <Play className="w-4 h-4 fill-current" />
+            Iniciar Tanda {nextTanda} (+{nextTandaQuestionsCount} preguntas nuevas)
+          </button>
+        </section>
+      )}
+
       {/* Indicador de Solidez del Resultado + CTA Siguiente Tanda */}
       <section className="bg-indigo-950 text-white rounded-3xl p-5 shadow-md border border-indigo-800/60">
         <div className="flex items-center justify-between mb-2">
@@ -215,6 +309,12 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
         )}
       </section>
 
+      {/* Brújula Política 2D */}
+      <PoliticalCompass
+        userCompass={report.userCompass}
+        rankings={report.rankings}
+      />
+
       {/* Ranking Completo de los 8 Partidos */}
       <section className="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/90 flex flex-col gap-3.5">
         <div className="flex items-center justify-between">
@@ -227,70 +327,92 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
         </div>
 
         <div className="flex flex-col gap-3">
-          {report.rankings.map((item, idx) => (
-            <div
-              key={item.party.id}
-              className="p-3.5 rounded-2xl border border-slate-200/80 bg-slate-50/50 flex flex-col gap-2"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2.5 min-w-0">
-                  <span
-                    className="w-6 h-6 rounded-full text-xs font-extrabold flex items-center justify-center text-white shrink-0"
-                    style={{ backgroundColor: item.party.color }}
-                  >
-                    {idx + 1}
-                  </span>
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-sm font-extrabold text-slate-900 truncate">
-                        {item.party.siglas}
-                      </span>
-                      <span className="text-[11px] text-slate-500 truncate">
-                        · {item.party.candidato_baleares}
-                      </span>
+          {report.rankings.map((item, idx) => {
+            const highlights = getPartyBlockHighlights(
+              item,
+              data.metadata.bloques
+            );
+
+            return (
+              <div
+                key={item.party.id}
+                className="p-3.5 rounded-2xl border border-slate-200/80 bg-slate-50/50 flex flex-col gap-2"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <span
+                      className="w-6 h-6 rounded-full text-xs font-extrabold flex items-center justify-center text-white shrink-0"
+                      style={{ backgroundColor: item.party.color }}
+                    >
+                      {idx + 1}
+                    </span>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-sm font-extrabold text-slate-900 truncate">
+                          {item.party.siglas}
+                        </span>
+                        <span className="text-[11px] text-slate-500 truncate">
+                          · {item.party.candidato_baleares}
+                        </span>
+                      </div>
+                      <div className="text-[11px] text-slate-400 truncate">
+                        {item.party.nombre}
+                      </div>
                     </div>
-                    <div className="text-[11px] text-slate-400 truncate">
-                      {item.party.nombre}
-                    </div>
+                  </div>
+
+                  <div className="text-right shrink-0">
+                    <span className="text-lg font-black text-slate-900">
+                      {item.finalPercentage.toFixed(1)}%
+                    </span>
                   </div>
                 </div>
 
-                <div className="text-right shrink-0">
-                  <span className="text-lg font-black text-slate-900">
-                    {item.finalPercentage.toFixed(1)}%
+                {/* Barra animada del partido */}
+                <div className="w-full h-2.5 bg-slate-200/80 rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full transition-all duration-700 ease-out"
+                    style={{
+                      width: `${Math.max(2, item.finalPercentage)}%`,
+                      backgroundColor: item.party.color,
+                    }}
+                  />
+                </div>
+
+                {/* Resumen Más cerca en / Más lejos en */}
+                {highlights && (
+                  <p className="text-[11px] text-slate-600 leading-snug">
+                    <span className="font-bold text-emerald-700">
+                      Más cerca en:
+                    </span>{' '}
+                    {highlights.closest.map((b) => b.nombre).join(', ')}{' '}
+                    <span className="text-slate-400">·</span>{' '}
+                    <span className="font-bold text-rose-700">
+                      Más lejos en:
+                    </span>{' '}
+                    {highlights.farthest.nombre}
+                  </p>
+                )}
+
+                {/* Índice de Transparencia / Cobertura Programática */}
+                <div className="flex items-center justify-between text-[11px] text-slate-500 pt-0.5">
+                  <span className="inline-flex items-center gap-1">
+                    <ShieldCheck className="w-3.5 h-3.5 text-slate-400" />
+                    Cobertura programática:{' '}
+                    <strong className="text-slate-700">
+                      {item.coveragePercentage}%
+                    </strong>{' '}
+                    ({item.questionsWithPosition}/{item.totalAnsweredByUser} temas)
                   </span>
+                  {item.questionsWithoutPosition > 0 && (
+                    <span className="text-amber-700 font-medium">
+                      {item.questionsWithoutPosition} sin postura
+                    </span>
+                  )}
                 </div>
               </div>
-
-              {/* Barra animada del partido */}
-              <div className="w-full h-2.5 bg-slate-200/80 rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-all duration-700 ease-out"
-                  style={{
-                    width: `${Math.max(2, item.finalPercentage)}%`,
-                    backgroundColor: item.party.color,
-                  }}
-                />
-              </div>
-
-              {/* Índice de Transparencia / Cobertura Programática */}
-              <div className="flex items-center justify-between text-[11px] text-slate-500 pt-0.5">
-                <span className="inline-flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-slate-400" />
-                  Cobertura programática:{' '}
-                  <strong className="text-slate-700">
-                    {item.coveragePercentage}%
-                  </strong>{' '}
-                  ({item.questionsWithPosition}/{item.totalAnsweredByUser} temas)
-                </span>
-                {item.questionsWithoutPosition > 0 && (
-                  <span className="text-amber-700 font-medium">
-                    {item.questionsWithoutPosition} sin postura
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
