@@ -1,100 +1,76 @@
 import React, { useEffect, useState } from 'react';
-import {
-  ChevronDown,
-  ChevronUp,
-  Flame,
-  HelpCircle,
-  Layers,
-  Scale,
-  ShieldCheck,
-  X,
-} from 'lucide-react';
+import { BTN_PRIMARY, CARD, KICKER } from './ui';
+
+const POINTS: { title: string; body: React.ReactNode }[] = [
+  {
+    title: '3 Tandas acumulativas (Sin repetir preguntas)',
+    body: (
+      <p>
+        El test completo se divide en 3 tandas de unas 20-30 preguntas. Con
+        hacer la Tanda 1 (4 min) ya obtienes tu afinidad. Si luego quieres
+        afinar más el resultado, puedes jugar las Tandas 2 y 3 sumando nuevas
+        preguntas sin repetir ninguna.
+      </p>
+    ),
+  },
+  {
+    title: '"Neutral" vs "Saltar pregunta"',
+    body: (
+      <ul className="space-y-1.5">
+        <li className="pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-stone">
+          Pulsar "Neutral / Depende" significa que prefieres una postura
+          moderada o intermedia (suma puntos con partidos moderados y resta con
+          los extremos).
+        </li>
+        <li className="pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-stone">
+          Pulsar "Saltar pregunta / No sé" ignora por completo esa pregunta para
+          que no afecte a tu porcentaje.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Tema clave para mí (Doble valor)',
+    body: (
+      <p>
+        Si una pregunta trata un asunto innegociable para tu voto (ej. vivienda
+        o turismo), activa la casilla "Tema clave". Esa pregunta valdrá el
+        doble (x2) en tu nota final.
+      </p>
+    ),
+  },
+  {
+    title: 'Datos reales y auditables (Baleares 29N)',
+    body: (
+      <p>
+        Las posturas de los 8 partidos que se presentan en Illes Balears se
+        extraen de sus programas y compromisos oficiales. En la pantalla de
+        resultados podrás desplegar pregunta a pregunta la cita exacta y la
+        fuente de cada partido.
+      </p>
+    ),
+  },
+];
 
 export const HowItWorksCards: React.FC = () => {
   return (
-    <div className="flex flex-col gap-3">
-      {/* Punto 1 */}
-      <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-        <div className="p-2 rounded-xl bg-indigo-100 text-indigo-700 shrink-0 mt-0.5">
-          <Layers className="w-4 h-4" />
-        </div>
-        <div className="min-w-0 flex-1">
-          <h3 className="text-xs font-extrabold text-slate-900 leading-snug">
-            1. 3 Tandas acumulativas (Sin repetir preguntas)
-          </h3>
-          <p className="text-xs text-slate-600 leading-relaxed mt-1">
-            El test completo se divide en 3 tandas de unas 20-30 preguntas. Con
-            hacer la Tanda 1 (4 min) ya obtienes tu afinidad. Si luego quieres
-            afinar más el resultado, puedes jugar las Tandas 2 y 3 sumando
-            nuevas preguntas sin repetir ninguna.
-          </p>
-        </div>
-      </div>
-
-      {/* Punto 2 */}
-      <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-        <div className="p-2 rounded-xl bg-slate-200/80 text-slate-700 shrink-0 mt-0.5">
-          <Scale className="w-4 h-4" />
-        </div>
-        <div className="min-w-0 flex-1">
-          <h3 className="text-xs font-extrabold text-slate-900 leading-snug">
-            2. "Neutral" vs "Saltar pregunta"
-          </h3>
-          <ul className="text-xs text-slate-600 leading-relaxed mt-1 space-y-1">
-            <li className="flex items-start gap-1.5">
-              <span className="font-bold text-slate-500">•</span>
-              <span>
-                Pulsar "Neutral / Depende" significa que prefieres una postura
-                moderada o intermedia (suma puntos con partidos moderados y
-                resta con los extremos).
-              </span>
-            </li>
-            <li className="flex items-start gap-1.5">
-              <span className="font-bold text-slate-500">•</span>
-              <span>
-                Pulsar "Saltar pregunta / No sé" ignora por completo esa
-                pregunta para que no afecte a tu porcentaje.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Punto 3 */}
-      <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-        <div className="p-2 rounded-xl bg-orange-100 text-orange-600 shrink-0 mt-0.5">
-          <Flame className="w-4 h-4" />
-        </div>
-        <div className="min-w-0 flex-1">
-          <h3 className="text-xs font-extrabold text-slate-900 leading-snug">
-            3. Tema clave para mí (Doble valor)
-          </h3>
-          <p className="text-xs text-slate-600 leading-relaxed mt-1">
-            Si una pregunta trata un asunto innegociable para tu voto (ej.
-            vivienda o turismo), activa la casilla "Tema clave". Esa pregunta
-            valdrá el doble (x2) en tu nota final.
-          </p>
-        </div>
-      </div>
-
-      {/* Punto 4 */}
-      <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-        <div className="p-2 rounded-xl bg-emerald-100 text-emerald-700 shrink-0 mt-0.5">
-          <ShieldCheck className="w-4 h-4" />
-        </div>
-        <div className="min-w-0 flex-1">
-          <h3 className="text-xs font-extrabold text-slate-900 leading-snug">
-            4. Datos reales y auditables (Baleares 29N)
-          </h3>
-          <p className="text-xs text-slate-600 leading-relaxed mt-1">
-            Las posturas de los 8 partidos que se presentan en Illes Balears se
-            extraen de sus programas y compromisos oficiales. En la pantalla de
-            resultados podrás desplegar pregunta a pregunta la cita exacta y la
-            fuente de cada partido.
-          </p>
-        </div>
-      </div>
-    </div>
+    <ol className="divide-y divide-line">
+      {POINTS.map((point, idx) => (
+        <li key={point.title} className="flex gap-4 py-4 first:pt-0 last:pb-0">
+          <span className="font-serif text-2xl font-bold text-ink leading-none w-5 shrink-0 tabular-nums">
+            {idx + 1}
+          </span>
+          <div className="min-w-0">
+            <h3 className="font-serif text-base font-semibold text-ink leading-snug tracking-tight">
+              {point.title}
+            </h3>
+            <div className="text-sm text-stone leading-relaxed mt-1">
+              {point.body}
+            </div>
+          </div>
+        </li>
+      ))}
+    </ol>
   );
 };
 
@@ -102,38 +78,26 @@ export const HowItWorksAccordion: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+    <section className={CARD}>
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
-        className="w-full p-4 flex items-center justify-between gap-3 text-left hover:bg-slate-50/80 transition cursor-pointer"
+        className="w-full px-5 py-4 flex items-center justify-between gap-3 text-left cursor-pointer group"
       >
-        <div className="flex items-center gap-2.5 min-w-0">
-          <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600 shrink-0">
-            <HelpCircle className="w-4 h-4" />
-          </div>
-          <div className="min-w-0">
-            <h2 className="text-sm font-bold text-slate-800 leading-tight">
-              ¿Cómo funciona el test?
-            </h2>
-            <p className="text-[11px] text-slate-500 mt-0.5 truncate">
-              Tandas, Neutral vs. Saltar, Tema clave y fuentes reales
-            </p>
-          </div>
+        <div className="min-w-0">
+          <span className={KICKER}>Guía rápida</span>
+          <h2 className="font-serif text-xl font-semibold tracking-tight text-ink leading-snug mt-0.5 group-hover:underline underline-offset-4 decoration-line-strong">
+            ¿Cómo funciona el test?
+          </h2>
         </div>
-
-        <div className="p-1.5 rounded-lg bg-slate-100 text-slate-500 shrink-0">
-          {isOpen ? (
-            <ChevronUp className="w-4 h-4" />
-          ) : (
-            <ChevronDown className="w-4 h-4" />
-          )}
-        </div>
+        <span className="text-xl text-stone leading-none shrink-0 w-5 text-center">
+          {isOpen ? '−' : '+'}
+        </span>
       </button>
 
       {isOpen && (
-        <div className="px-4 pb-4 pt-1 border-t border-slate-100">
+        <div className="px-5 pb-5 pt-4 border-t border-line">
           <HowItWorksCards />
         </div>
       )}
@@ -171,49 +135,42 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4"
+      className="fixed inset-0 z-50 bg-ink/45 flex items-end sm:items-center justify-center p-0 sm:p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="how-it-works-modal-title"
     >
       <div
-        className="bg-white w-full max-w-md rounded-t-3xl sm:rounded-3xl shadow-2xl border border-slate-200 max-h-[88vh] flex flex-col overflow-hidden"
+        className="bg-card w-full max-w-md border border-line sm:rounded-[4px] max-h-[88vh] flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between gap-3 shrink-0">
-          <div className="flex items-center gap-2">
-            <div className="p-1.5 rounded-lg bg-indigo-50 text-indigo-600">
-              <HelpCircle className="w-4 h-4" />
-            </div>
+        <div className="px-5 py-4 border-b border-line flex items-baseline justify-between gap-3 shrink-0">
+          <div>
+            <span className={KICKER}>Guía rápida</span>
             <h2
               id="how-it-works-modal-title"
-              className="text-base font-extrabold text-slate-900"
+              className="font-serif text-xl font-semibold tracking-tight text-ink mt-0.5"
             >
               ¿Cómo funciona el test?
             </h2>
           </div>
-
           <button
             type="button"
             onClick={onClose}
             aria-label="Cerrar ayuda"
-            className="p-2 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition cursor-pointer"
+            className="text-sm text-stone hover:text-ink underline underline-offset-4 decoration-line-strong cursor-pointer"
           >
-            <X className="w-4 h-4" />
+            Cerrar
           </button>
         </div>
 
-        <div className="p-4 overflow-y-auto flex-1">
+        <div className="px-5 py-5 overflow-y-auto flex-1">
           <HowItWorksCards />
         </div>
 
-        <div className="p-4 pt-3 border-t border-slate-100 bg-white shrink-0">
-          <button
-            type="button"
-            onClick={onClose}
-            className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 active:scale-[0.99] text-white font-bold text-sm rounded-xl shadow-md shadow-indigo-600/20 transition cursor-pointer"
-          >
+        <div className="p-4 border-t border-line shrink-0">
+          <button type="button" onClick={onClose} className={BTN_PRIMARY}>
             Entendido
           </button>
         </div>
@@ -221,4 +178,3 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({
     </div>
   );
 };
-

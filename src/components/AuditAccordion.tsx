@@ -7,14 +7,7 @@ import {
   UserAnswer,
 } from '../types';
 import { calculateSingleQuestionMatchPercent } from '../engine/affinity';
-import {
-  ChevronDown,
-  ChevronUp,
-  FileText,
-  Flame,
-  Filter,
-  Quote,
-} from 'lucide-react';
+import { CARD, KICKER, SECTION_TITLE } from './ui';
 
 interface AuditAccordionProps {
   data: QuestionnaireData;
@@ -32,17 +25,14 @@ function formatLikertLabel(val: LikertValue | null): string {
     case 0:
       return 'Neutral / Depende (0)';
     case -1:
-      return 'Más bien en contra (-1)';
+      return 'Más bien en contra (−1)';
     case -2:
-      return 'Totalmente en contra (-2)';
+      return 'Totalmente en contra (−2)';
   }
 }
 
-function formatShortLikert(val: LikertValue | null): string {
-  if (val === null || val === undefined) return 'N/A';
-  if (val > 0) return `+${val}`;
-  return `${val}`;
-}
+const SELECT_CLASS =
+  'w-full text-sm bg-white border border-line-strong rounded-[4px] px-3 py-2 text-ink focus:outline-none focus:border-ink cursor-pointer';
 
 export const AuditAccordion: React.FC<AuditAccordionProps> = ({
   data,
@@ -58,8 +48,7 @@ export const AuditAccordion: React.FC<AuditAccordionProps> = ({
   const answeredQuestions = data.preguntas.filter((q) => {
     const ans = answers[q.id];
     const isAnswered = ans !== undefined;
-    const matchesBlock =
-      selectedBlock === 'ALL' || q.bloque === selectedBlock;
+    const matchesBlock = selectedBlock === 'ALL' || q.bloque === selectedBlock;
     return isAnswered && matchesBlock;
   });
 
@@ -69,208 +58,140 @@ export const AuditAccordion: React.FC<AuditAccordionProps> = ({
       : data.metadata.partidos.filter((p) => p.id === selectedParty);
 
   return (
-    <section className="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/90 flex flex-col gap-4">
+    <section className={`${CARD} p-5 flex flex-col gap-4`}>
       <div>
-        <div className="flex items-center gap-2 mb-1">
-          <FileText className="w-4 h-4 text-indigo-600" />
-          <h2 className="text-base font-extrabold text-slate-900">
-            ¿Por qué me sale este resultado?
-          </h2>
-        </div>
-        <p className="text-xs text-slate-500 leading-relaxed">
-          Auditoría de transparencia pregunta a pregunta. Filtra por partido o
-          bloque para comparar tu respuesta con la cita y fuente exacta de cada
-          programa electoral.
+        <span className={KICKER}>Auditoría de transparencia</span>
+        <h2 className={`${SECTION_TITLE} mt-1`}>
+          ¿Por qué me sale este resultado?
+        </h2>
+        <p className="text-sm text-stone mt-1 leading-relaxed">
+          Compara pregunta a pregunta tu respuesta con la postura de cada
+          partido, con la cita y la fuente de su programa.
         </p>
       </div>
 
-      {/* Filtros por Partido y por Bloque */}
-      <div className="flex flex-col gap-2.5 bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70">
-        <div className="flex items-center gap-1.5 text-xs font-bold text-slate-600">
-          <Filter className="w-3.5 h-3.5 text-indigo-600" />
-          <span>Filtrar citas programáticas:</span>
-        </div>
+      <div className="grid grid-cols-1 gap-3 border-y border-line py-4">
+        <label className="block">
+          <span className="block text-xs text-stone mb-1">Partido</span>
+          <select
+            value={selectedParty}
+            onChange={(e) => setSelectedParty(e.target.value as PartyId | 'ALL')}
+            className={SELECT_CLASS}
+          >
+            <option value="ALL">Todos los partidos</option>
+            {data.metadata.partidos.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.siglas} — {p.candidato_baleares}
+              </option>
+            ))}
+          </select>
+        </label>
 
-        <div className="grid grid-cols-1 gap-2">
-          <div>
-            <label className="block text-[11px] font-semibold text-slate-500 mb-1">
-              Partido político:
-            </label>
-            <select
-              value={selectedParty}
-              onChange={(e) =>
-                setSelectedParty(e.target.value as PartyId | 'ALL')
-              }
-              className="w-full text-xs font-semibold bg-white border border-slate-200 rounded-xl px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              <option value="ALL">Todos los partidos (8 candidaturas)</option>
-              {data.metadata.partidos.map((p) => (
-                <option key={p.id} value={p.id}>
-                  {p.siglas} — {p.nombre} ({p.candidato_baleares})
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label className="block text-[11px] font-semibold text-slate-500 mb-1">
-              Bloque temático:
-            </label>
-            <select
-              value={selectedBlock}
-              onChange={(e) =>
-                setSelectedBlock(e.target.value as BlockId | 'ALL')
-              }
-              className="w-full text-xs font-semibold bg-white border border-slate-200 rounded-xl px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              <option value="ALL">Todos los bloques temáticos (8)</option>
-              {data.metadata.bloques.map((b) => (
-                <option key={b.id} value={b.id}>
-                  {b.nombre}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
+        <label className="block">
+          <span className="block text-xs text-stone mb-1">Bloque temático</span>
+          <select
+            value={selectedBlock}
+            onChange={(e) => setSelectedBlock(e.target.value as BlockId | 'ALL')}
+            className={SELECT_CLASS}
+          >
+            <option value="ALL">Todos los bloques</option>
+            {data.metadata.bloques.map((b) => (
+              <option key={b.id} value={b.id}>
+                {b.nombre}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
 
-      {/* Lista de acordeones por pregunta */}
-      <div className="flex flex-col gap-2.5">
+      <div className="divide-y divide-line">
         {answeredQuestions.length === 0 ? (
-          <div className="text-center py-6 text-xs text-slate-400">
+          <p className="text-center py-6 text-sm text-stone">
             No hay preguntas respondidas para este filtro.
-          </div>
+          </p>
         ) : (
           answeredQuestions.map((q) => {
             const userAns = answers[q.id];
             const isOpen = openQuestionId === q.id;
-            const blockMeta = data.metadata.bloques.find(
-              (b) => b.id === q.bloque
-            );
+            const blockMeta = data.metadata.bloques.find((b) => b.id === q.bloque);
 
             return (
-              <div
-                key={q.id}
-                className="rounded-2xl border border-slate-200/90 overflow-hidden bg-white transition"
-              >
+              <div key={q.id}>
                 <button
                   type="button"
                   onClick={() =>
                     setOpenQuestionId((prev) => (prev === q.id ? null : q.id))
                   }
-                  className="w-full p-3.5 text-left flex items-start justify-between gap-3 hover:bg-slate-50/80 transition cursor-pointer"
+                  aria-expanded={isOpen}
+                  className="w-full py-3.5 text-left flex items-start justify-between gap-3 cursor-pointer group"
                 >
                   <div className="flex-1 min-w-0">
-                    <div className="flex flex-wrap items-center gap-1.5 mb-1">
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-600">
-                        Tanda {q.tanda} · {blockMeta?.nombre || q.bloque}
-                      </span>
+                    <div className="text-[11px] text-stone mb-1">
+                      Tanda {q.tanda} · {blockMeta?.nombre || q.bloque}
                       {userAns?.weight === 2 && (
-                        <span className="inline-flex items-center gap-0.5 text-[10px] font-bold bg-orange-100 text-orange-800 px-2 py-0.5 rounded-md">
-                          <Flame className="w-3 h-3" /> Doble peso (x2)
-                        </span>
+                        <span className="text-ink font-semibold"> · Tema clave ×2</span>
                       )}
-                      {userAns?.weight === 0 && (
-                        <span className="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-0.5 rounded-md">
-                          Saltada
-                        </span>
-                      )}
+                      {userAns?.weight === 0 && <span> · Saltada</span>}
                     </div>
-
-                    <p className="text-xs font-bold text-slate-800 leading-snug">
+                    <p className="font-serif text-[15px] font-semibold text-ink leading-snug group-hover:underline underline-offset-4 decoration-line-strong">
                       {q.enunciado}
                     </p>
-
-                    <div className="mt-1.5 text-[11px] text-slate-500">
+                    <p className="mt-1.5 text-xs text-stone">
                       Tu postura:{' '}
-                      <strong className="text-slate-800">
+                      <span className="text-ink font-medium">
                         {userAns?.weight === 0
-                          ? 'Pregunta saltada (No computa)'
+                          ? 'Pregunta saltada (no computa)'
                           : formatLikertLabel(userAns?.value ?? null)}
-                      </strong>
-                    </div>
+                      </span>
+                    </p>
                   </div>
-
-                  <div className="p-1 rounded-lg bg-slate-100 text-slate-500 shrink-0 mt-1">
-                    {isOpen ? (
-                      <ChevronUp className="w-4 h-4" />
-                    ) : (
-                      <ChevronDown className="w-4 h-4" />
-                    )}
-                  </div>
+                  <span className="text-base text-stone leading-none pt-1 shrink-0 w-4 text-center">
+                    {isOpen ? '−' : '+'}
+                  </span>
                 </button>
 
                 {isOpen && (
-                  <div className="p-3.5 pt-2 bg-slate-50/70 border-t border-slate-100 flex flex-col gap-2.5">
+                  <div className="pb-4 flex flex-col divide-y divide-line border-t border-line">
                     {partiesToDisplay.map((party) => {
                       const pos = q.posturas[party.id];
                       const matchPct =
-                        userAns &&
-                        userAns.weight > 0 &&
-                        userAns.value !== null &&
-                        pos
-                          ? calculateSingleQuestionMatchPercent(
-                              userAns.value,
-                              pos.valor
-                            )
+                        userAns && userAns.weight > 0 && userAns.value !== null && pos
+                          ? calculateSingleQuestionMatchPercent(userAns.value, pos.valor)
                           : null;
 
                       return (
-                        <div
-                          key={party.id}
-                          className="p-3 rounded-xl bg-white border border-slate-200/80 shadow-2xs"
-                        >
-                          <div className="flex items-center justify-between gap-2 mb-1.5">
-                            <div className="flex items-center gap-2">
+                        <div key={party.id} className="py-3">
+                          <div className="flex items-baseline justify-between gap-2">
+                            <div className="flex items-baseline gap-2 min-w-0">
                               <span
-                                className="w-2.5 h-2.5 rounded-full shrink-0"
+                                className="w-2 h-2 shrink-0 self-center"
                                 style={{ backgroundColor: party.color }}
                               />
-                              <span className="text-xs font-extrabold text-slate-900">
+                              <span className="font-serif text-[15px] font-semibold text-ink">
                                 {party.siglas}
                               </span>
-                              <span className="text-[11px] font-mono font-semibold text-slate-500">
-                                ({formatShortLikert(pos?.valor ?? null)})
+                              <span className="text-xs text-stone truncate">
+                                {formatLikertLabel(pos?.valor ?? null)}
                               </span>
                             </div>
-
-                            {matchPct !== null ? (
-                              <span
-                                className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
-                                  matchPct >= 75
-                                    ? 'bg-emerald-100 text-emerald-800'
-                                    : matchPct >= 50
-                                    ? 'bg-amber-100 text-amber-800'
-                                    : 'bg-rose-100 text-rose-800'
-                                }`}
-                              >
-                                {matchPct}% coincidencia
-                              </span>
-                            ) : (
-                              <span className="text-[10px] font-semibold bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full">
-                                {pos?.valor === null
-                                  ? 'Silencio programático'
-                                  : 'Sin evaluar'}
-                              </span>
-                            )}
-                          </div>
-
-                          <div className="text-[11px] font-semibold text-slate-700 mb-1">
-                            Postura: {formatLikertLabel(pos?.valor ?? null)}
+                            <span className="text-xs tabular-nums shrink-0 text-ink">
+                              {matchPct !== null
+                                ? `${matchPct} % coincidencia`
+                                : pos?.valor === null
+                                ? <span className="text-stone">Silencio programático</span>
+                                : <span className="text-stone">Sin evaluar</span>}
+                            </span>
                           </div>
 
                           {pos?.cita && (
-                            <div className="flex items-start gap-1.5 text-xs text-slate-600 italic bg-slate-50 p-2 rounded-lg border border-slate-100">
-                              <Quote className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
-                              <div>
-                                "{pos.cita}"
-                                {pos.fuente && (
-                                  <div className="not-italic text-[10px] font-semibold text-slate-400 mt-1">
-                                    Fuente: {pos.fuente}
-                                  </div>
-                                )}
-                              </div>
-                            </div>
+                            <blockquote className="mt-2 pl-3 border-l-2 border-line-strong text-[13px] text-ink/85 leading-relaxed">
+                              {pos.cita}
+                              {pos.fuente && (
+                                <footer className="text-[11px] text-stone mt-1">
+                                  Fuente: {pos.fuente}
+                                </footer>
+                              )}
+                            </blockquote>
                           )}
                         </div>
                       );
@@ -285,4 +206,3 @@ export const AuditAccordion: React.FC<AuditAccordionProps> = ({
     </section>
   );
 };
-

@@ -5,18 +5,16 @@ import {
   QuestionnaireData,
   TandaNumber,
 } from '../types';
-import { BlockIcon } from './BlockIcon';
 import { HowItWorksAccordion } from './HowItWorks';
 import {
-  Play,
-  RotateCcw,
-  BarChart3,
-  CheckCircle2,
-  HelpCircle,
-  SlidersHorizontal,
-  Sparkles,
-  Users,
-} from 'lucide-react';
+  BTN_PRIMARY,
+  BTN_SECONDARY,
+  BTN_SMALL,
+  CARD,
+  KICKER,
+  LINK,
+  SECTION_TITLE,
+} from './ui';
 
 interface HomeScreenProps {
   data: QuestionnaireData;
@@ -53,7 +51,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   const selectAllBlocks = () => setSelectedBlocks([]);
 
-  // Calcular cuántas preguntas hay en la tanda activa según filtro
+  // Calcular cuántas preguntas hay en cada tanda según filtro
   const getQuestionsForTanda = (tanda: TandaNumber) =>
     data.preguntas.filter(
       (q) =>
@@ -104,156 +102,143 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       ? 2
       : 3;
 
+  const tandaLabel = (t: TandaNumber) =>
+    t === 1
+      ? `Test principal · ${pctTanda1} % del banco`
+      : t === 2
+      ? `Consolidación · ${pctTanda12} % acumulado`
+      : 'Test exhaustivo · 100 %';
+
   return (
-    <div className="flex flex-col gap-5 pb-10">
-      {/* Cabecera / Hero */}
-      <header className="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 shadow-lg relative overflow-hidden">
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider bg-indigo-500/20 text-indigo-200 border border-indigo-400/30 px-3 py-1 rounded-full">
-            <Sparkles className="w-3.5 h-3.5" /> Congreso 29N · Illes Balears
-          </span>
-          <span className="text-xs text-slate-300 font-medium">
+    <div className="flex flex-col gap-6 pb-14">
+      {/* Cabecera editorial */}
+      <header className="pt-2 pb-6 border-b border-ink">
+        <div className="flex items-baseline justify-between gap-3">
+          <span className={KICKER}>Elecciones Generales · 29N · Illes Balears</span>
+          <span className="text-[11px] text-stone tabular-nums">
             v{data.metadata.version}
           </span>
         </div>
-        <h1 className="text-2xl font-extrabold tracking-tight leading-snug mb-2">
-          Test de Afinidad Electoral Baleares 29N
+        <h1 className="font-serif text-[34px] leading-[1.08] font-bold tracking-tight text-ink mt-4">
+          Test de afinidad electoral
         </h1>
-        <p className="text-sm text-slate-300 leading-relaxed">
-          Compara tus posturas con los programas y declaraciones reales de las{' '}
-          <strong className="text-white">8 candidaturas</strong> por Baleares en
-          un sistema acumulativo de 3 tandas.
+        <p className="text-[15px] text-stone leading-relaxed mt-3">
+          Compara tus posturas con los programas y compromisos de las{' '}
+          <span className="text-ink font-medium">8 candidaturas</span> al
+          Congreso por Baleares, en un sistema acumulativo de tres tandas.
         </p>
-        <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between gap-2">
-          <button
-            type="button"
-            onClick={onOpenHelp}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/20 px-3 py-1.5 rounded-full transition cursor-pointer"
-          >
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>¿Cómo funciona?</span>
-          </button>
-          <span className="text-[11px] text-slate-300/80">
-            4 claves rápidas
-          </span>
-        </div>
+        <button type="button" onClick={onOpenHelp} className={`${LINK} mt-4`}>
+          ¿Cómo funciona?
+        </button>
       </header>
 
-      {/* Tarjeta de Estado en localStorage */}
-      <section className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-            Tu progreso guardado
-          </span>
-          <span className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            Llevas {completedCount}/3 tandas completadas
+      {/* Estado guardado */}
+      <section className={`${CARD} p-5`}>
+        <div className="flex items-baseline justify-between gap-3 mb-4">
+          <span className={KICKER}>Tu progreso</span>
+          <span className="text-xs text-stone">
+            {completedCount}/3 tandas completadas
           </span>
         </div>
 
-        {/* Indicadores de las 3 tandas */}
-        <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-3 border border-line divide-x divide-line rounded-[4px] mb-5">
           {([1, 2, 3] as TandaNumber[]).map((t) => {
             const isDone = persisted.completedTandas.includes(t);
             const isCurrent = persisted.activeTanda === t && hasInProgressTanda;
+            const count =
+              t === 1
+                ? tanda1Questions.length
+                : t === 2
+                ? tanda2Questions.length
+                : tanda3Questions.length;
             return (
               <div
                 key={t}
-                className={`rounded-xl p-2.5 border text-center transition-all ${
-                  isDone
-                    ? 'bg-emerald-50 border-emerald-200 text-emerald-900'
-                    : isCurrent
-                    ? 'bg-indigo-50 border-indigo-300 text-indigo-900'
-                    : 'bg-slate-50 border-slate-200 text-slate-500'
+                className={`px-2 py-3 text-center ${
+                  isCurrent ? 'bg-cream' : ''
                 }`}
               >
-                <div className="text-xs font-bold">Tanda {t}</div>
-                <div className="text-[11px] mt-0.5">
+                <div className="font-serif text-base font-semibold text-ink">
+                  Tanda {t}
+                </div>
+                <div
+                  className={`text-[11px] mt-0.5 ${
+                    isDone || isCurrent ? 'text-ink font-medium' : 'text-stone'
+                  }`}
+                >
                   {isDone
                     ? 'Completada'
                     : isCurrent
-                    ? `En curso (${answeredInActiveTanda}/${currentTandaQuestions.length})`
-                    : t === 1
-                    ? `Principal (${tanda1Questions.length})`
-                    : t === 2
-                    ? `Refuerzo (${tanda2Questions.length})`
-                    : `Cierre (${tanda3Questions.length})`}
+                    ? `En curso ${answeredInActiveTanda}/${currentTandaQuestions.length}`
+                    : `${count} preguntas`}
                 </div>
               </div>
             );
           })}
         </div>
 
-        {/* Botones de acción principales según el estado */}
         <div className="flex flex-col gap-2.5">
           {hasInProgressTanda && (
-            <button
-              onClick={onContinueQuiz}
-              className="w-full py-3.5 px-4 bg-indigo-600 hover:bg-indigo-700 active:scale-[0.99] text-white font-bold rounded-xl shadow-md shadow-indigo-600/20 flex items-center justify-center gap-2 transition cursor-pointer"
-            >
-              <Play className="w-4 h-4 fill-current" />
-              Continuar Tanda {persisted.activeTanda} por la pregunta{' '}
-              {Math.min(
-                persisted.currentIndex + 1,
-                currentTandaQuestions.length
-              )}
+            <button type="button" onClick={onContinueQuiz} className={BTN_PRIMARY}>
+              Continuar la tanda {persisted.activeTanda} por la pregunta{' '}
+              {Math.min(persisted.currentIndex + 1, currentTandaQuestions.length)}
             </button>
           )}
 
           {!hasInProgressTanda && completedCount < 3 && (
             <button
+              type="button"
               onClick={() => onStartTanda(nextTandaToStart, selectedBlocks)}
-              className="w-full py-3.5 px-4 bg-indigo-600 hover:bg-indigo-700 active:scale-[0.99] text-white font-bold rounded-xl shadow-md shadow-indigo-600/20 flex items-center justify-center gap-2 transition cursor-pointer"
+              className={BTN_PRIMARY}
             >
-              <Play className="w-4 h-4 fill-current" />
               {nextTandaToStart === 1
-                ? `Iniciar Tanda 1 (${tanda1Questions.length} preguntas)`
+                ? `Comenzar la tanda 1 · ${tanda1Questions.length} preguntas`
                 : nextTandaToStart === 2
-                ? `Afianzar afinidad: Hacer Tanda 2 (+${tanda2Questions.length} preg.)`
-                : `Test Exhaustivo: Hacer Tanda 3 (+${tanda3Questions.length} preg.)`}
+                ? `Siguiente tanda: tanda 2 · +${tanda2Questions.length} preguntas`
+                : `Siguiente tanda: tanda 3 · +${tanda3Questions.length} preguntas`}
             </button>
           )}
 
           {answeredCount > 0 && (
-            <button
-              onClick={onViewResults}
-              className="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl flex items-center justify-center gap-2 transition cursor-pointer text-sm"
-            >
-              <BarChart3 className="w-4 h-4" />
-              Ver resultados actuales ({answeredCount} resp.)
+            <button type="button" onClick={onViewResults} className={BTN_SECONDARY}>
+              Ver resultados actuales ({answeredCount} respuestas)
             </button>
           )}
 
           {(answeredCount > 0 || completedCount > 0) && (
-            <div className="pt-1">
+            <div className="pt-2">
               {!confirmReset ? (
                 <button
+                  type="button"
                   onClick={() => setConfirmReset(true)}
-                  className="w-full py-2 text-xs font-medium text-slate-500 hover:text-rose-600 flex items-center justify-center gap-1.5 transition cursor-pointer"
+                  className="w-full text-center text-xs text-stone underline underline-offset-4 decoration-line-strong hover:text-ink hover:decoration-ink transition-colors cursor-pointer"
                 >
-                  <RotateCcw className="w-3.5 h-3.5" />
-                  Reiniciar test desde cero
+                  Reiniciar el test desde cero
                 </button>
               ) : (
-                <div className="flex items-center gap-2 bg-rose-50 border border-rose-200 p-2.5 rounded-xl">
-                  <span className="text-xs text-rose-800 font-medium flex-1">
+                <div className="bg-mist p-3.5 rounded-[4px] flex flex-col gap-3">
+                  <span className="text-sm text-ink">
                     ¿Borrar todas tus respuestas guardadas?
                   </span>
-                  <button
-                    onClick={() => {
-                      onResetAll();
-                      setConfirmReset(false);
-                    }}
-                    className="px-3 py-1.5 bg-rose-600 text-white text-xs font-bold rounded-lg cursor-pointer"
-                  >
-                    Sí, borrar
-                  </button>
-                  <button
-                    onClick={() => setConfirmReset(false)}
-                    className="px-2.5 py-1.5 bg-white text-slate-600 text-xs font-medium rounded-lg border border-slate-200 cursor-pointer"
-                  >
-                    Cancelar
-                  </button>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        onResetAll();
+                        setConfirmReset(false);
+                      }}
+                      className="flex-1 py-2 bg-navy hover:bg-navy-hover text-white text-xs font-semibold rounded-[4px] transition-colors cursor-pointer"
+                    >
+                      Sí, borrar
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setConfirmReset(false)}
+                      className="flex-1 py-2 bg-white border border-line-strong text-ink text-xs font-semibold rounded-[4px] hover:border-ink transition-colors cursor-pointer"
+                    >
+                      Cancelar
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
@@ -261,114 +246,96 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         </div>
       </section>
 
-      {/* Acordeón informativo "¿Cómo funciona?" */}
+      {/* ¿Cómo funciona? */}
       <HowItWorksAccordion />
 
-      {/* Filtro Personalizado por Bloques Temáticos */}
-      <section className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            <SlidersHorizontal className="w-4 h-4 text-indigo-600" />
-            <h2 className="text-sm font-bold text-slate-800">
-              Modo por Bloques Temáticos
-            </h2>
-          </div>
+      {/* Filtro por bloques temáticos */}
+      <section className={`${CARD} p-5`}>
+        <div className="flex items-baseline justify-between gap-3 mb-1">
+          <h2 className={SECTION_TITLE}>Bloques temáticos</h2>
           {!isAllBlocks && (
             <button
+              type="button"
               onClick={selectAllBlocks}
-              className="text-xs font-semibold text-indigo-600 hover:underline cursor-pointer"
+              className="text-xs font-medium text-ink underline underline-offset-4 decoration-line-strong hover:decoration-ink cursor-pointer"
             >
-              Marcar todos (8)
+              Marcar los 8
             </button>
           )}
         </div>
-        <p className="text-xs text-slate-500 mb-3.5">
+        <p className="text-sm text-stone mb-4 leading-relaxed">
           {isAllBlocks
-            ? 'Por defecto se evalúan los 8 bloques. Pulsa sobre los bloques si prefieres filtrar temas específicos:'
-            : `Has seleccionado ${selectedBlocks.length} de 8 bloques temáticos:`}
+            ? 'Por defecto se evalúan los 8 bloques. Selecciona alguno si prefieres responder solo sobre temas concretos.'
+            : `Has seleccionado ${selectedBlocks.length} de 8 bloques.`}
         </p>
 
         <div className="grid grid-cols-2 gap-2">
           {data.metadata.bloques.map((bloque) => {
-            const isSelected =
-              isAllBlocks || selectedBlocks.includes(bloque.id);
             const isExplicitlySelected = selectedBlocks.includes(bloque.id);
+            const isDimmed = !isAllBlocks && !isExplicitlySelected;
 
             return (
               <button
                 key={bloque.id}
                 type="button"
                 onClick={() => toggleBlock(bloque.id)}
-                className={`flex items-center gap-2.5 p-2.5 rounded-xl border text-left transition cursor-pointer ${
+                aria-pressed={isExplicitlySelected}
+                className={`flex items-start gap-2.5 px-3 py-2.5 border rounded-[4px] text-left transition-colors cursor-pointer ${
                   isExplicitlySelected
-                    ? 'bg-indigo-50/90 border-indigo-500 text-indigo-950 ring-1 ring-indigo-500'
-                    : isAllBlocks
-                    ? 'bg-slate-50/70 hover:bg-slate-100/80 border-slate-200 text-slate-700'
-                    : 'bg-white border-slate-200 text-slate-400 opacity-65'
+                    ? 'border-ink bg-cream'
+                    : 'border-line-strong bg-white hover:border-ink'
                 }`}
               >
-                <div
-                  className={`p-2 rounded-lg shrink-0 ${
-                    isSelected
-                      ? 'bg-indigo-100 text-indigo-700'
-                      : 'bg-slate-100 text-slate-400'
+                <span
+                  className={`mt-[3px] w-3 h-3 border shrink-0 ${
+                    isExplicitlySelected
+                      ? 'bg-ink border-ink'
+                      : 'border-line-strong bg-white'
+                  }`}
+                />
+                <span
+                  className={`text-xs leading-snug ${
+                    isDimmed ? 'text-stone' : 'text-ink font-medium'
                   }`}
                 >
-                  <BlockIcon iconName={bloque.icono} className="w-4 h-4" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="text-xs font-semibold leading-tight truncate">
-                    {bloque.nombre}
-                  </div>
-                </div>
+                  {bloque.nombre}
+                </span>
               </button>
             );
           })}
         </div>
       </section>
 
-      {/* Selector directo de Tandas */}
-      <section className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
-        <h2 className="text-sm font-bold text-slate-800 mb-1">
-          Sistema de 3 Tandas Acumulativas
-        </h2>
-        <p className="text-xs text-slate-500 mb-3">
-          Puedes hacer solo la Tanda 1 para un resultado sólido inicial ({pctTanda1}%
-          del banco) o sumar las tandas 2 y 3 para alcanzar el 100 % de
-          precisión.
+      {/* Selector directo de tandas */}
+      <section className={`${CARD} p-5`}>
+        <h2 className={SECTION_TITLE}>Tres tandas acumulativas</h2>
+        <p className="text-sm text-stone mt-1 mb-3 leading-relaxed">
+          La tanda 1 ya ofrece un resultado sólido ({pctTanda1} % del banco).
+          Las tandas 2 y 3 añaden preguntas nuevas hasta cubrir el 100 %.
         </p>
-        <div className="flex flex-col gap-2">
+        <div className="divide-y divide-line border-t border-line">
           {([1, 2, 3] as TandaNumber[]).map((t) => {
             const questionsInT = getQuestionsForTanda(t);
             const isDone = persisted.completedTandas.includes(t);
             return (
-              <div
-                key={t}
-                className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/80"
-              >
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-slate-800">
-                      Tanda {t}:{' '}
-                      {t === 1
-                        ? `Test Principal (${pctTanda1}%)`
-                        : t === 2
-                        ? `Consolidación (${pctTanda12}% acum.)`
-                        : 'Test Exhaustivo (100%)'}
+              <div key={t} className="flex items-center justify-between gap-3 py-3">
+                <div className="min-w-0">
+                  <div className="flex items-baseline gap-2">
+                    <span className="font-serif text-base font-semibold text-ink">
+                      Tanda {t}
                     </span>
                     {isDone && (
-                      <span className="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
-                        Hecha
-                      </span>
+                      <span className="text-[11px] text-stone">· hecha</span>
                     )}
                   </div>
-                  <p className="text-[11px] text-slate-500 mt-0.5">
-                    {questionsInT.length} preguntas seleccionadas
+                  <p className="text-xs text-stone mt-0.5">
+                    {tandaLabel(t)} · {questionsInT.length} preguntas
                   </p>
                 </div>
                 <button
+                  type="button"
                   onClick={() => onStartTanda(t, selectedBlocks)}
-                  className="px-3 py-1.5 rounded-lg text-xs font-bold bg-white hover:bg-indigo-50 text-indigo-700 border border-slate-200 hover:border-indigo-200 transition cursor-pointer"
+                  className={BTN_SMALL}
                 >
                   {isDone ? 'Repetir' : 'Jugar'}
                 </button>
@@ -378,32 +345,25 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         </div>
       </section>
 
-      {/* Candidaturas evaluadas en Illes Balears */}
-      <section className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
-        <div className="flex items-center gap-2 mb-3">
-          <Users className="w-4 h-4 text-slate-600" />
-          <h2 className="text-sm font-bold text-slate-800">
-            8 Candidaturas por Illes Balears
-          </h2>
-        </div>
-        <div className="grid grid-cols-2 gap-2">
+      {/* Candidaturas */}
+      <section className={`${CARD} p-5`}>
+        <h2 className={SECTION_TITLE}>Las 8 candidaturas</h2>
+        <p className="text-sm text-stone mt-1 mb-3">
+          Cabezas de lista al Congreso por Illes Balears.
+        </p>
+        <div className="divide-y divide-line border-t border-line">
           {data.metadata.partidos.map((p) => (
-            <div
-              key={p.id}
-              className="flex items-center gap-2.5 p-2 rounded-xl border border-slate-100 bg-slate-50/60"
-            >
+            <div key={p.id} className="flex items-center gap-3 py-2.5">
               <span
-                className="w-3 h-8 rounded-full shrink-0"
+                className="w-2.5 h-2.5 shrink-0"
                 style={{ backgroundColor: p.color }}
               />
-              <div className="min-w-0">
-                <div className="text-xs font-bold text-slate-800 truncate">
-                  {p.siglas}
-                </div>
-                <div className="text-[11px] text-slate-500 truncate">
-                  {p.candidato_baleares}
-                </div>
-              </div>
+              <span className="font-serif text-[15px] font-semibold text-ink min-w-0 truncate">
+                {p.siglas}
+              </span>
+              <span className="text-xs text-stone ml-auto text-right truncate">
+                {p.candidato_baleares}
+              </span>
             </div>
           ))}
         </div>
@@ -411,4 +371,3 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     </div>
   );
 };
-
