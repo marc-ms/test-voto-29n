@@ -60,17 +60,19 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
       ).length
     : 0;
 
+  const relevantQuestions = data.preguntas.filter(
+    (q) => selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque)
+  );
+  const coveredQuestionsCount = relevantQuestions.filter(
+    (q) => completedTandas.includes(q.tanda) || answers[q.id] !== undefined
+  ).length;
   const precisionPct =
-    completedTandas.length >= 3
-      ? 100
-      : completedTandas.length === 2
-      ? 66
-      : completedTandas.length === 1
-      ? 33
-      : Math.min(
+    relevantQuestions.length > 0
+      ? Math.min(
           100,
-          Math.round((report.totalAnsweredQuestions / data.preguntas.length) * 100)
-        );
+          Math.round((coveredQuestionsCount / relevantQuestions.length) * 100)
+        )
+      : 0;
 
   return (
     <div className="flex flex-col gap-5 pb-12">
@@ -159,7 +161,7 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
       <section className="bg-indigo-950 text-white rounded-3xl p-5 shadow-md border border-indigo-800/60">
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-extrabold uppercase tracking-wider text-indigo-300">
-            Solidez del Resultado ({Math.max(1, completedTandas.length)}/3 Tandas)
+            Solidez del Resultado ({completedTandas.length}/3 Tandas)
           </span>
           <span className="text-xs font-bold bg-indigo-500/30 text-indigo-100 px-2.5 py-0.5 rounded-full">
             Precisión: {precisionPct}%

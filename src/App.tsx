@@ -60,6 +60,11 @@ export const App: React.FC = () => {
     );
   }, [data, persisted.activeTanda, persisted.selectedBlocks]);
 
+  const safeCurrentIndex = Math.min(
+    persisted.currentIndex,
+    Math.max(0, activeQuestions.length - 1)
+  );
+
   // Informe matemático determinista
   const affinityReport = useMemo(() => {
     if (!data) return null;
@@ -106,7 +111,11 @@ export const App: React.FC = () => {
         [questionId]: { questionId, value, weight },
       };
 
-      const isLastQuestion = prev.currentIndex >= activeQuestions.length - 1;
+      const currentIdx = Math.min(
+        prev.currentIndex,
+        Math.max(0, activeQuestions.length - 1)
+      );
+      const isLastQuestion = currentIdx >= activeQuestions.length - 1;
 
       if (isLastQuestion) {
         const updatedCompleted = prev.completedTandas.includes(prev.activeTanda)
@@ -123,7 +132,7 @@ export const App: React.FC = () => {
         return {
           ...prev,
           answers: updatedAnswers,
-          currentIndex: prev.currentIndex + 1,
+          currentIndex: currentIdx + 1,
         };
       }
     });
@@ -131,10 +140,16 @@ export const App: React.FC = () => {
   };
 
   const handlePrevQuestion = () => {
-    setPersisted((prev) => ({
-      ...prev,
-      currentIndex: Math.max(0, prev.currentIndex - 1),
-    }));
+    setPersisted((prev) => {
+      const currentIdx = Math.min(
+        prev.currentIndex,
+        Math.max(0, activeQuestions.length - 1)
+      );
+      return {
+        ...prev,
+        currentIndex: Math.max(0, currentIdx - 1),
+      };
+    });
   };
 
   const handleResetAll = () => {
@@ -189,7 +204,7 @@ export const App: React.FC = () => {
           tanda={persisted.activeTanda}
           questions={activeQuestions}
           blocks={data.metadata.bloques}
-          currentIndex={persisted.currentIndex}
+          currentIndex={safeCurrentIndex}
           answers={persisted.answers}
           onAnswer={handleAnswer}
           onPrevQuestion={handlePrevQuestion}

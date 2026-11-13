@@ -207,7 +207,7 @@
     },
     {
       "id": "viv_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "vivienda",
       "tipo": "programa_29n",
       "enunciado": "Hay que aprobar una ley antiokupación que permita a la policía desalojar cualquier inmueble ocupado sin título en un plazo máximo de 24 a 48 horas.",
@@ -357,7 +357,7 @@
     },
     {
       "id": "tur_02",
-      "tanda": 1,
+      "tanda": 2,
       "bloque": "turismo",
       "tipo": "programa_29n",
       "enunciado": "Hay que aplicar un IVA del 10 % a los pisos turísticos y permitir que los ayuntamientos les cobren un recargo de hasta el 150 % en el IBI.",
@@ -407,7 +407,7 @@
     },
     {
       "id": "tur_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "turismo",
       "tipo": "programa_29n",
       "enunciado": "El Estado debe ceder a Baleares la cogestión de los aeropuertos de AENA (Palma, Ibiza y Menorca) para poder limitar el número de vuelos y cruceros en temporada alta.",
@@ -457,7 +457,7 @@
     },
     {
       "id": "tur_04",
-      "tanda": 3,
+      "tanda": 1,
       "bloque": "turismo",
       "tipo": "programa_29n",
       "enunciado": "Se debe duplicar el Impuesto de Turismo Sostenible (Ecotasa) en temporada alta y obligar por ley a destinarlo a transición ecológica y vivienda pública.",
@@ -557,7 +557,7 @@
     },
     {
       "id": "inm_02",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "inmigracion",
       "tipo": "programa_29n",
       "enunciado": "Ante el aumento de llegadas en patera a las costas de Cabrera, Formentera y Mallorca (Ruta Argelina), se debe desplegar a la Armada y bloquear navalmente las embarcaciones.",
@@ -607,7 +607,7 @@
     },
     {
       "id": "inm_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "inmigracion",
       "tipo": "programa_29n",
       "enunciado": "Las comunidades autónomas como Baleares deben estar obligadas por ley a acoger la cuota de menores extranjeros no acompañados que les asigne el Gobierno central.",
@@ -807,7 +807,7 @@
     },
     {
       "id": "med_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "medio_ambiente",
       "tipo": "programa_29n",
       "enunciado": "España debe alargar la vida útil de las centrales nucleares más allá de 2035 para abaratar el recibo de la luz y garantizar el suministro eléctrico.",
@@ -857,7 +857,7 @@
     },
     {
       "id": "med_04",
-      "tanda": 3,
+      "tanda": 2,
       "bloque": "medio_ambiente",
       "tipo": "programa_29n",
       "enunciado": "Los ayuntamientos baleares deben restringir la entrada de coches de alquiler y vehículos contaminantes mediante Zonas de Bajas Emisiones (ZBE) estrictas y topes insulares de vehículos.",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": "eco_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "economia",
       "tipo": "programa_29n",
       "enunciado": "Se debe mantener y aumentar el Impuesto de Patrimonio y el Impuesto a las Grandes Fortunas, eliminando las bonificaciones autonómicas a los patrimonios de más de 3 millones de euros.",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": "eco_04",
-      "tanda": 3,
+      "tanda": 1,
       "bloque": "economia",
       "tipo": "programa_29n",
       "enunciado": "La tarifa del IRPF debe deflactarse automáticamente cada año según la inflación para que las subidas salariales no impliquen pagar un porcentaje mayor de impuestos.",
@@ -1157,7 +1157,7 @@
     },
     {
       "id": "tra_02",
-      "tanda": 1,
+      "tanda": 2,
       "bloque": "trabajo",
       "tipo": "programa_29n",
       "enunciado": "Los empleados públicos (médicos, policías, jueces y docentes) destinados en Baleares deben recibir una subida sustancial del complemento de residencia para cubrir el precio de la vivienda.",
@@ -1257,7 +1257,7 @@
     },
     {
       "id": "tra_04",
-      "tanda": 3,
+      "tanda": 1,
       "bloque": "trabajo",
       "tipo": "programa_29n",
       "enunciado": "Se debe establecer un Salario Mínimo Interprofesional (SMI) diferenciado y más alto en comunidades caras como Baleares que en el resto del Estado.",
@@ -1357,7 +1357,7 @@
     },
     {
       "id": "mod_02",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "modelo_estado",
       "tipo": "programa_29n",
       "enunciado": "El nuevo sistema de financiación autonómica debe garantizar por ley el «principio de ordinalidad», de modo que Baleares no pierda posiciones en recursos por habitante tras aportar a la caja común.",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": "mod_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "modelo_estado",
       "tipo": "programa_29n",
       "enunciado": "Se debe derogar la Ley de Amnistía y prohibir por ley la concesión de indultos o conciertos fiscales singulares a partidos independentistas.",
@@ -1457,7 +1457,7 @@
     },
     {
       "id": "mod_04",
-      "tanda": 3,
+      "tanda": 2,
       "bloque": "modelo_estado",
       "tipo": "programa_29n",
       "enunciado": "Debe convocarse un referéndum vinculante para que la ciudadanía decida entre mantener la Monarquía parlamentaria o instaurar una República.",
@@ -1557,7 +1557,7 @@
     },
     {
       "id": "ser_02",
-      "tanda": 1,
+      "tanda": 2,
       "bloque": "servicios_seguridad",
       "tipo": "programa_29n",
       "enunciado": "El Estado debe financiar y firmar de inmediato el convenio ferroviario para llevar el tren de Mallorca hasta el Aeropuerto de Son Sant Joan, Llucmajor, Campos y Alcúdia.",
@@ -1607,7 +1607,7 @@
     },
     {
       "id": "ser_03",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "servicios_seguridad",
       "tipo": "programa_29n",
       "enunciado": "Las familias de Baleares deben poder elegir libremente en todas las etapas educativas si sus hijos estudian en castellano o en catalán como lengua vehicular.",
@@ -2013,7 +2013,7 @@
     },
     {
       "id": "tur_07",
-      "tanda": 2,
+      "tanda": 3,
       "bloque": "turismo",
       "subtema": "economia.industria",
       "tipo": "programa_29n",
@@ -2115,7 +2115,7 @@
     },
     {
       "id": "inm_05",
-      "tanda": 1,
+      "tanda": 2,
       "bloque": "inmigracion",
       "subtema": "inmigracion.integracion",
       "tipo": "programa_29n",
@@ -2421,7 +2421,7 @@
     },
     {
       "id": "med_07",
-      "tanda": 2,
+      "tanda": 3,
       "bloque": "medio_ambiente",
       "subtema": "rural.agricultura",
       "tipo": "programa_29n",
@@ -2778,7 +2778,7 @@
     },
     {
       "id": "tra_06",
-      "tanda": 2,
+      "tanda": 3,
       "bloque": "trabajo",
       "subtema": "familia.natalidad",
       "tipo": "programa_29n",
@@ -2880,7 +2880,7 @@
     },
     {
       "id": "tra_08",
-      "tanda": 3,
+      "tanda": 2,
       "bloque": "trabajo",
       "subtema": "proteccion-social.rentas",
       "tipo": "programa_29n",
@@ -3135,7 +3135,7 @@
     },
     {
       "id": "ser_05",
-      "tanda": 1,
+      "tanda": 3,
       "bloque": "servicios_seguridad",
       "subtema": "sanidad.prestaciones",
       "tipo": "programa_29n",
@@ -3237,7 +3237,7 @@
     },
     {
       "id": "ser_07",
-      "tanda": 2,
+      "tanda": 1,
       "bloque": "servicios_seguridad",
       "subtema": "igualdad.violencia-genero",
       "tipo": "programa_29n",
@@ -3288,7 +3288,7 @@
     },
     {
       "id": "ser_08",
-      "tanda": 3,
+      "tanda": 1,
       "bloque": "servicios_seguridad",
       "subtema": "seguridad-justicia.penal",
       "tipo": "programa_29n",

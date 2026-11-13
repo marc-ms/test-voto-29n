@@ -61,6 +61,21 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   const tanda2Questions = getQuestionsForTanda(2);
   const tanda3Questions = getQuestionsForTanda(3);
 
+  const totalSelectedQuestions =
+    tanda1Questions.length + tanda2Questions.length + tanda3Questions.length;
+  const pctTanda1 =
+    totalSelectedQuestions > 0
+      ? Math.round((tanda1Questions.length / totalSelectedQuestions) * 100)
+      : 0;
+  const pctTanda12 =
+    totalSelectedQuestions > 0
+      ? Math.round(
+          ((tanda1Questions.length + tanda2Questions.length) /
+            totalSelectedQuestions) *
+            100
+        )
+      : 0;
+
   const answeredCount = Object.keys(persisted.answers).length;
   const completedCount = persisted.completedTandas.length;
 
@@ -142,10 +157,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                     : isCurrent
                     ? `En curso (${answeredInActiveTanda}/${currentTandaQuestions.length})`
                     : t === 1
-                    ? 'Test Rápido'
+                    ? `Principal (${tanda1Questions.length})`
                     : t === 2
-                    ? 'Consolidación'
-                    : 'Exhaustivo'}
+                    ? `Refuerzo (${tanda2Questions.length})`
+                    : `Cierre (${tanda3Questions.length})`}
                 </div>
               </div>
             );
@@ -298,8 +313,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           Sistema de 3 Tandas Acumulativas
         </h2>
         <p className="text-xs text-slate-500 mb-3">
-          Puedes hacer solo la Tanda 1 para un resultado rápido o sumar las 3
-          tandas para alcanzar el 100 % de precisión.
+          Puedes hacer solo la Tanda 1 para un resultado sólido inicial ({pctTanda1}%
+          del banco) o sumar las tandas 2 y 3 para alcanzar el 100 % de
+          precisión.
         </p>
         <div className="flex flex-col gap-2">
           {([1, 2, 3] as TandaNumber[]).map((t) => {
@@ -315,9 +331,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                     <span className="text-xs font-bold text-slate-800">
                       Tanda {t}:{' '}
                       {t === 1
-                        ? 'Test Rápido (33%)'
+                        ? `Test Principal (${pctTanda1}%)`
                         : t === 2
-                        ? 'Consolidación (66%)'
+                        ? `Consolidación (${pctTanda12}% acum.)`
                         : 'Test Exhaustivo (100%)'}
                     </span>
                     {isDone && (
