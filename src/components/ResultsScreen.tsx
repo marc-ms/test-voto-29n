@@ -13,6 +13,7 @@ import {
   CheckCircle2,
   ChevronRight,
   Flame,
+  HelpCircle,
   Home,
   Layers,
   Play,
@@ -29,6 +30,7 @@ interface ResultsScreenProps {
   onStartNextTanda: (tanda: TandaNumber) => void;
   onGoHome: () => void;
   onResetAll: () => void;
+  onOpenHelp: () => void;
 }
 
 export const ResultsScreen: React.FC<ResultsScreenProps> = ({
@@ -40,6 +42,7 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
   onStartNextTanda,
   onGoHome,
   onResetAll,
+  onOpenHelp,
 }) => {
   const [expandedBlock, setExpandedBlock] = useState<BlockId | null>(null);
 
@@ -77,8 +80,9 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
   return (
     <div className="flex flex-col gap-5 pb-12">
       {/* Barra superior */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-2">
         <button
+          type="button"
           onClick={onGoHome}
           className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-slate-900 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-2xs transition cursor-pointer"
         >
@@ -86,9 +90,14 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
           Inicio / Tandas
         </button>
 
-        <span className="text-xs font-bold text-slate-500">
-          {report.totalAnsweredQuestions} preguntas evaluadas
-        </span>
+        <button
+          type="button"
+          onClick={onOpenHelp}
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-white hover:bg-indigo-50/70 px-3 py-2 rounded-xl border border-indigo-200/80 shadow-2xs transition cursor-pointer"
+        >
+          <HelpCircle className="w-3.5 h-3.5" />
+          <span>¿Cómo funciona?</span>
+        </button>
       </div>
 
       {/* Podio Principal / Ganador */}

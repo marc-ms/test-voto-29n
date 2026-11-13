@@ -15,11 +15,13 @@ import { calculateAffinityReport } from './engine/affinity';
 import { HomeScreen } from './components/HomeScreen';
 import { QuizScreen } from './components/QuizScreen';
 import { ResultsScreen } from './components/ResultsScreen';
+import { HowItWorksModal } from './components/HowItWorks';
 
 export const App: React.FC = () => {
   const [data, setData] = useState<QuestionnaireData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [isHelpOpen, setIsHelpOpen] = useState<boolean>(false);
 
   const [persisted, setPersisted] = useState<PersistedState>(() =>
     loadPersistedState()
@@ -196,6 +198,7 @@ export const App: React.FC = () => {
             setPersisted((prev) => ({ ...prev, currentScreen: 'results' }))
           }
           onResetAll={handleResetAll}
+          onOpenHelp={() => setIsHelpOpen(true)}
         />
       )}
 
@@ -211,6 +214,7 @@ export const App: React.FC = () => {
           onExitToHome={() =>
             setPersisted((prev) => ({ ...prev, currentScreen: 'home' }))
           }
+          onOpenHelp={() => setIsHelpOpen(true)}
         />
       )}
 
@@ -228,8 +232,14 @@ export const App: React.FC = () => {
             setPersisted((prev) => ({ ...prev, currentScreen: 'home' }))
           }
           onResetAll={handleResetAll}
+          onOpenHelp={() => setIsHelpOpen(true)}
         />
       )}
+
+      <HowItWorksModal
+        isOpen={isHelpOpen}
+        onClose={() => setIsHelpOpen(false)}
+      />
     </main>
   );
 };

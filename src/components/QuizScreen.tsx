@@ -12,6 +12,7 @@ import {
   ChevronDown,
   ChevronUp,
   Flame,
+  HelpCircle,
   Home,
   Info,
   SkipForward,
@@ -26,6 +27,7 @@ interface QuizScreenProps {
   onAnswer: (questionId: string, value: LikertValue | null, weight: 0 | 1 | 2) => void;
   onPrevQuestion: () => void;
   onExitToHome: () => void;
+  onOpenHelp: () => void;
 }
 
 const LIKERT_OPTIONS: {
@@ -92,6 +94,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
   onAnswer,
   onPrevQuestion,
   onExitToHome,
+  onOpenHelp,
 }) => {
   const question = questions[currentIndex];
   const existingAnswer = question ? answers[question.id] : undefined;
@@ -127,8 +130,9 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
     <div className="flex flex-col gap-4 pb-10">
       {/* Barra superior de navegación y progreso */}
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
-        <div className="flex items-center justify-between mb-2.5">
+        <div className="flex items-center justify-between gap-2 mb-2.5">
           <button
+            type="button"
             onClick={onExitToHome}
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-slate-800 transition cursor-pointer"
           >
@@ -136,6 +140,17 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
             Inicio
           </button>
 
+          <button
+            type="button"
+            onClick={onOpenHelp}
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50/80 hover:bg-indigo-100/80 px-2.5 py-1 rounded-full transition cursor-pointer"
+          >
+            <HelpCircle className="w-3.5 h-3.5" />
+            <span>¿Cómo funciona?</span>
+          </button>
+        </div>
+
+        <div className="flex items-center justify-between gap-2 mb-2">
           <span className="text-xs font-extrabold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
             Tanda {tanda} · {currentIndex + 1} de {questions.length}
           </span>

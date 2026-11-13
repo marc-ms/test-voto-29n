@@ -6,11 +6,13 @@ import {
   TandaNumber,
 } from '../types';
 import { BlockIcon } from './BlockIcon';
+import { HowItWorksAccordion } from './HowItWorks';
 import {
   Play,
   RotateCcw,
   BarChart3,
   CheckCircle2,
+  HelpCircle,
   SlidersHorizontal,
   Sparkles,
   Users,
@@ -23,6 +25,7 @@ interface HomeScreenProps {
   onContinueQuiz: () => void;
   onViewResults: () => void;
   onResetAll: () => void;
+  onOpenHelp: () => void;
 }
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({
@@ -32,6 +35,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   onContinueQuiz,
   onViewResults,
   onResetAll,
+  onOpenHelp,
 }) => {
   const [selectedBlocks, setSelectedBlocks] = useState<BlockId[]>(
     persisted.selectedBlocks || []
@@ -120,6 +124,19 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           <strong className="text-white">8 candidaturas</strong> por Baleares en
           un sistema acumulativo de 3 tandas.
         </p>
+        <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+          <button
+            type="button"
+            onClick={onOpenHelp}
+            className="inline-flex items-center gap-1.5 text-xs font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/20 px-3 py-1.5 rounded-full transition cursor-pointer"
+          >
+            <HelpCircle className="w-3.5 h-3.5" />
+            <span>¿Cómo funciona?</span>
+          </button>
+          <span className="text-[11px] text-slate-300/80">
+            4 claves rápidas
+          </span>
+        </div>
       </header>
 
       {/* Tarjeta de Estado en localStorage */}
@@ -243,6 +260,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           )}
         </div>
       </section>
+
+      {/* Acordeón informativo "¿Cómo funciona?" */}
+      <HowItWorksAccordion />
 
       {/* Filtro Personalizado por Bloques Temáticos */}
       <section className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
