@@ -112,6 +112,16 @@
       "tipo": "programa_29n",
       "enunciado": "Se debe declarar toda la comunidad de las Islas Baleares como «zona tensionada» para limitar por ley el precio máximo de los alquileres.",
       "contexto_opcional": "La Ley Estatal de Vivienda permite topar el alquiler si la comunidad autónoma solicita la declaración de zona tensionada, algo que el Govern balear del PP rechaza aplicar.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "El alquiler se come más del 60 % del sueldo en Mallorca mientras el Govern se niega a aplicar el tope de la Ley de Vivienda",
+          "fuente": "elDiario.es Illes Balears"
+        },
+        "derecha": {
+          "titular": "Inmobiliarias y propietarios advierten de que declarar Baleares zona tensionada desplomará la oferta de pisos en alquiler",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,
@@ -162,6 +172,16 @@
       "tipo": "programa_29n",
       "enunciado": "Debe prohibirse la compra de vivienda en Baleares a ciudadanos o empresas no residentes que no acrediten un mínimo de años viviendo en las islas.",
       "contexto_opcional": "Alrededor de un tercio de las compraventas de viviendas en Baleares las realizan compradores extranjeros o no residentes.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Uno de cada tres pisos vendidos en Balears acaba en manos de extranjeros no residentes: crecen las voces por limitar la compra",
+          "fuente": "Ara Balears"
+        },
+        "derecha": {
+          "titular": "Prohibir la compra de vivienda a ciudadanos europeos vulnera los tratados de la UE y hundiría la inversión en las Islas",
+          "fuente": "El Mundo Baleares"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,
@@ -212,6 +232,16 @@
       "tipo": "programa_29n",
       "enunciado": "Hay que aprobar una ley antiokupación que permita a la policía desalojar cualquier inmueble ocupado sin título en un plazo máximo de 24 a 48 horas.",
       "contexto_opcional": "El debate enfrenta la agilización inmediata del desalojo policial frente a la exigencia de informe previo de vulnerabilidad y alternativa habitacional.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Las plataformas antidesahucios denuncian que agitar la alarma okupa oculta el drama de miles de familias vulnerables sin alternativa habitacional",
+          "fuente": "Diario de Mallorca"
+        },
+        "derecha": {
+          "titular": "Los propietarios reclaman desalojos policiales en 48 horas ante la impunidad de las okupaciones y la lentitud de los juzgados",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": 1,
@@ -262,6 +292,16 @@
       "tipo": "programa_29n",
       "enunciado": "El Estado debe traspasar gratuitamente al IBAVI todos los suelos e inmuebles de la Sareb en Baleares y financiar un parque público con el 1 % del PIB.",
       "contexto_opcional": "Incluye proyectos clave en Mallorca como el desarrollo íntegramente público del cuartel de Son Busquets en Palma.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Entidades vecinales exigen que todos los pisos de la Sareb y el cuartel de Son Busquets se destinen al 100 % a alquiler social",
+          "fuente": "Diario de Mallorca"
+        },
+        "derecha": {
+          "titular": "Los promotores defienden la colaboración público-privada y liberar suelo como única vía rápida para levantar vivienda asequible",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -1,
@@ -312,6 +352,16 @@
       "tipo": "programa_29n",
       "enunciado": "Se deben retirar progresivamente al menos 130.000 plazas turísticas en Baleares y prohibir por completo nuevos pisos de alquiler vacacional.",
       "contexto_opcional": "El debate insular opone el decrecimiento turístico planificado frente al mantenimiento del techo actual de plazas con persecución de la oferta ilegal.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Miles de personas claman en Palma «Menys turisme, més vida» y exigen reducir plazas para frenar el colapso de las islas",
+          "fuente": "Diario de Mallorca"
+        },
+        "derecha": {
+          "titular": "La patronal hotelera y el comercio alertan de que el decrecimiento turístico destruiría miles de empleos en Baleares",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,
@@ -362,6 +412,16 @@
       "tipo": "programa_29n",
       "enunciado": "Hay que aplicar un IVA del 10 % a los pisos turísticos y permitir que los ayuntamientos les cobren un recargo de hasta el 150 % en el IBI.",
       "contexto_opcional": "Medida aprobada por el Gobierno en el Real Decreto-ley 29/2026 de octubre para equiparar la fiscalidad del piso turístico a la hotelera.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Equiparar el IVA del alquiler turístico al de los hoteles busca frenar la expulsión de vecinos de los barrios residenciales",
+          "fuente": "El País"
+        },
+        "derecha": {
+          "titular": "Habtur califica de «asfixia fiscal» el sablazo del IVA y el recargo del IBI a las familias que alquilan su vivienda vacacional",
+          "fuente": "Periódico de Ibiza y Formentera"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,
@@ -412,6 +472,16 @@
       "tipo": "programa_29n",
       "enunciado": "El Estado debe ceder a Baleares la cogestión de los aeropuertos de AENA (Palma, Ibiza y Menorca) para poder limitar el número de vuelos y cruceros en temporada alta.",
       "contexto_opcional": "AENA es una empresa cotizada de mayoría estatal (51 %) cuya gestión está centralizada en el Ministerio de Transportes.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Son Sant Joan e Ibiza baten récords de vuelos: el soberanismo y la izquierda reclaman cogestionar AENA para fijar un techo",
+          "fuente": "Ara Balears"
+        },
+        "derecha": {
+          "titular": "El sector aéreo rechaza trocear la red de AENA y advierte de que limitar vuelos encarecería los billetes y aislaría a Baleares",
+          "fuente": "El Mundo Baleares"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -1,
@@ -462,6 +532,16 @@
       "tipo": "programa_29n",
       "enunciado": "Se debe duplicar el Impuesto de Turismo Sostenible (Ecotasa) en temporada alta y obligar por ley a destinarlo a transición ecológica y vivienda pública.",
       "contexto_opcional": "Actualmente el ITS varía entre 1 € y 4 € por noche en temporada alta según la categoría del alojamiento.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Duplicar el Impuesto de Turismo Sostenible en pleno verano permitiría recaudar fondos clave para vivienda pública y ciclo del agua",
+          "fuente": "elDiario.es Illes Balears"
+        },
+        "derecha": {
+          "titular": "Los hoteleros rechazan doblar la ecotasa y avisan de que encarecer la estancia restará competitividad frente a destinos rivales",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -1,
@@ -512,6 +592,16 @@
       "tipo": "programa_29n",
       "enunciado": "El Gobierno debe anular la regularización extraordinaria de inmigrantes de 2026 y permitir solo regularizaciones individuales ligadas a un contrato laboral previo.",
       "contexto_opcional": "La regularización extraordinaria impulsada en 2026 para unos 500.000 extranjeros en situación administrativa irregular es uno de los choques centrales de la campaña.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Entidades sociales y sindicatos defienden que regularizar a medio millón de migrantes saca a miles de trabajadores de la economía sumergida",
+          "fuente": "El País"
+        },
+        "derecha": {
+          "titular": "La oposición exige anular la regularización masiva por premiar la entrada ilegal y provocar un efecto llamada sin precedentes",
+          "fuente": "El Mundo"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": 1,
@@ -562,6 +652,16 @@
       "tipo": "programa_29n",
       "enunciado": "Ante el aumento de llegadas en patera a las costas de Cabrera, Formentera y Mallorca (Ruta Argelina), se debe desplegar a la Armada y bloquear navalmente las embarcaciones.",
       "contexto_opcional": "La ruta migratoria entre Argelia y el archipiélago balear ha registrado cifras récord de llegadas en los dos últimos años.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Las ONG recuerdan que el derecho marítimo obliga a rescatar vidas en el mar y rechazan militarizar las aguas de Cabrera y Formentera",
+          "fuente": "Diario de Mallorca"
+        },
+        "derecha": {
+          "titular": "El récord de pateras en la ruta argelina hacia Baleares dispara la exigencia de desplegar a la Armada contra las mafias",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": 1,
@@ -612,6 +712,16 @@
       "tipo": "programa_29n",
       "enunciado": "Las comunidades autónomas como Baleares deben estar obligadas por ley a acoger la cuota de menores extranjeros no acompañados que les asigne el Gobierno central.",
       "contexto_opcional": "La reforma del artículo 35 de la Ley de Extranjería sobre el reparto obligatorio de menores entre comunidades ha enfrentado al Gobierno con los ejecutivos autonómicos del PP y con Vox.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "El Gobierno defiende el reparto obligatorio de menores migrantes por solidaridad interterritorial y derechos de la infancia",
+          "fuente": "El País"
+        },
+        "derecha": {
+          "titular": "Los Consells Insulars denuncian que los centros de acogida de Baleares están al 1.000 % de su capacidad y no admiten más cuotas",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,
@@ -712,6 +822,16 @@
       "tipo": "programa_29n",
       "enunciado": "Debe prohibirse totalmente la construcción de nuevas viviendas unifamiliares y piscinas privadas en suelo rústico en todas las Islas Baleares.",
       "contexto_opcional": "El consumo de territorio y agua por chalets con piscina en suelo rústico es uno de los debates ambientales más intensos en Mallorca e Ibiza.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "El GOB alerta de que se construye más de un chalet con piscina al día en el campo mallorquín en plena alerta por sequía",
+          "fuente": "Ara Balears"
+        },
+        "derecha": {
+          "titular": "Propietarios y constructores defienden el derecho a edificar en suelo rústico y culpan de la falta de agua a las fugas en la red",
+          "fuente": "Última Hora"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -1,
@@ -762,6 +882,16 @@
       "tipo": "programa_29n",
       "enunciado": "Hay que prohibir por ley las corridas de toros en toda España y eliminar cualquier subvención o protección estatal a la tauromaquia.",
       "contexto_opcional": "En Mallorca siguen celebrándose festejos taurinos amparados por la legislación estatal que declara la tauromaquia patrimonio cultural.",
+      "debate_prensa": {
+        "izquierda": {
+          "titular": "Colectivos animalistas vuelven a protestar ante el Coliseo Balear para exigir la abolición definitiva de las corridas de toros",
+          "fuente": "Diario de Mallorca"
+        },
+        "derecha": {
+          "titular": "Defensores de la tauromaquia reivindican la libertad cultural y la protección constitucional de la fiesta nacional en Palma",
+          "fuente": "El Mundo Baleares"
+        }
+      },
       "posturas": {
         "PP": {
           "valor": -2,

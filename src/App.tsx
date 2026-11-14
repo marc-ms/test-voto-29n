@@ -16,6 +16,7 @@ import { HomeScreen } from './components/HomeScreen';
 import { QuizScreen } from './components/QuizScreen';
 import { ResultsScreen } from './components/ResultsScreen';
 import { HowItWorksModal } from './components/HowItWorks';
+import { CARD } from './components/ui';
 
 export const App: React.FC = () => {
   const [data, setData] = useState<QuestionnaireData | null>(null);
@@ -163,10 +164,9 @@ export const App: React.FC = () => {
   if (loading) {
     return (
       <div className="max-w-md mx-auto min-h-screen p-4 flex items-center justify-center">
-        <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 text-center w-full">
-          <div className="w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-          <p className="text-sm font-bold text-slate-700">
-            Cargando banco de preguntas 29N Baleares...
+        <div className={`${CARD} p-6 text-center w-full`}>
+          <p className="font-serif text-base font-semibold text-ink">
+            Cargando banco de preguntas 29N Baleares…
           </p>
         </div>
       </div>
@@ -176,11 +176,11 @@ export const App: React.FC = () => {
   if (error || !data) {
     return (
       <div className="max-w-md mx-auto min-h-screen p-4 flex items-center justify-center">
-        <div className="bg-rose-50 border border-rose-200 rounded-3xl p-6 text-center w-full">
-          <p className="text-sm font-bold text-rose-900 mb-1">
+        <div className={`${CARD} p-6 text-center w-full`}>
+          <p className="font-serif text-base font-semibold text-ink mb-1">
             No se pudo cargar el cuestionario
           </p>
-          <p className="text-xs text-rose-700">{error}</p>
+          <p className="text-xs text-stone">{error}</p>
         </div>
       </div>
     );

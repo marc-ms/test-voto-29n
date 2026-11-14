@@ -33,6 +33,16 @@ export interface PartyPosition {
   fuente: string;
 }
 
+export interface PressClip {
+  titular: string;
+  fuente: string;
+}
+
+export interface PressDebate {
+  izquierda: PressClip;
+  derecha: PressClip;
+}
+
 export interface Question {
   id: string;
   tanda: TandaNumber;
@@ -40,6 +50,7 @@ export interface Question {
   tipo: string;
   enunciado: string;
   contexto_opcional?: string;
+  debate_prensa?: PressDebate;
   posturas: Record<PartyId, PartyPosition>;
 }
 

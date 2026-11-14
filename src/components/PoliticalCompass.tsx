@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { CompassCoordinates, PartyResult } from '../types';
-import { Compass } from 'lucide-react';
+import { CARD, SECTION_TITLE } from './ui';
 
 interface PoliticalCompassProps {
   userCompass: CompassCoordinates;
@@ -214,42 +214,35 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
     userPoint.y < GRID_TOP + 24 ? userPoint.y + 18 : userPoint.y - 12;
 
   return (
-    <section className="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/90 flex flex-col gap-3.5">
-      <div className="flex items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <Compass className="w-4 h-4 text-indigo-600" />
-          <h2 className="text-base font-extrabold text-slate-900">
-            Tu Brújula Política
-          </h2>
-        </div>
+    <section className={`${CARD} p-5 flex flex-col gap-4`}>
+      <div className="flex items-baseline justify-between gap-2">
+        <h2 className={SECTION_TITLE}>Tu brújula política</h2>
       </div>
 
-      {/* Switch para ver los 8 partidos en el mapa */}
+      {/* Control sobrio para ver los 8 partidos en el mapa */}
       <button
         type="button"
         role="switch"
         aria-checked={showParties}
         onClick={() => setShowParties((prev) => !prev)}
-        className={`w-full flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-2xl border text-left transition cursor-pointer ${
+        className={`w-full flex items-center justify-between gap-3 px-3.5 py-2.5 border rounded-[4px] text-left transition-colors cursor-pointer ${
           showParties
-            ? 'bg-indigo-50/80 border-indigo-300 text-indigo-950'
-            : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100/80'
+            ? 'bg-cream border-ink text-ink'
+            : 'bg-white border-line-strong text-ink hover:border-ink'
         }`}
       >
-        <span className="text-xs font-bold">
+        <span className="text-xs font-medium">
           Ver posición de los partidos en el mapa
         </span>
-        <div
-          className={`w-10 h-6 rounded-full p-0.5 transition-colors shrink-0 ${
-            showParties ? 'bg-indigo-600' : 'bg-slate-300'
+        <span
+          className={`w-9 h-5 border rounded-[2px] p-0.5 transition-colors flex items-center shrink-0 ${
+            showParties
+              ? 'bg-ink border-ink justify-end'
+              : 'bg-track border-line-strong justify-start'
           }`}
         >
-          <div
-            className={`w-5 h-5 rounded-full bg-white shadow transition-transform ${
-              showParties ? 'translate-x-4' : 'translate-x-0'
-            }`}
-          />
-        </div>
+          <span className="w-3.5 h-3.5 bg-white block" />
+        </span>
       </button>
 
       {/* Gráfico SVG 2D */}
@@ -269,7 +262,7 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
                 y={GRID_TOP}
                 width={GRID_SIZE}
                 height={GRID_SIZE}
-                rx={12}
+                rx={2}
               />
             </clipPath>
           </defs>
@@ -279,7 +272,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
             x={CENTER_X}
             y={17}
             textAnchor="middle"
-            className="fill-slate-700 font-bold"
+            fill="#1A1917"
+            fontWeight="600"
             fontSize="11"
           >
             Conservador (+100)
@@ -288,7 +282,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
             x={CENTER_X}
             y={312}
             textAnchor="middle"
-            className="fill-slate-700 font-bold"
+            fill="#1A1917"
+            fontWeight="600"
             fontSize="11"
           >
             Progresista (-100)
@@ -298,7 +293,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
             y={CENTER_Y}
             textAnchor="middle"
             transform={`rotate(-90 22 ${CENTER_Y})`}
-            className="fill-slate-700 font-bold"
+            fill="#1A1917"
+            fontWeight="600"
             fontSize="11"
           >
             Izquierda (-100)
@@ -308,7 +304,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
             y={CENTER_Y}
             textAnchor="middle"
             transform={`rotate(90 338 ${CENTER_Y})`}
-            className="fill-slate-700 font-bold"
+            fill="#1A1917"
+            fontWeight="600"
             fontSize="11"
           >
             Derecha (+100)
@@ -355,8 +352,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={GRID_TOP}
               x2={CENTER_X - HALF / 2}
               y2={GRID_TOP + GRID_SIZE}
-              stroke="#94a3b8"
-              strokeOpacity="0.25"
+              stroke="#66615B"
+              strokeOpacity="0.22"
               strokeDasharray="3 3"
             />
             <line
@@ -364,8 +361,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={GRID_TOP}
               x2={CENTER_X + HALF / 2}
               y2={GRID_TOP + GRID_SIZE}
-              stroke="#94a3b8"
-              strokeOpacity="0.25"
+              stroke="#66615B"
+              strokeOpacity="0.22"
               strokeDasharray="3 3"
             />
             <line
@@ -373,8 +370,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={CENTER_Y - HALF / 2}
               x2={GRID_LEFT + GRID_SIZE}
               y2={CENTER_Y - HALF / 2}
-              stroke="#94a3b8"
-              strokeOpacity="0.25"
+              stroke="#66615B"
+              strokeOpacity="0.22"
               strokeDasharray="3 3"
             />
             <line
@@ -382,8 +379,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={CENTER_Y + HALF / 2}
               x2={GRID_LEFT + GRID_SIZE}
               y2={CENTER_Y + HALF / 2}
-              stroke="#94a3b8"
-              strokeOpacity="0.25"
+              stroke="#66615B"
+              strokeOpacity="0.22"
               strokeDasharray="3 3"
             />
 
@@ -393,7 +390,7 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={GRID_TOP}
               x2={CENTER_X}
               y2={GRID_TOP + GRID_SIZE}
-              stroke="#64748b"
+              stroke="#66615B"
               strokeOpacity="0.45"
               strokeWidth="1.25"
             />
@@ -402,7 +399,7 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               y1={CENTER_Y}
               x2={GRID_LEFT + GRID_SIZE}
               y2={CENTER_Y}
-              stroke="#64748b"
+              stroke="#66615B"
               strokeOpacity="0.45"
               strokeWidth="1.25"
             />
@@ -414,10 +411,10 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
             y={GRID_TOP}
             width={GRID_SIZE}
             height={GRID_SIZE}
-            rx={12}
+            rx={2}
             fill="none"
-            stroke="#cbd5e1"
-            strokeWidth="1.5"
+            stroke="#DCD6CC"
+            strokeWidth="1.25"
           />
 
           {/* Puntos de los 8 partidos (si el switch está activo) */}
@@ -436,8 +433,8 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
                 y={pm.labelY}
                 textAnchor={pm.anchor}
                 fontSize="8.5"
-                fontWeight="800"
-                fill="#0f172a"
+                fontWeight="700"
+                fill="#1A1917"
                 stroke="#ffffff"
                 strokeWidth="2.8"
                 paintOrder="stroke"
@@ -453,25 +450,25 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
               <circle
                 cx={userPoint.x}
                 cy={userPoint.y}
-                r={13}
-                fill="#4f46e5"
-                fillOpacity="0.18"
+                r={12}
+                fill="#1A1917"
+                fillOpacity="0.14"
               />
               <circle
                 cx={userPoint.x}
                 cy={userPoint.y}
-                r={7}
-                fill="#4f46e5"
+                r={6.5}
+                fill="#1A1917"
                 stroke="#ffffff"
-                strokeWidth="2.5"
+                strokeWidth="2"
               />
               <text
                 x={userPoint.x}
                 y={userLabelY}
                 textAnchor="middle"
                 fontSize="10"
-                fontWeight="900"
-                fill="#312e81"
+                fontWeight="800"
+                fill="#1A1917"
                 stroke="#ffffff"
                 strokeWidth="3"
                 paintOrder="stroke"
@@ -483,20 +480,20 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
         </svg>
       </div>
 
-      {/* Dos píldoras con los valores numéricos exactos (-100 a +100) */}
+      {/* Dos etiquetas con los valores numéricos exactos (-100 a +100) */}
       <div className="grid grid-cols-2 gap-2.5">
-        <div className="px-3 py-2 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-          <span className="text-xs font-extrabold text-slate-800">
+        <div className="px-3 py-2 rounded-[4px] bg-white border border-line text-center">
+          <span className="text-xs font-medium text-stone">
             Económico:{' '}
-            <span className="font-mono text-indigo-700">
+            <span className="font-semibold text-ink tabular-nums">
               {formatAxisValue(userCompass.economico)}
             </span>
           </span>
         </div>
-        <div className="px-3 py-2 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-          <span className="text-xs font-extrabold text-slate-800">
+        <div className="px-3 py-2 rounded-[4px] bg-white border border-line text-center">
+          <span className="text-xs font-medium text-stone">
             Social:{' '}
-            <span className="font-mono text-indigo-700">
+            <span className="font-semibold text-ink tabular-nums">
               {formatAxisValue(userCompass.social)}
             </span>
           </span>
@@ -504,14 +501,14 @@ export const PoliticalCompass: React.FC<PoliticalCompassProps> = ({
       </div>
 
       {!hasCompassData && (
-        <p className="text-[11px] text-amber-700 text-center font-medium">
+        <p className="text-xs text-stone text-center">
           En los bloques filtrados actuales no hay preguntas asignadas a los
           ejes económico o social.
         </p>
       )}
 
       {/* Nota obligatoria en cursiva */}
-      <p className="text-[11px] italic text-slate-500 text-center leading-relaxed">
+      <p className="text-xs italic text-stone text-center leading-relaxed">
         Esta brújula no tiene en cuenta el modelo territorial, la lengua ni la
         política de defensa.
       </p>

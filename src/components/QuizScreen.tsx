@@ -28,6 +28,35 @@ const LIKERT_OPTIONS: { value: LikertValue; label: string; badge: string }[] = [
   { value: -2, label: 'Totalmente en contra', badge: '−2' },
 ];
 
+interface PressClipBlockProps {
+  stanceLabel: string;
+  titular: string;
+  fuente: string;
+}
+
+const PressClipBlock: React.FC<PressClipBlockProps> = ({
+  stanceLabel,
+  titular,
+  fuente,
+}) => (
+  <aside className="bg-card border border-line rounded-[4px] p-4 flex flex-col gap-2.5">
+    <div className="pb-2 border-b border-line">
+      <span className="block text-[10px] font-sans font-semibold uppercase tracking-[0.08em] text-stone">
+        Choque de posturas · Prensa
+      </span>
+      <span className="block text-xs font-sans font-semibold text-ink mt-0.5">
+        {stanceLabel}
+      </span>
+    </div>
+    <blockquote className="font-serif italic text-[15px] leading-[1.4] text-ink">
+      «{titular}»
+    </blockquote>
+    <cite className="not-italic font-sans text-xs text-stone">
+      — {fuente}
+    </cite>
+  </aside>
+);
+
 export const QuizScreen: React.FC<QuizScreenProps> = ({
   tanda,
   questions,
@@ -96,39 +125,89 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
         </div>
       </div>
 
-      {/* Tarjeta de pregunta */}
-      <article className={`${CARD} p-5 flex flex-col gap-5`}>
-        <div className="flex items-baseline justify-between gap-3">
-          <span className={KICKER}>
-            {blockMeta ? blockMeta.nombre : question.bloque}
-          </span>
-          <span className="text-[11px] text-stone/70 tabular-nums">
-            {question.id}
-          </span>
-        </div>
+      {/* Contenedor relativo para tarjeta central y recortes de prensa flotantes en escritorio */}
+      <div className="relative">
+        {question.debate_prensa && (
+          <>
+            <div className="hidden lg:block absolute top-0 right-[calc(100%+1.25rem)] xl:right-[calc(100%+2rem)] w-60 xl:w-72">
+              <PressClipBlock
+                stanceLabel="Argumento Izquierda / Progresista"
+                titular={question.debate_prensa.izquierda.titular}
+                fuente={question.debate_prensa.izquierda.fuente}
+              />
+            </div>
 
-        <h2 className="font-serif text-[23px] leading-[1.3] font-semibold tracking-tight text-ink">
-          {question.enunciado}
-        </h2>
-
-        {question.contexto_opcional && (
-          <div>
-            <button
-              type="button"
-              onClick={() => setShowContext((prev) => !prev)}
-              aria-expanded={showContext}
-              className="text-sm font-medium text-ink underline underline-offset-4 decoration-line-strong hover:decoration-ink cursor-pointer"
-            >
-              {showContext ? '− Ocultar contexto' : '+ ¿Qué implica esto?'}
-            </button>
-
-            {showContext && (
-              <p className="mt-3 pl-3 border-l-2 border-ink text-sm text-stone leading-relaxed">
-                {question.contexto_opcional}
-              </p>
-            )}
-          </div>
+            <div className="hidden lg:block absolute top-0 left-[calc(100%+1.25rem)] xl:left-[calc(100%+2rem)] w-60 xl:w-72">
+              <PressClipBlock
+                stanceLabel="Argumento Derecha / Conservador"
+                titular={question.debate_prensa.derecha.titular}
+                fuente={question.debate_prensa.derecha.fuente}
+              />
+            </div>
+          </>
         )}
+
+        {/* Tarjeta de pregunta */}
+        <article className={`${CARD} p-5 flex flex-col gap-5`}>
+          <div className="flex items-baseline justify-between gap-3">
+            <span className={KICKER}>
+              {blockMeta ? blockMeta.nombre : question.bloque}
+            </span>
+            <span className="text-[11px] text-stone/70 tabular-nums">
+              {question.id}
+            </span>
+          </div>
+
+          <h2 className="font-serif text-[23px] leading-[1.3] font-semibold tracking-tight text-ink">
+            {question.enunciado}
+          </h2>
+
+          {(question.contexto_opcional || question.debate_prensa) && (
+            <div>
+              <button
+                type="button"
+                onClick={() => setShowContext((prev) => !prev)}
+                aria-expanded={showContext}
+                className="text-sm font-medium text-ink underline underline-offset-4 decoration-line-strong hover:decoration-ink cursor-pointer text-left"
+              >
+                {showContext ? (
+                  '− Ocultar contexto'
+                ) : question.debate_prensa ? (
+                  <>
+                    + ¿Qué implica esto?
+                    <span className="lg:hidden"> · Ver posturas en prensa</span>
+                  </>
+                ) : (
+                  '+ ¿Qué implica esto?'
+                )}
+              </button>
+
+              {showContext && (
+                <div className="mt-3 flex flex-col gap-3">
+                  {question.contexto_opcional && (
+                    <p className="pl-3 border-l-2 border-ink text-sm text-stone leading-relaxed">
+                      {question.contexto_opcional}
+                    </p>
+                  )}
+
+                  {question.debate_prensa && (
+                    <div className="grid grid-cols-1 gap-2.5 lg:hidden">
+                      <PressClipBlock
+                        stanceLabel="Argumento Izquierda / Progresista"
+                        titular={question.debate_prensa.izquierda.titular}
+                        fuente={question.debate_prensa.izquierda.fuente}
+                      />
+                      <PressClipBlock
+                        stanceLabel="Argumento Derecha / Conservador"
+                        titular={question.debate_prensa.derecha.titular}
+                        fuente={question.debate_prensa.derecha.fuente}
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
 
         {/* Tema clave: casilla sobria */}
         <button
@@ -223,6 +302,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
           </button>
         </div>
       </article>
+      </div>
     </div>
   );
 };
