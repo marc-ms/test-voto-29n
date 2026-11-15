@@ -1,7 +1,7 @@
 {
   "metadata": {
     "elecciones": "Elecciones Generales 29N 2026 - Circunscripción Illes Balears",
-    "ultima_actualizacion": "2026-11-12",
+    "ultima_actualizacion": "2026-11-15",
     "version": "1.1.0",
     "partidos": [
       {
@@ -129,14 +129,14 @@
           "fuente": "Programa PP 29N, pag. 53"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Aplicación inmediata del tope de alquileres en Baleares como zona tensionada y prórroga de contratos vigentes.",
-          "fuente": "Compromisos PSIB-PSOE 29N"
+          "valor": 1,
+          "cita": "Propone congelar temporalmente los precios de los alquileres que superen los índices de referencia en los mercados tensionados. \"Congelar temporalmente las rentas que superen los índices de referencia, evitando incrementos abusivos en los mercados tensionados.\"",
+          "fuente": "Programa PSOE 29N, pag. 31"
         },
         "VOX": {
           "valor": -2,
-          "cita": "Derogación íntegra de la Ley de Vivienda por considerar el control de precios un ataque a la propiedad privada.",
-          "fuente": "Programa Marco VOX"
+          "cita": "Plantea derogar la Ley de Vivienda e impulsar incentivos fiscales para el alquiler de larga duración. \"Derogación de la Ley de Vivienda. Incentivos fiscales al alquiler de larga […] duración y deducciones para inquilinos españoles.\"",
+          "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
           "valor": 2,
@@ -194,9 +194,9 @@
           "fuente": "Declaraciones PSIB-PSOE"
         },
         "VOX": {
-          "valor": -1,
-          "cita": "Rechazo a prohibir compras a europeos, aunque plantea gravar la compra masiva por fondos extranjeros extracomunitarios.",
-          "fuente": "Postura Parlamentaria VOX"
+          "valor": 0,
+          "cita": "Plantea aplicar una fiscalidad agravada y disuasoria a compradores extracomunitarios y operaciones especulativas de fondos o sociedades, sin prohibir la compra. \"Fiscalidad agravada y disuasoria para compradores no comunitarios y operaciones especulativas de fondos o sociedades.\"",
+          "fuente": "Programa VOX 29N, pag. 21"
         },
         "ARAMES": {
           "valor": 2,
@@ -209,9 +209,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 1,
-          "cita": "Freno a la especulación inmobiliaria de no residentes en territorios insulares frágiles.",
-          "fuente": "Programa PACMA Territorio"
+          "valor": 0,
+          "cita": "Plantea aplicar recargos fiscales para desincentivar la compra de viviendas por no residentes y fondos de inversión, sin proponer su prohibición. \"Desincentivar la compra especulativa, aplicando recargos fiscales a la compra de viviendas por parte de fondos de inversión y no residentes.\"",
+          "fuente": "Programa PACMA 29N, pag. 70"
         },
         "PCTE": {
           "valor": 2,
@@ -249,14 +249,14 @@
           "fuente": "Programa PP 29N, pag. 55"
         },
         "PSIB": {
-          "valor": -1,
-          "cita": "Los allanamientos de morada ya se desalojan de inmediato; rechazan equipararlos con familias vulnerables en precario.",
-          "fuente": "Posición Grupo Socialista Congreso"
+          "valor": 0,
+          "cita": "Plantea el desalojo de viviendas ocupadas en un plazo de 48 horas mediante la agilización de la justicia y más jueces y fiscales, sin atribuir esa facultad a la policía. \"Ahora queremos una Justicia que llegue a tiempo: juicios por despido y desahucio en un máximo de tres meses, desalojo de viviendas ocupadas en 48 horas y más jueces y fiscales.\"",
+          "fuente": "Programa PSOE 29N, pag. 101"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Desalojo exprés inmediato con uso de la fuerza pública, endurecimiento penal y pérdida de ayudas sociales al okupa.",
-          "fuente": "Programa VOX Seguridad y Propiedad"
+          "cita": "Propone el desalojo en menos de 24 horas de las viviendas ocupadas y la recuperación inmediata de la posesión por el propietario. \"Desalojo de la vivienda okupada en menos de 24 horas y recuperación inmediata de la posesión por su legítimo titular, el propietario.\"",
+          "fuente": "Programa VOX 29N, pag. 20"
         },
         "ARAMES": {
           "valor": -2,
@@ -264,9 +264,9 @@
           "fuente": "Programa Frente Amplio (Oct 2026)"
         },
         "FO": {
-          "valor": 1,
-          "cita": "Mano dura contra la delincuencia y mafias de la okupación en barrios obreros, separándolo de la vivienda pública.",
-          "fuente": "Documentos Frente Obrero"
+          "valor": 0,
+          "cita": "Plantea actuar contra la ocupación de viviendas de particulares y contra los impagos fraudulentos de alquiler. \"Se actuará a su vez contra la ocupación de viviendas de particulares, que no debe ser permitida en ningún caso. También se actuará contra los inquiokupas, que han hecho de la estafa su modo de vida.\"",
+          "fuente": "Programa FO, pag. 46"
         },
         "PACMA": {
           "valor": -1,
@@ -280,8 +280,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Desalojo policial inmediato en menos de 24 horas y penas de prisión efectivas por ocupación ilegal.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone el desalojo policial de viviendas ocupadas en 48 horas previa denuncia y acreditacion del titulo de propiedad. \"Con denuncia y título de propiedad, la Policía desaloja en 48 horas.\"",
+          "fuente": "Programa SALF 29N, pag. 5"
         }
       }
     },
@@ -310,8 +310,8 @@
         },
         "PSIB": {
           "valor": 1,
-          "cita": "Defensa de la nueva Empresa Estatal de Vivienda (SEPES/Sareb) ejecutando directamente promociones como Son Busquets.",
-          "fuente": "Programa Vivienda PSOE 2026"
+          "cita": "Propone movilizar anualmente el 1 % del PIB para garantizar el acceso a una vivienda asequible, sin mencionar traspasos al IBAVI. \"Movilizar anualmente un 1% del PIB para garantizar el acceso a la vivienda. La vivienda a precio asequible será la principal prioridad de la legislatura, con objetivos que se evaluarán de forma periódica.\"",
+          "fuente": "Programa PSOE 29N, pag. 28"
         },
         "VOX": {
           "valor": -1,
@@ -339,9 +339,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -2,
-          "cita": "Liquidación de chiringuitos públicos de vivienda y bajada drástica del ITP e IVA en la compra de primera vivienda.",
-          "fuente": "Ideario SALF"
+          "valor": 0,
+          "cita": "Plantea sacar a concurso el suelo de la Sareb y del Estado en 12 meses para vivienda protegida en propiedad y no en alquiler municipal. \"Todo el suelo de la Sareb y del Estado, en 12 meses, a concurso para construir vivienda protegida en propiedad a precio tasado. El joven que compra es dueño, no inquilino del Ayuntamiento.\"",
+          "fuente": "Programa SALF 29N, pag. 6"
         }
       }
     },
@@ -369,14 +369,14 @@
           "fuente": "Ejes PP Illes Balears"
         },
         "PSIB": {
-          "valor": 1,
-          "cita": "Reducción progresiva del techo de plazas insulares y prohibición de nuevos pisos turísticos en edificios plurifamiliares.",
-          "fuente": "Propuestas PSIB-PSOE"
+          "valor": 0,
+          "cita": "Plantea limitar nuevos usos no residenciales en las zonas tensionadas para dar prioridad al uso residencial, sin plantear la retirada de plazas turísticas ni una prohibición total. \"Garantizar la prioridad del uso residencial, limitando en las zonas tensionadas la compra especulativa y la implantación de nuevos usos no residenciales.\"",
+          "fuente": "Programa PSOE 29N, pag. 33"
         },
         "VOX": {
-          "valor": -2,
-          "cita": "Oposición total a limitar plazas o prohibir el alquiler vacacional por ser el principal motor económico de las familias baleares.",
-          "fuente": "VOX Baleares"
+          "valor": 0,
+          "cita": "Plantea regular la proliferación de viviendas de uso turístico y reforzar la inspección de pisos turísticos sin licencia. \"Regulación de la proliferación masiva de VUT y refuerzo del servicio de inspección de pisos turísticos ilegales.\"",
+          "fuente": "Programa VOX 29N, pag. 20"
         },
         "ARAMES": {
           "valor": 2,
@@ -385,13 +385,13 @@
         },
         "FO": {
           "valor": 1,
-          "cita": "Crítica al modelo de sol y playa precario que convierte a España en un parque temático de camareros mal pagados.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone aplicar medidas para frenar la gentrificación, el crecimiento de los pisos turísticos y los efectos negativos del modelo turístico. \"Aplicar medidas que detengan la gentrificación, el auge de los pisos turísticos y las consecuencias negativas del turismo destructivo.\"",
+          "fuente": "Programa FO, pag. 46"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Reducción drástica del número de plazas turísticas para frenar el colapso ecológico e hídrico de las islas.",
-          "fuente": "Programa PACMA Baleares"
+          "valor": 0,
+          "cita": "Propone restringir las licencias de pisos turísticos en cascos históricos y barrios tensionados, sin plantear un veto total ni retirada de plazas. \"Restringir las licencias de pisos turísticos en cascos históricos y barrios tensionados.\"",
+          "fuente": "Programa PACMA 29N, pag. 70"
         },
         "PCTE": {
           "valor": 2,
@@ -399,9 +399,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -2,
-          "cita": "Libertad absoluta para propietarios de viviendas vacacionales y rechazo a las cuotas o moratorias turísticas.",
-          "fuente": "Ideario SALF"
+          "valor": -1,
+          "cita": "Plantea implantar un registro unico de alquiler turistico con cumplimiento fiscal y sin prohibiciones. \"Registro único de alquiler turístico con cumplimiento fiscal, sin prohibiciones.\"",
+          "fuente": "Programa SALF 29N, pag. 7"
         }
       }
     },
@@ -429,9 +429,9 @@
           "fuente": "Votación Congreso PP (Oct 2026)"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Impulsor directo del IVA del 10 % a estancias cortas y del recargo del 150 % del IBI en el Real Decreto-ley 29/2026.",
-          "fuente": "Real Decreto-ley 29/2026 (Oct 2026)"
+          "valor": 1,
+          "cita": "Propone aprobar un marco estatal que habilite a los ayuntamientos a aplicar recargos sobre las estancias turísticas o impuestos sobre las pernoctaciones en viviendas de uso turístico. \"Permitir que los municipios que lo deseen pongan en un impuesto sobre las pernoctaciones en las viviendas de uso turístico que genere recursos para los municipios. Aprobaremos un marco estatal que habilite a los ayuntamientos para aplicar recargos sobre las estancias turísticas, respetando los tributos autonómicos ya existentes.\"",
+          "fuente": "Programa PSOE 29N, pag. 33"
         },
         "VOX": {
           "valor": -2,
@@ -459,9 +459,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -2,
-          "cita": "En contra de cualquier subida del IVA o recargo municipal del IBI.",
-          "fuente": "Ideario SALF"
+          "valor": -1,
+          "cita": "Plantea la eliminacion completa del Impuesto sobre Bienes Inmuebles para todos los contribuyentes sin compensaciones. \"El IBI se elimina por completo, para todos. Sin compensaciones a nadie: el impuesto desaparece y punto.\"",
+          "fuente": "Programa SALF 29N, pag. 7"
         }
       }
     },
@@ -550,8 +550,8 @@
         },
         "PSIB": {
           "valor": 1,
-          "cita": "Subida selectiva del ITS en los meses punta de verano para financiar vivienda pública y medio ambiente.",
-          "fuente": "Propuestas PSIB-PSOE"
+          "cita": "Propone habilitar recargos municipales sobre las estancias turísticas, respetando los tributos autonómicos existentes, para financiar servicios públicos, sostenibilidad urbana y políticas de vivienda. \"Los municipios podrán utilizar este instrumento para gestionar mejor los efectos de la presión turística y obtener recursos adicionales destinados a financiar servicios públicos, movilidad, limpieza, sostenibilidad urbana, conservación del patrimonio y políticas de vivienda vinculadas al impacto del turismo.\"",
+          "fuente": "Programa PSOE 29N, pag. 33"
         },
         "VOX": {
           "valor": -2,
@@ -614,9 +614,9 @@
           "fuente": "Posición PSOE Congreso (2026)"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Derogación de cualquier regularización, prohibición de empadronamiento a irregulares y deportación inmediata.",
-          "fuente": "Programa VOX Fronteras"
+          "valor": 1,
+          "cita": "Plantea prohibir las regularizaciones extraordinarias e impedir que quien entre de forma irregular pueda regularizar su situación. \"Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.\"",
+          "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
           "valor": -2,
@@ -624,9 +624,9 @@
           "fuente": "Acuerdos Frente Amplio (2026)"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Oposición frontal a las regularizaciones masivas que sirven a la patronal para hundir los salarios de la clase obrera nacional.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea impedir la regularización de quienes hayan intentado entrar de forma irregular y revisar los permisos de residencia concedidos tras entradas irregulares. \"Imposibilidad de regularse si han intentado entrar de forma ilegal. Revisión de los permisos de residencia a aquellos que hayan entrado de forma ilegal y lo hayan conseguido en los últimos años.\"",
+          "fuente": "Programa FO, pag. 53"
         },
         "PACMA": {
           "valor": -2,
@@ -640,8 +640,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Anulación de todas las regularizaciones y expulsión inmediata de todo inmigrante que haya entrado ilegalmente.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone derogar la regularizacion de 2026, revisar las concesiones y prohibir por ley organica las regularizaciones masivas. \"Derogación de la regularización de 2026, revisión una por una de las concesiones y prohibición por ley orgánica de cualquier regularización masiva.\"",
+          "fuente": "Programa SALF 29N, pag. 17"
         }
       }
     },
@@ -674,9 +674,9 @@
           "fuente": "Posición Gobierno / PSIB"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Despliegue inmediato de la Armada Española en aguas de Baleares para bloqueo naval y devolución en caliente a Argelia.",
-          "fuente": "Programa VOX Defensa y Fronteras"
+          "valor": 1,
+          "cita": "Propone establecer una protección permanente de las fronteras terrestres, marítimas y aéreas con participación de las Fuerzas Armadas frente a la inmigración irregular. \"Establecer un nuevo modelo de protección permanente de las fronteras terrestres, marítimas y aéreas, con participación de las Fuerzas Armadas, en apoyo a la Guardia Civil y el Cuerpo Nacional de Policía, reforzando la lucha contra la inmigración ilegal, las mafias de tráfico […] de personas y las amenazas híbridas, especialmente en Ceuta y Melilla.\"",
+          "fuente": "Programa VOX 29N, pag. 40"
         },
         "ARAMES": {
           "valor": -2,
@@ -684,9 +684,9 @@
           "fuente": "Programa Ara Més - Front Ampli"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Control militar estricto de las fronteras marítimas y fin de la colaboración con ONGs que actúan en el Mediterráneo.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone ejercer un control absoluto sobre las fronteras terrestres y del mar circundante. \"Control absoluto de las fronteras tanto de las terrestres como del mar circundante. Un país que no es capaz de controlar sus fronteras es un Estado fallido.\"",
+          "fuente": "Programa FO, pag. 53"
         },
         "PACMA": {
           "valor": -2,
@@ -735,8 +735,8 @@
         },
         "VOX": {
           "valor": -2,
-          "cita": "Cierre de todos los centros de menas y repatriación inmediata de los menores con sus familias a sus países de origen.",
-          "fuente": "Programa VOX"
+          "cita": "Plantea devolver a los menores extranjeros no acompañados a sus familias o instituciones de tutela en sus países de origen. \"Devolución de menores extranjeros no acompañados a sus padres o a las […] instituciones de tutela de sus países de origen, atendiendo al interés superior del menor.\"",
+          "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
           "valor": 2,
@@ -749,9 +749,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Protección integral de la infancia migrante y corresponsabilidad obligatoria entre administraciones.",
-          "fuente": "Programa Social PACMA"
+          "valor": 1,
+          "cita": "Propone ampliar las plazas en los centros de acogida atendiendo especialmente a los menores migrantes no acompañados, sin mencionar cuotas autonómicas obligatorias. \"Aumento del número de plazas en los centros de acogida, con especial atención a la situación de los niños y niñas migrantes no acompañados.\"",
+          "fuente": "Programa PACMA 29N, pag. 81"
         },
         "PCTE": {
           "valor": 1,
@@ -785,8 +785,8 @@
         },
         "VOX": {
           "valor": 2,
-          "cita": "Expulsión inmediata de cualquier extranjero que cometa un delito y cumplimiento de condena en su país de origen.",
-          "fuente": "Programa VOX Seguridad"
+          "cita": "Propone deportar a quienes cometan delitos graves o hagan de los delitos leves una conducta habitual. \"Deportación de quienes cometan delitos graves o hagan del delito leve su forma de vida, así como de quienes traten de imponer costumbres, hábitos o culturas ajenas a nuestro modo de vida o incompatibles con el respeto a la dignidad de las mujeres.\"",
+          "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
           "valor": -2,
@@ -795,8 +795,8 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Deportación inmediata de delincuentes extranjeros reincidentes que degradan la seguridad de los barrios trabajadores.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone la expulsión inmediata de las personas inmigrantes que delincan de forma reiterada o se encuentren en situación irregular. \"Expulsión inmediata de todos aquellos inmigrantes que delinquen de forma reiterada o que están de forma irregular en el país.\"",
+          "fuente": "Programa FO, pag. 53"
         },
         "PACMA": {
           "valor": -1,
@@ -809,9 +809,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Deportación automática al primer delito cometido en territorio español y revocación de nacionalidades concedidas.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone firmar convenios para que los extranjeros condenados cumplan su pena en terceros paises y vetarles despues el acceso a Espana de por vida. \"Convenios con terceros países para que los extranjeros condenados cumplan la pena allí, en prisiones de máxima dureza, no en una celda con televisión y permisos. Después, veto de por vida del acceso a España.\"",
+          "fuente": "Programa SALF 29N, pag. 9"
         }
       }
     },
@@ -905,8 +905,8 @@
         },
         "VOX": {
           "valor": -2,
-          "cita": "Protección blindada y promoción activa de la tauromaquia y la caza como señas de identidad nacional.",
-          "fuente": "Programa VOX"
+          "cita": "Plantea defender la tauromaquia, promover su difusión y potenciar las actividades vinculadas a esta tradición. \"Defensa de la Tauromaquia y promoción de la difusión del arte taurino y potenciación del conjunto de actividades alrededor de esta tradición.\"",
+          "fuente": "Programa VOX 29N, pag. 37"
         },
         "ARAMES": {
           "valor": 2,
@@ -920,8 +920,8 @@
         },
         "PACMA": {
           "valor": 2,
-          "cita": "Eje fundacional: abolición total e inmediata de la tauromaquia, los festejos con animales y la caza en toda España.",
-          "fuente": "Programa Electoral PACMA"
+          "cita": "Propone prohibir los espectáculos con animales, retirarles toda subvención pública y derogar la ley que protege la tauromaquia como patrimonio cultural. \"Por ello, propondremos establecer la prohibición de utilización de animales en todo tipo de espectáculos, tradiciones y festejos, tanto privados como públicos. Mientras conseguimos una prohibición real, exigiremos la prohibición de su retransmisión televisiva o radiofónica, la retirada inmediata de toda subvención pública que reciban directa o indirectamente, así como de cualquier reconocimiento que los proteja como patrimonio o bien de interés cultural, empezando por derogar la Ley 18/2013, de 12 de noviembre, para la regulación de la Tauromaquia como patrimonio cultural, cuya finalidad fue la de impedir que las comunidades autónomas pudieran prohibir las corridas de toros, como quisieron hacer en Cataluña, o, incluso, regularlas sin herir ni matar a los animales, como intentaron llevar a cabo en Baleares.\"",
+          "fuente": "Programa PACMA 29N, pag. 12"
         },
         "PCTE": {
           "valor": 1,
@@ -950,13 +950,13 @@
         },
         "PSIB": {
           "valor": -2,
-          "cita": "Mantenimiento del calendario de cierre nuclear pactado (2027-2035) y apuesta exclusiva por renovables, almacenamiento y cables submarinos.",
-          "fuente": "PNIEC Gobierno PSOE"
+          "cita": "Rechaza alargar la vida útil de las centrales nucleares y plantea mantener el calendario previsto de cierre hasta 2035. \"Mantener el calendario de cierre de las centrales nucleares hasta 2035 y desarrollar proyectos de transición justa en las comarcas afectadas, preservando las capacidades tecnológicas y de conocimiento vinculadas al sector.\"",
+          "fuente": "Programa PSOE 29N, pag. 67"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Prórroga de todas las centrales nucleares actuales y construcción de nuevos reactores para lograr soberanía energética.",
-          "fuente": "Programa VOX Energía"
+          "cita": "Propone garantizar la continuidad de las centrales nucleares actuales mediante la derogación del calendario de cierre. \"Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.\"",
+          "fuente": "Programa VOX 29N, pag. 10"
         },
         "ARAMES": {
           "valor": -2,
@@ -965,13 +965,13 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Apuesta decidida por la energía nuclear bajo control estatal para reindustrializar España y lograr soberanía energética.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone mantener y aumentar la inversión para poner en marcha y modernizar las centrales nucleares. \"Apuesta por la energía nuclear, como fuente de energía fiable, estable y controlable. Aumentar la inversión para la puesta en marcha y modernización de las plantas nucleares del país.\"",
+          "fuente": "Programa FO, pag. 16"
         },
         "PACMA": {
-          "valor": -2,
-          "cita": "Cierre de todas las centrales nucleares por el riesgo ambiental y el problema sin resolver de los residuos radiactivos.",
-          "fuente": "Programa PACMA Energía"
+          "valor": -1,
+          "cita": "Plantea avanzar hacia un modelo energético basado en energías renovables, al considerar insostenible el modelo apoyado en la energía nuclear. \"El modelo energético basado en el uso masivo de los combustibles fósiles y la energía nuclear es insostenible, provoca daños irreversibles al medioambiente y conlleva riesgos y catástrofes evitables. El Partido Animalista Con el Medio Ambiente apuesta por avanzar hacia un modelo más eficiente y autosuficiente, con una política energética que fomente las renovables, pero manteniendo la seguridad en el abastecimiento y permitiendo la entrega de energía al consumidor a precios asequibles.\"",
+          "fuente": "Programa PACMA 29N, pag. 34"
         },
         "PCTE": {
           "valor": 0,
@@ -999,14 +999,14 @@
           "fuente": "Gestión PP Consells / Palma"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Despliegue completo de Zonas de Bajas Emisiones y limitación estricta a la entrada de flotas de rent a car en verano.",
-          "fuente": "Programa PSIB-PSOE Movilidad"
+          "valor": 1,
+          "cita": "Propone impulsar las Zonas de Bajas Emisiones y la movilidad sostenible en las ciudades para reducir las emisiones y mejorar la calidad del aire. \"Impulsar las Zonas de Bajas Emisiones y la movilidad sostenible en las ciudades, promoviendo medidas eficaces para reducir las emisiones y mejorar la calidad del aire.\"",
+          "fuente": "Programa PSOE 29N, pag. 72"
         },
         "VOX": {
           "valor": -2,
-          "cita": "Eliminación de las Zonas de Bajas Emisiones y de cualquier prohibición a la libre circulación de vehículos privados.",
-          "fuente": "VOX Palma / Baleares"
+          "cita": "Plantea suprimir las Zonas de Bajas Emisiones y las restricciones climáticas que limitan la circulación. \"Acabar con todas las imposiciones climáticas como el Pacto Verde que castigan nuestra industria, nuestro campo o que coartan la libertad de circulación de los españoles, como la imposición de ZBE.\"",
+          "fuente": "Programa VOX 29N, pag. 25"
         },
         "ARAMES": {
           "valor": 2,
@@ -1114,9 +1114,9 @@
           "fuente": "Propuestas Económicas MÉS (Sept 2026)"
         },
         "FO": {
-          "valor": 0,
-          "cita": "Eliminación del IVA en productos de primera necesidad para toda la clase trabajadora española sin privilegios territoriales.",
-          "fuente": "Programa Frente Obrero"
+          "valor": -1,
+          "cita": "Plantea que todas las comunidades autónomas tengan las mismas competencias y el mismo régimen fiscal sin diferencias territoriales. \"Implantar medidas para que todas las Comunidades Autónomas tengan las mismas competencias y el mismo régimen fiscal. Se acabaron las desigualdades entre regiones.\"",
+          "fuente": "Programa FO, pag. 56"
         },
         "PACMA": {
           "valor": 1,
@@ -1149,9 +1149,9 @@
           "fuente": "Programa PP 29N, pag. 61"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Consolidación del Impuesto a las Grandes Fortunas, la banca y las energéticas para evitar el dumping fiscal a los más ricos.",
-          "fuente": "Programa Fiscal PSOE 2026"
+          "valor": 1,
+          "cita": "Propone destinar la recaudación de una tributación complementaria sobre los grandes patrimonios y las rentas del capital a financiar políticas de crianza y lucha contra la pobreza infantil. \"La recaudación de la tributación complementaria de los grandes patrimonios y de la mayor progresividad de las rentas del capital contribuirá a financiar la prestación por crianza y la lucha contra la pobreza infantil.\"",
+          "fuente": "Programa PSOE 29N, pag. 48"
         },
         "VOX": {
           "valor": -2,
@@ -1165,8 +1165,8 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Fuerte progresividad fiscal sobre las grandes fortunas, la banca y los fondos de inversión.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone centralizar el impuesto de patrimonio y suprimir las bonificaciones fiscales que benefician a las rentas más altas. \"El impuesto de sucesiones y de patrimonio se centralizará y se suprimirán las bonificaciones que benefician sobre todo a los más ricos.\"",
+          "fuente": "Programa FO, pag. 19"
         },
         "PACMA": {
           "valor": 2,
@@ -1180,8 +1180,8 @@
         },
         "SALF": {
           "valor": -2,
-          "cita": "Eliminación de los impuestos de Patrimonio y Sucesiones por suponer una doble imposición confiscatoria.",
-          "fuente": "Ideario SALF"
+          "cita": "Rechaza mantener estos impuestos y propone suprimir el Impuesto de Patrimonio y el impuesto a las grandes fortunas. \"Sucesiones, Donaciones y Patrimonio: suprimidos. Heredar la casa de tus padres no es un hecho imponible. Es un duelo. Fuera también el impuesto a las grandes fortunas.\"",
+          "fuente": "Programa SALF 29N, pag. 13"
         }
       }
     },
@@ -1199,9 +1199,9 @@
           "fuente": "Programa PP 29N, pag. 60"
         },
         "PSIB": {
-          "valor": -1,
-          "cita": "Rechazo a deflactar de forma lineal porque beneficia más a las rentas altas; apuesta por rebajas focalizadas en rentas bajas.",
-          "fuente": "Posición Hacienda PSOE"
+          "valor": 0,
+          "cita": "Plantea un mecanismo para activar una deducción progresiva en el IRPF dirigida a rentas medias y bajas cuando suban los precios, en lugar de deflactar toda la tarifa. \"Crearemos un mecanismo para activar una deducción en el IRPF en contextos de subidas de precios. Tendrá un diseño progresivo para beneficiar a rentas medias y bajas, lo que permitirá concentrar el esfuerzo fiscal en quienes más lo necesitan y asegurar su compatibilidad con los objetivos de estabilidad presupuestaria.\"",
+          "fuente": "Programa PSOE 29N, pag. 38"
         },
         "VOX": {
           "valor": 2,
@@ -1230,8 +1230,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Deflactación inmediata del IRPF y reducción drástica de todos los tramos impositivos.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone actualizar anualmente por ley la tarifa, los minimos y las deducciones del IRPF segun el IPC. \"Tarifa, mínimos y deducciones del IRPF actualizados cada año con el IPC, por ley.\"",
+          "fuente": "Programa SALF 29N, pag. 12"
         }
       }
     },
@@ -1250,8 +1250,8 @@
         },
         "PSIB": {
           "valor": 2,
-          "cita": "Aprobación inmediata por ley de la jornada máxima de 37,5 horas semanales sin reducción salarial.",
-          "fuente": "Programa PSOE 29N"
+          "cita": "Propone completar la reducción de la jornada laboral a 37,5 horas sin pérdida de salario e incentivar la negociación hacia las 35 horas. \"Completar la reducción de la jornada a 37,5 horas e incentivar los avances en la negociación colectiva hacia las 35 horas. Trabajar menos horas debe permitir ganar tiempo para la familia, los cuidados, el descanso y la vida personal, sin perder salario.\"",
+          "fuente": "Programa PSOE 29N, pag. 42"
         },
         "VOX": {
           "valor": -2,
@@ -1304,9 +1304,9 @@
           "fuente": "Propuestas PSIB-PSOE"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Plus de insularidad digno y pabellones de vivienda garantizados para Guardia Civil, Policía Nacional y funcionarios en Baleares.",
-          "fuente": "VOX Baleares"
+          "valor": 1,
+          "cita": "Propone actualizar el complemento de insularidad del personal activo del sector público estatal en los territorios insulares para adaptarlo al coste de vida real. \"Actualizar el complemento de insularidad para el personal en activo del sector público estatal en los territorios insulares con el fin de adaptarlo al coste de vida real.\"",
+          "fuente": "Programa VOX 29N, pag. 8"
         },
         "ARAMES": {
           "valor": 2,
@@ -1350,8 +1350,8 @@
         },
         "PSIB": {
           "valor": 1,
-          "cita": "Blindaje constitucional y legal de la subida de las pensiones con el IPC manteniendo los plazos actuales del Pacto de Toledo.",
-          "fuente": "Programa PSOE 2026"
+          "cita": "Propone blindar constitucionalmente la revalorización de las pensiones conforme al IPC, sin plantear el retorno general de la edad de jubilación a los 65 años. \"Blindar constitucionalmente el sistema público de pensiones y su revalorización conforme al IPC, garantizando el derecho de las personas mayores a una pensión digna, suficiente y actualizada.\"",
+          "fuente": "Programa PSOE 29N, pag. 41"
         },
         "VOX": {
           "valor": 0,
@@ -1364,14 +1364,14 @@
           "fuente": "Programa Frente Amplio"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Jubilación a los 65 años (o antes en oficios penosos) con el 100 % de la base y revalorización garantizada por el IPC.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone revertir el aumento de la edad de jubilación y adaptarla al puesto de trabajo desempeñado. \"Revertir el incremento de la edad de jubilación y establecer una edad de retiro adecuada al puesto laboral desempeñado.\"",
+          "fuente": "Programa FO, pag. 48"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Revalorización automática según el IPC y reducción de la edad de jubilación a los 65 años.",
-          "fuente": "Programa Social PACMA"
+          "valor": 1,
+          "cita": "Propone reformar la Constitución para proteger el sistema público de pensiones frente a recortes y privatizaciones, sin mencionar la edad de jubilación ni el IPC. \"Y, por supuesto, es inaplazable reformar la Constitución para blindar las pensiones, garantizando que el sistema público no pueda recortarse, ni privatizarse.\"",
+          "fuente": "Programa PACMA 29N, pag. 80"
         },
         "PCTE": {
           "valor": 2,
@@ -1380,8 +1380,8 @@
         },
         "SALF": {
           "valor": 1,
-          "cita": "Exención de IRPF en las pensiones y recorte del gasto político superfluo para garantizar su pago.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone blindar con rango constitucional la revalorizacion de las pensiones con el IPC y la prohibicion de recortes. \"Revalorización con el IPC y prohibición de recortes, con rango constitucional.\"",
+          "fuente": "Programa SALF 29N, pag. 20"
         }
       }
     },
@@ -1455,8 +1455,8 @@
         },
         "VOX": {
           "valor": -2,
-          "cita": "Eliminación total del requisito y de la puntuación abusiva del catalán en toda la función pública balear.",
-          "fuente": "VOX Baleares"
+          "cita": "Plantea garantizar que el desconocimiento de las lenguas cooficiales no impida el acceso por oposición a plazas de personal sanitario. \"Garantizar que el desconocimiento de las lenguas regionales no sea en ningún caso impedimento para el acceso por oposición a plazas de personal sanitario ni un perjuicio para los pacientes.\"",
+          "fuente": "Programa VOX 29N, pag. 32"
         },
         "ARAMES": {
           "valor": 2,
@@ -1529,9 +1529,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -2,
-          "cita": "Eliminación de los parlamentos autonómicos y centralización de impuestos y servicios en el Estado.",
-          "fuente": "Ideario SALF"
+          "valor": 0,
+          "cita": "Plantea un sistema de financiacion autonomica solidario y basado en criterios objetivos, transparentes e iguales para todas las comunidades. \"Frente a modelos de financiación improvisados ad hoc por el sanchismo para contentar a sus socios separatistas y mantenerse un día más en el poder, defenderemos un sistema justo, solidario y responsable, regido por criterios objetivos y transparentes, iguales para todas las Comunidades Autónomas.\"",
+          "fuente": "Programa SALF 29N, pag. 14"
         }
       }
     },
@@ -1554,9 +1554,9 @@
           "fuente": "Posición PSOE (2026)"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Anulación de la amnistía, ilegalización de todos los partidos separatistas y suspensión de la autonomía rebelde.",
-          "fuente": "Programa VOX Unidad Nacional"
+          "valor": 1,
+          "cita": "Propone recuperar el delito de sedición, agravar la malversación y prohibir los indultos por delitos contra la integridad territorial o de corrupción política. \"Recuperar el delito de sedición, […] agravar el tipo delictivo de la malversación de caudales públicos y prohibir los indultos para delitos relacionados con la corrupción política, la forma política del Estado o la integridad territorial.\"",
+          "fuente": "Programa VOX 29N, pag. 48"
         },
         "ARAMES": {
           "valor": -2,
@@ -1564,9 +1564,9 @@
           "fuente": "Posición MÉS / Frente Amplio"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Oposición frontal a la amnistía, al separatismo y a cualquier privilegio fiscal pactado con el nacionalismo.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea igualar las competencias y el régimen fiscal de todas las comunidades autónomas para evitar diferencias territoriales. \"Implantar medidas para que todas las Comunidades Autónomas tengan las mismas competencias y el mismo régimen fiscal. Se acabaron las desigualdades entre regiones.\"",
+          "fuente": "Programa FO, pag. 56"
         },
         "PACMA": {
           "valor": -1,
@@ -1580,8 +1580,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Prisión para los golpistas, ilegalización de partidos separatistas y eliminación de todo concierto fiscal.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone reformar la Constitucion para prohibir las amnistias, restringir los indultos a criterios judiciales sin uso politico y prohibir indultos a corruptos. \"Reforma de la Constitución para prohibir expresamente las amnistías y condicionar los indultos a requisitos que impidan su utilización política: solicitud por el órgano jurisdiccional en la misma sentencia condenatoria e informe favorable del CGPJ o de un órgano ad hoc sin influencia política en su composición. Prohibición, en todo caso, de los indultos a políticos corruptos, sin excepciones.\"",
+          "fuente": "Programa SALF 29N, pag. 27"
         }
       }
     },
@@ -1614,9 +1614,9 @@
           "fuente": "Ideario Ara Més - Front Ampli"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Instauración de una República soberana, unitaria y de los trabajadores frente a la Monarquía.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea sustituir la monarquía por una república cuando se decida la nueva forma de Estado. \"Nosotros somos contrarios a la monarquía, somos partidarios de una República encaminada al socialismo, pero hasta que llegue el momento de decidir la nueva forma de Estado pensamos que es necesario igualar las competencias y regímenes fiscales de todas las autonomías.\"",
+          "fuente": "Programa FO, pag. 56"
         },
         "PACMA": {
           "valor": 1,
@@ -1649,14 +1649,14 @@
           "fuente": "Programa Sanitario PP (2026)"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Impulso de la Ley de Gestión Pública del SNS para blindar la gestión pública directa y derogar la Ley 15/1997.",
-          "fuente": "Proyecto de Ley SNS (Mayo 2026)"
+          "valor": 1,
+          "cita": "Propone limitar la privatización sanitaria mediante una ley que establezca la gestión directa como modalidad preferente en el Sistema Nacional de Salud. \"Limitar la privatización de la sanidad estableciendo la gestión directa como modalidad preferente en la prestación sanitaria. Aprobar una Ley de Buen Gobierno y Buena Gestión del SNS, basada en la transparencia, la rendición de cuentas, la participación y la evaluación permanente de resultados.\"",
+          "fuente": "Programa PSOE 29N, pag. 50"
         },
         "VOX": {
-          "valor": -2,
-          "cita": "Tarjeta sanitaria única nacional y uso de todos los recursos públicos y privados concertados para eliminar listas de espera.",
-          "fuente": "Programa VOX Sanidad"
+          "valor": -1,
+          "cita": "Plantea fomentar la colaboración público-privada en sanidad cuando ayude a reducir demoras, con transparencia y control del gasto. \"Fomento de la colaboración público-privada cuando ayude efectivamente a reducir demoras, con transparencia, evaluación de calidad y control del gasto.\"",
+          "fuente": "Programa VOX 29N, pag. 32"
         },
         "ARAMES": {
           "valor": 2,
@@ -1665,13 +1665,13 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Sanidad 100 % pública y estatalizada, prohibiendo el desvío de fondos públicos a clínicas privadas.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone poner fin a la externalización y privatización de la sanidad pública y aumentar el control sobre las mutuas. \"Acabar con el proceso de externalización y privatización de la sanidad. Mayor control sobre la actuación de las mutuas y protección de los trabajadores frente a las reclamaciones contra estas.\"",
+          "fuente": "Programa FO, pag. 42"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Defensa de una sanidad íntegramente pública, universal y sin privatizaciones encubiertas.",
-          "fuente": "Programa Social PACMA"
+          "valor": 1,
+          "cita": "Propone reintegrar al sistema sanitario público los servicios privatizados, aunque no detalla una prohibición legal de futuros conciertos. \"Reintegración al sistema sanitario público los servicios privatizados.\"",
+          "fuente": "Programa PACMA 29N, pag. 56"
         },
         "PCTE": {
           "valor": 2,
@@ -1680,8 +1680,8 @@
         },
         "SALF": {
           "valor": -1,
-          "cita": "Colaboración con el sector privado cuando sea más eficiente y eliminación del gasto burocrático sanitario.",
-          "fuente": "Ideario SALF"
+          "cita": "Plantea que, si se superan ciertos plazos maximos de espera sanitaria, el paciente pueda elegir un centro privado pagado por la sanidad publica. \"60 días para cirugía, 30 para especialista, 7 para pruebas prioritarias. Superado el plazo, eliges centro, público o privado, y lo paga la sanidad pública.\"",
+          "fuente": "Programa SALF 29N, pag. 23"
         }
       }
     },
@@ -1754,9 +1754,9 @@
           "fuente": "Posición PSIB-PSOE Educación"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Libertad total de elección de lengua en todas las etapas y asignaturas, garantizando el 100 % en español a quien lo solicite.",
-          "fuente": "Programa VOX Educación"
+          "valor": 1,
+          "cita": "Propone garantizar la educación en español en todo el territorio nacional. \"Se garantizará la educación en español en todo el territorio nacional.\"",
+          "fuente": "Programa VOX 29N, pag. 35"
         },
         "ARAMES": {
           "valor": -2,
@@ -1765,8 +1765,8 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Garantía plena de poder estudiar íntegramente en español en todo el territorio nacional sin imposiciones lingüísticas.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone garantizar el derecho de todas las personas a estudiar en castellano o en las lenguas cooficiales del Estado. \"Garantizar el derecho a todo el mundo de estudiar en castellano o en las lenguas cooficiales del Estado. Se promoverá que los alumnos conozcan la riqueza lingüística en nuestro país y se acabará con el uso político de las lenguas por parte de nacionalistas de un bando u otro.\"",
+          "fuente": "Programa FO, pag. 22"
         },
         "PACMA": {
           "valor": -1,
@@ -1779,9 +1779,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Derecho garantizado a estudiar en español en cualquier colegio de las Islas Baleares.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone garantizar por ley el derecho de las familias a exigir la ensenanza en castellano en toda Espana con inspeccion estatal. \"Derecho a la enseñanza en castellano en toda España, exigible por la familia, con Alta Inspección estatal que sanciona.\"",
+          "fuente": "Programa SALF 29N, pag. 34"
         }
       }
     },
@@ -1804,9 +1804,9 @@
           "fuente": "Programa PSIB-PSOE"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Defensa del descuento de residente e inspección a las aerolíneas para evitar que inflen los precios base de los billetes.",
-          "fuente": "VOX Baleares"
+          "valor": 1,
+          "cita": "Plantea mejorar las ayudas al transporte hacia la Península. \"Mejora de las ayudas al transporte a la Península.\"",
+          "fuente": "Programa VOX 29N, pag. 8"
         },
         "ARAMES": {
           "valor": 2,
@@ -1851,13 +1851,13 @@
         },
         "PSIB": {
           "valor": 0,
-          "cita": "Plantea mantener los avales ICO del 20 %, pero advierte que subvencionar la compra sin topar precios encarece los pisos.",
-          "fuente": "Programa Vivienda PSOE"
+          "cita": "Plantea desplegar préstamos sin intereses de hasta 50.000 euros para la compra de la primera vivienda, sin proponer avales del 100 % ni exenciones en el ITP. \"Desplegar el Programa TUCASA y ampliar su dotación en caso de que se agoten los 10.000 millones de euros de la línea de préstamos de hasta 50 mil euros sin intereses para adquisición de una primera vivienda.\"",
+          "fuente": "Programa PSOE 29N, pag. 32"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone eximir del 100 % del ITP y del AJD la compra de primera vivienda habitual para jóvenes y familias.",
-          "fuente": "Programa Económico VOX"
+          "cita": "Propone aplicar un tipo del 0 % de IVA y una bonificación del 100 % en el ITP para la compra de la primera vivienda habitual. \"Tipo 0% de IVA para la compra de tu primera vivienda habitual -de nueva construcción- y bonificación 100% del ITP para la compra de tu primera vivienda habitual -de segunda mano-.\"",
+          "fuente": "Programa VOX 29N, pag. 20"
         },
         "ARAMES": {
           "valor": -1,
@@ -1870,9 +1870,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 0,
-          "cita": "Plantea ayudas directas al acceso a la vivienda priorizando el alquiler social y la rehabilitación frente a la compra libre.",
-          "fuente": "Programa Social PACMA"
+          "valor": 1,
+          "cita": "Plantea reducir temporalmente el Impuesto de Transmisiones Patrimoniales para compradores de primera vivienda habitual, sin fijar el cero por ciento ni avales hipotecarios. \"Incentivos fiscales, ofreciendo bonificaciones del 100% en el IRPF o exenciones del IBI a los pequeños propietarios/as que pongan su vivienda en el mercado un 10% o 15% por debajo del precio medio de la zona; reduciendo temporalmente el Impuesto de Transmisiones Patrimoniales en viviendas de segunda mano y el IVA en viviendas de obra nueva, para compradores de primera vivienda habitual.\"",
+          "fuente": "Programa PACMA 29N, pag. 70"
         },
         "PCTE": {
           "valor": -2,
@@ -1880,9 +1880,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Propone eliminar por completo el ITP y el IVA en la adquisición de la primera vivienda para todos los españoles.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone un aval publico estatal del 20 % de la entrada para menores de 40 anos en la compra de su primera vivienda. \"Aval público del 20 % de entrada para menores de 40 en su primera vivienda.\"",
+          "fuente": "Programa SALF 29N, pag. 6"
         }
       }
     },
@@ -1901,9 +1901,9 @@
           "fuente": "Programa PP 29N, pag. 54"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone recuperar la cesión obligatoria de viviendas vacías de grandes tenedores para alquiler social y recargos del IBI.",
-          "fuente": "Compromisos PSIB-PSOE"
+          "valor": 1,
+          "cita": "Propone gravar con un impuesto progresivo las viviendas vacías de grandes propietarios y fondos de inversión para movilizarlas al alquiler asequible, sin plantear su cesión obligatoria. \"Se gravará con un impuesto progresivo la posesión de todas aquellas viviendas de grandes propietarios y fondos buitre que no se destinen a alquiler residencial asequible. Las viviendas que se dediquen a fines turísticos, que estén vacías, o que se pongan en alquiler a un precio abusivo serán objeto de este nuevo impuesto.\"",
+          "fuente": "Programa PSOE 29N, pag. 32"
         },
         "VOX": {
           "valor": -2,
@@ -1921,9 +1921,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Propone penalizar fiscalmente las viviendas vacías de grandes propietarios y movilizarlas hacia el parque social.",
-          "fuente": "Programa PACMA"
+          "valor": 0,
+          "cita": "Plantea adquirir viviendas vacías y buscar acuerdos con entidades financieras para destinarlas a alquiler social, en lugar de imponer cesiones obligatorias o expropiaciones. \"La solución real pasa por la construcción masiva de vivienda pública, así como por la adquisición de viviendas vacías, para destinarlas tanto a compra como a alquiler social. Con la misma […] finalidad, se deben perseguir acuerdos con las entidades financieras que dispongan de viviendas deshabitadas para destinarlas también al alquiler a precios sociales.\"",
+          "fuente": "Programa PACMA 29N, pag. 69"
         },
         "PCTE": {
           "valor": 2,
@@ -1952,14 +1952,14 @@
           "fuente": "Programa PP 29N, pag. 53"
         },
         "PSIB": {
-          "valor": -1,
-          "cita": "Plantea agilizar trámites solo para vivienda pública protegida en suelo ya urbano, rechazando la liberalización de suelo.",
-          "fuente": "Posición PSIB-PSOE"
+          "valor": 1,
+          "cita": "Propone aprobar una ley para movilizar el suelo y agilizar los procesos urbanísticos manteniendo las garantías sociales y ambientales. \"Aprobar una Ley de Sostenibilidad y Movilización del Suelo, para agilizar y simplificar los procesos de desarrollo urbanístico, manteniendo las garantías sociales y ambientales.\"",
+          "fuente": "Programa PSOE 29N, pag. 30"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone liberalizar todo el suelo que no esté especialmente protegido y eliminar la burocracia municipal en licencias.",
-          "fuente": "Programa Económico VOX"
+          "cita": "Propone ampliar el suelo disponible, agilizar procedimientos y suprimir trabas regulatorias para incrementar la construcción de vivienda nueva. \"Incrementar de manera sustancial y sostenida en el tiempo la construcción de vivienda nueva: ampliación de suelo disponible, agilización de procedimientos, supresión de trabas regulatorias innecesarias, simplificación administrativa.\"",
+          "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
           "valor": -2,
@@ -1982,9 +1982,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Propone liberar suelo de forma masiva y suprimir licencias municipales que retrasan años la construcción.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone fijar plazos maximos de uno a tres meses para las licencias de obra con concesion automatica por silencio positivo si hay retraso. \"Un mes obra menor, dos obra mayor, tres grandes desarrollos. Pasado el plazo, licencia concedida y el ayuntamiento paga el retraso.\"",
+          "fuente": "Programa SALF 29N, pag. 6"
         }
       }
     },
@@ -2004,13 +2004,13 @@
         },
         "PSIB": {
           "valor": 1,
-          "cita": "Plantea bonificaciones de hasta el 90 % en el IRPF únicamente si el propietario baja el precio dentro de una zona tensionada.",
-          "fuente": "Ley Estatal de Vivienda PSOE"
+          "cita": "Propone consolidar las bonificaciones fiscales para los propietarios que reduzcan el precio del alquiler y ofrezcan vivienda asequible. \"Consolidar las bonificaciones fiscales para las personas propietarias que reduzcan los precios del alquiler, incentivando la oferta de vivienda asequible.\"",
+          "fuente": "Programa PSOE 29N, pag. 32"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone eximir de tributación en el IRPF los rendimientos del alquiler de larga duración para aumentar la oferta.",
-          "fuente": "Programa Fiscal VOX"
+          "valor": 1,
+          "cita": "Plantea establecer incentivos fiscales para el alquiler de larga duración y deducciones para los inquilinos españoles. \"Incentivos fiscales al alquiler de larga […] duración y deducciones para inquilinos españoles.\"",
+          "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
           "valor": -2,
@@ -2023,9 +2023,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 0,
-          "cita": "Plantea incentivos condicionados estrictamente a que el alquiler no supere el 30 % de los ingresos del inquilino.",
-          "fuente": "Programa PACMA"
+          "valor": 2,
+          "cita": "Propone bonificaciones del cien por cien en el IRPF para pequeños propietarios que alquilen su vivienda por debajo del precio medio de la zona. \"Incentivos fiscales, ofreciendo bonificaciones del 100% en el IRPF o exenciones del IBI a los pequeños propietarios/as que pongan su vivienda en el mercado un 10% o 15% por debajo del precio medio de la zona; reduciendo temporalmente el Impuesto de Transmisiones Patrimoniales en viviendas de segunda mano y el IVA en viviendas de obra nueva, para compradores de primera vivienda habitual.\"",
+          "fuente": "Programa PACMA 29N, pag. 70"
         },
         "PCTE": {
           "valor": -2,
@@ -2105,9 +2105,9 @@
           "fuente": "Programa Laboral PP"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone aplicar coeficientes reductores para adelantar la jubilación de las camareras de pisos y regular sus cargas de trabajo.",
-          "fuente": "Programa PSIB-PSOE"
+          "valor": 1,
+          "cita": "Propone impulsar coeficientes reductores de la edad de jubilación por penosidad de forma individualizada para reconocer el desgaste laboral real y corregir el sesgo de género. \"Impulsar los cambios necesarios para que los coeficientes reductores de la edad de jubilación por penosidad se apliquen de forma singularizada a través de una cuenta individual de penosidad, para reconocer el desgaste laboral real de cada trabajador.\"",
+          "fuente": "Programa PSOE 29N, pag. 41"
         },
         "VOX": {
           "valor": 0,
@@ -2161,9 +2161,9 @@
           "fuente": "Programa PSIB-PSOE"
         },
         "VOX": {
-          "valor": -2,
-          "cita": "Defiende mantener la promoción internacional de Baleares frente a destinos competidores del Mediterráneo.",
-          "fuente": "VOX Baleares"
+          "valor": -1,
+          "cita": "Plantea adoptar medidas fiscales y de promoción interior y exterior para impulsar el sector turístico. \"Adoptar medidas fiscales y de promoción interior y exterior de esta industria para crear empleo y riqueza, y para vertebrar esa España abandonada por los sucesivos gobiernos.\"",
+          "fuente": "Programa VOX 29N, pag. 11"
         },
         "ARAMES": {
           "valor": 2,
@@ -2176,9 +2176,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Propone eliminar el gasto en promoción turística masiva y redirigirlo a conservación ambiental y economía local.",
-          "fuente": "Programa PACMA"
+          "valor": -1,
+          "cita": "Plantea mantener la promoción turística a nivel internacional enfocada hacia un modelo turístico alternativo y diversificado, frente a su eliminación total. \"Entre las medidas necesarias para alcanzar este objetivo estarían: Promoción a nivel internacional.\"",
+          "fuente": "Programa PACMA 29N, pag. 67"
         },
         "PCTE": {
           "valor": 2,
@@ -2263,9 +2263,9 @@
           "fuente": "Programa PSIB-PSOE"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone aplicar la prioridad nacional en todas las ayudas sociales y viviendas públicas, suprimiendo prestaciones a inmigrantes ilegales.",
-          "fuente": "Programa VOX Inmigración"
+          "valor": 1,
+          "cita": "Propone establecer el acceso preferente de los ciudadanos españoles a la vivienda pública, ayudas, prestaciones y servicios sociales. \"Acceso preferente de los españoles a vivienda pública, plazas de guardería, bonos de comedor o transporte, ayudas, prestaciones y servicios sociales.\"",
+          "fuente": "Programa VOX 29N, pag. 16"
         },
         "ARAMES": {
           "valor": -1,
@@ -2273,14 +2273,14 @@
           "fuente": "Programa Ara Més"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone dar prioridad a los trabajadores españoles en el acceso a vivienda pública y ayudas sociales del Estado.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea dirigir el acceso a la vivienda pública y modificar el criterio de las ayudas para priorizar a los españoles autóctonos. \"Enfocar el acceso a la vivienda pública hacia los españoles autóctonos. No permitir que suceda como con las ayudas, que, como se ha visto en el programa, también deben cambiar, pues se suele priorizar al extranjero.\"",
+          "fuente": "Programa FO, pag. 46"
         },
         "PACMA": {
-          "valor": -2,
-          "cita": "Rechaza establecer barreras de antigüedad que excluyan a familias migrantes vulnerables de las ayudas de emergencia.",
-          "fuente": "Programa Social PACMA"
+          "valor": -1,
+          "cita": "Propone un acceso unificado de las personas migrantes a todos los derechos, incluido el alojamiento, frente a exigir años mínimos de residencia. \"Acceso unificado a todos los derechos, como la educación, la sanidad y el alojamiento para una inclusión efectiva.\"",
+          "fuente": "Programa PACMA 29N, pag. 81"
         },
         "PCTE": {
           "valor": -2,
@@ -2289,8 +2289,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone reservar las ayudas sociales y la vivienda pública exclusivamente a ciudadanos españoles.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone exigir cinco anos de residencia legal y cotizacion para acceder a prestaciones no contributivas, ayudas al alquiler y vivienda publica. \"Ninguna prestación no contributiva, ayuda al alquiler ni vivienda pública sin cinco años de residencia legal y cotización.\"",
+          "fuente": "Programa SALF 29N, pag. 19"
         }
       }
     },
@@ -2309,14 +2309,14 @@
           "fuente": "Programa PP 29N, pag. 22"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone reforzar los programas de migración circular y contratación legal en origen con plenas garantías laborales.",
-          "fuente": "Política Migratoria PSOE"
+          "valor": 1,
+          "cita": "Propone impulsar la contratación en origen y simplificar los trámites para facilitar el acceso al empleo de las personas migrantes. \"Queremos seguir avanzando en esta dirección: simplificar los trámites, dar seguridad jurídica, impulsar la contratación en origen, agilizar la homologación de títulos y facilitar el acceso al empleo, para aprovechar el talento de quienes vienen a vivir y trabajar aquí.\"",
+          "fuente": "Programa PSOE 29N, pag. 93"
         },
         "VOX": {
-          "valor": 0,
-          "cita": "Plantea priorizar el empleo de parados españoles y aceptar solo inmigración temporal legal de países culturalmente afines si es estrictamente necesaria.",
-          "fuente": "Programa VOX"
+          "valor": -1,
+          "cita": "Plantea que España no puede acoger a más inmigrantes tras las llegadas registradas en los últimos años. \"Después de recibir a 5 millones de personas en 5 años España no puede acoger a más inmigrantes.\"",
+          "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
           "valor": -1,
@@ -2325,8 +2325,8 @@
         },
         "FO": {
           "valor": -2,
-          "cita": "Rechaza los contingentes patronales que importan mano de obra barata para no subir los sueldos en la hostelería.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Rechaza la contratación colectiva de trabajadores en sectores precarizados y propone derogar las leyes que la permiten. \"Derogación de las leyes que permiten la contratación colectiva de trabajadores en sectores precarizados, que buscan abaratar los costes salariales.\"",
+          "fuente": "Programa FO, pag. 9"
         },
         "PACMA": {
           "valor": 1,
@@ -2339,9 +2339,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -1,
-          "cita": "Plantea que antes de importar trabajadores extranjeros se debe reducir el paro nacional y bajar impuestos al trabajo.",
-          "fuente": "Ideario SALF"
+          "valor": 0,
+          "cita": "Plantea una moratoria para paises que no colaboran ni readmiten y limitar el resto a visados con contrato previo y cupo anual en el Congreso. \"Moratoria total, durante toda la legislatura, a la inmigración procedente de países que no colaboran contra las mafias de trata de personas ni readmiten a sus nacionales. Para el resto, solo visados con contrato previo y cupo anual votado en el Congreso.\"",
+          "fuente": "Programa SALF 29N, pag. 18"
         }
       }
     },
@@ -2366,8 +2366,8 @@
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone elevar los años exigidos, auditar las nacionalidades concedidas y revocar la nacionalidad a extranjeros que cometan delitos graves.",
-          "fuente": "Programa VOX"
+          "cita": "Propone endurecer los requisitos para adquirir la nacionalidad española y ampliar los supuestos de pérdida en casos de delitos graves o reiterados. \"Endurecimiento de los requisitos de adquisición de la nacionalidad española. Revisión de las concesiones fraudulentas de la nacionalidad. Aumento de los supuestos de pérdida de nacionalidad española para los españoles no de origen en casos de delitos graves o reiterados.\"",
+          "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
           "valor": -2,
@@ -2376,8 +2376,8 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Propone endurecer el acceso a la nacionalidad exigiendo asimilación cultural real y ausencia total de delitos.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone suspender temporalmente la concesión de nacionalidades para revisar las otorgadas y endurecer los requisitos futuros primando la ascendencia. \"Cese de entrega de nacionalidades hasta que se pueda realizar una revisión exhaustiva de las que se han entregado en los últimos veinte años. Elevación de las condiciones para la obtención futura de la nacionalidad, primando de verdad el Ius Sanguinis.\"",
+          "fuente": "Programa FO, pag. 53"
         },
         "PACMA": {
           "valor": -2,
@@ -2391,8 +2391,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone paralizar las concesiones masivas de nacionalidad y revocarla automáticamente ante cualquier delito.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone exigir diez anos de residencia legal, examen, carencia de antecedentes y no depender de ayudas para obtener la nacionalidad. \"Nacionalidad: diez años de residencia legal, examen de cultura y Constitución, sin antecedentes y sin depender de ayudas.\"",
+          "fuente": "Programa SALF 29N, pag. 18"
         }
       }
     },
@@ -2417,8 +2417,8 @@
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone eliminar el 100 % de las subvenciones a ONG inmigracionistas e incautar los barcos que colaboren con el tráfico ilegal.",
-          "fuente": "Programa VOX Fronteras"
+          "cita": "Propone eliminar todas las subvenciones, ayudas y convenios con entidades que colaboren en la promoción o sostenimiento de la inmigración irregular. \"Eliminación de todas las subvenciones, ayudas, convenios y conciertos con ONG u otras entidades que participen directa o indirectamente en la promoción, facilitación o sostenimiento de la inmigración ilegal, o que actúen como cooperadores necesarios de las mafias de tráfico de personas.\"",
+          "fuente": "Programa VOX 29N, pag. 14"
         },
         "ARAMES": {
           "valor": -2,
@@ -2426,9 +2426,9 @@
           "fuente": "Programa Ara Més - Front Ampli"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone ilegalizar y retirar toda subvención a las ONG que colaboran en las rutas migratorias del Mediterráneo.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea sancionar legalmente a las organizaciones, especialmente a las ONG, que promuevan acciones para eludir la normativa migratoria. \"Sancionar y poner bajo el peso de la ley a aquellas organizaciones que promuevan acciones para evitar la legalidad al respecto. Con especial atención a las ONG.\"",
+          "fuente": "Programa FO, pag. 53"
         },
         "PACMA": {
           "valor": -2,
@@ -2514,13 +2514,13 @@
         },
         "PSIB": {
           "valor": 0,
-          "cita": "Plantea priorizar zonas degradadas y aparcamientos, pero manteniendo parques fotovoltaicos en rústico para cumplir objetivos climáticos.",
-          "fuente": "Plan Transición Energética PSIB"
+          "cita": "Plantea impulsar el despliegue renovable hasta el 81 % en 2030 priorizando Zonas de Aceleración Renovable compatibles con la biodiversidad y la actividad agroganadera, sin prohibirlas en suelo rústico. \"Impulsar el despliegue de energías renovables, para alcanzar el 81% de generación eléctrica en 2030, priorizando su ubicación en las Zonas de Aceleración Renovable para garantizar el máximo consenso social y la compatibilidad con la preservación de la biodiversidad y la actividad agroganadera.\"",
+          "fuente": "Programa PSOE 29N, pag. 66"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone frenar la implantación masiva de placas solares en suelo agrícola que destruye el paisaje y el sector primario balear.",
-          "fuente": "VOX Baleares"
+          "valor": 1,
+          "cita": "Plantea impedir la instalación descontrolada de grandes plantas de energía solar y eólica sobre tierras agrícolas y patrimonio natural. \"Impedir la destrucción de la riqueza agrícola y el patrimonio natural para la instalación descontrolada de macro plantas de energías renovables, solar y eólica.\"",
+          "fuente": "Programa VOX 29N, pag. 29"
         },
         "ARAMES": {
           "valor": 2,
@@ -2528,9 +2528,9 @@
           "fuente": "Programa Transición Ecológica Ara Més"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Rechaza los megaparques solares de fondos de inversión que arrasan tierras de cultivo en nombre de la transición verde.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone prohibir la construcción de parques solares en tierras aptas para el cultivo. \"Prohibición de la construcción de parques solares en tierras aptas para el cultivo.\"",
+          "fuente": "Programa FO, pag. 38"
         },
         "PACMA": {
           "valor": 2,
@@ -2565,13 +2565,13 @@
         },
         "PSIB": {
           "valor": -2,
-          "cita": "Defiende los objetivos climáticos de la Agenda 2030 y del Pacto Verde acompañando al sector primario con ayudas a la modernización.",
-          "fuente": "Programa PSOE Agricultura"
+          "cita": "Rechaza rebajar la ambición climática y propone defender y profundizar el Pacto Verde Europeo manteniendo sus objetivos ambientales en el presupuesto comunitario. \"Defender y profundizar el Pacto Verde Europeo, garantizando que la simplificación administrativa no suponga una reducción de la ambición climática y ambiental y manteniendo objetivos ambiciosos de inversión en clima, biodiversidad y sostenibilidad en el presupuesto de la Unión Europea.\"",
+          "fuente": "Programa PSOE 29N, pag. 74"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone derogar íntegramente el Pacto Verde Europeo y la Agenda 2030 para salvar la agricultura, la ganadería y la pesca balear.",
-          "fuente": "Programa VOX Campo y Pesca"
+          "cita": "Propone oponerse a todas las medidas derivadas del Pacto Verde y de las instituciones europeas que perjudiquen al sector primario. \"Oposición a todas las medidas que perjudiquen objetivamente al sector primario y proteger a los nuestros activamente -económica, política y jurídicamente- de las imposiciones de Bruselas y del Pacto Verde.\"",
+          "fuente": "Programa VOX 29N, pag. 28"
         },
         "ARAMES": {
           "valor": -1,
@@ -2580,13 +2580,13 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Rechaza la Agenda 2030 y las cuotas europeas que arruinan al campo y a la flota pesquera española frente a importaciones.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone romper con las políticas agrarias de la Unión Europea y derogar las leyes que perjudiquen al sector agrario. \"Romper con las políticas agrarias de la UE (PAC) y los Tratados Internacionales que merman nuestra capacidad productiva, derogación de las leyes que contribuyan a la desaparición del campo español.\"",
+          "fuente": "Programa FO, pag. 38"
         },
         "PACMA": {
-          "valor": -2,
-          "cita": "Propone endurecer la protección ambiental y marina, reconvirtiendo la ganadería intensiva y la pesca de arrastre.",
-          "fuente": "Programa PACMA"
+          "valor": -1,
+          "cita": "Plantea compatibilizar el modelo económico con la naturaleza sin poner en riesgo los objetivos ambientales europeos, en sentido contrario a eliminar exigencias ecológicas. \"Es necesario asumir de manera seria estas competencias y compatibilizar los modelos territorial y económico con la naturaleza, no poniendo en riesgo el cumplimiento de objetivos europeos y el acceso a fondos comunitarios, reduciendo la capacidad de mitigación del cambio climático y de adaptación a sus impactos, y no perjudicando el bienestar de las personas y el atractivo de los paisajes naturales.\"",
+          "fuente": "Programa PACMA 29N, pag. 47"
         },
         "PCTE": {
           "valor": 1,
@@ -2595,8 +2595,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone abandonar de inmediato la Agenda 2030 y el Pacto Verde Europeo y proteger el campo frente a importaciones extracomunitarias.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone vetar en el Consejo europeo el acuerdo de Mercosur, el recorte de la PAC y las medidas del Pacto Verde y la Ley de Restauracion. \"Mercosur se aplica desde mayo de 2026 contra el voto de Francia; el recorte del 20 % de la PAC quita 877 millones al año al campo español; la Ley de Restauración deja improductivo hasta el 40 % de la Red Natura. España lo veta en el Consejo: lo que se come en España se produce en España.\"",
+          "fuente": "Programa SALF 29N, pag. 37"
         }
       }
     },
@@ -2615,9 +2615,9 @@
           "fuente": "Programa Marítimo PP Balears"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone reforzar el servicio de vigilancia de posidonia, endurecer sanciones a grandes esloras y ampliar las reservas marinas.",
-          "fuente": "Programa PSIB-PSOE"
+          "valor": 1,
+          "cita": "Propone proteger y recuperar la biodiversidad marina y terrestre, alcanzando hasta el 10 % de las áreas marinas con protección estricta. \"Proteger y recuperar la biodiversidad terrestre y marina, avanzando hacia la conservación efectiva de las especies amenazadas y de los espacios de alto valor ecológico, protegiendo al menos el 30 % de los ecosistemas y hasta el 10% de las áreas marinas con protección estricta.\"",
+          "fuente": "Programa PSOE 29N, pag. 73"
         },
         "VOX": {
           "valor": -1,
@@ -2635,9 +2635,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Propone blindar el 30 % del mar balear como reserva integral y prohibir el fondeo fuera de boyas ecológicas autorizadas.",
-          "fuente": "Programa PACMA Naturaleza"
+          "valor": 1,
+          "cita": "Propone ampliar las zonas marinas y ecosistemas costeros protegidos hasta abarcar al menos el treinta por ciento para 2030, sin mencionar yates ni posidonia. \"PACMA propone ampliar las zonas marinas y terrestres protegidas, de manera que las áreas naturales protegidas de bosques, humedales, turberas, pastizales y ecosistemas costeros, que, actualmente solo suponen un 18% del territorio, abarquen, al menos, un 30% para 2030.\"",
+          "fuente": "Programa PACMA 29N, pag. 47"
         },
         "PCTE": {
           "valor": 2,
@@ -2722,9 +2722,9 @@
           "fuente": "Ministerio de Hacienda PSOE"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone eliminar el IVA en todos los productos de alimentación básicos, carne, pescado, luz, gas y agua.",
-          "fuente": "Programa Económico VOX"
+          "valor": 1,
+          "cita": "Propone rebajar el tipo reducido y general del IVA dando prioridad a los productos esenciales y de primera necesidad. \"Rebaja del tipo reducido y del tipo general del IVA atendiendo prioritariamente a productos esenciales y de primera necesidad.\"",
+          "fuente": "Programa VOX 29N, pag. 7"
         },
         "ARAMES": {
           "valor": 1,
@@ -2732,14 +2732,14 @@
           "fuente": "Programa Ara Més - Front Ampli"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone suprimir el IVA de todos los alimentos básicos, carne, pescado y suministros energéticos del hogar.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone reducir el IVA e incluir progresivamente todas las mercancías de primera necesidad en el tipo superreducido. \"Disminuir la carga fiscal del IVA e incorporar de forma progresiva todas las mercancías de primera necesidad en el tipo superreducido.\"",
+          "fuente": "Programa FO, pag. 18"
         },
         "PACMA": {
           "valor": -1,
-          "cita": "Propone bajar el IVA a frutas, verduras y legumbres al 0 %, pero rechaza subvencionar fiscalmente el consumo de carne y pesca.",
-          "fuente": "Programa PACMA Alimentación"
+          "cita": "Propone aumentar la carga impositiva a los productos de origen animal mediante un impuesto climático, en lugar de rebajar su IVA. \"Mayor carga impositiva a los productos de origen animal, aplicando un impuesto climático, cuyo gravamen se calcule en función de las emisiones generadas asociadas a la producción de cada alimento y cuya recaudación se destine a compensar el daño climático que causa su producción.\"",
+          "fuente": "Programa PACMA 29N, pag. 37"
         },
         "PCTE": {
           "valor": 2,
@@ -2747,9 +2747,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Propone bajar al 0 % el IVA de todos los alimentos básicos, carne, pescado y electricidad.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone reducir el IVA de la luz y del agua al 4 % de forma permanente y eliminar el impuesto a la produccion electrica. \"La luz, del 21 al 4 %; el agua, del 10 al 4 %. Y fuera el impuesto a la producción eléctrica que va directo a tu factura.\"",
+          "fuente": "Programa SALF 29N, pag. 13"
         }
       }
     },
@@ -2834,9 +2834,9 @@
           "fuente": "Programa Fiscal Ara Més"
         },
         "FO": {
-          "valor": 0,
-          "cita": "Plantea eximir por completo la herencia de la vivienda familiar de los trabajadores y gravar únicamente a las grandes fortunas.",
-          "fuente": "Programa Frente Obrero"
+          "valor": -1,
+          "cita": "Plantea eliminar el impuesto de sucesiones únicamente para las rentas bajas, centralizándolo y suprimiendo las bonificaciones para los más ricos. \"El impuesto de sucesiones y de patrimonio se centralizará y se suprimirán las bonificaciones que benefician sobre todo a los más ricos. Eliminación del impuesto de sucesiones para las rentas bajas.\"",
+          "fuente": "Programa FO, pag. 19"
         },
         "PACMA": {
           "valor": -1,
@@ -2850,8 +2850,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone abolir el Impuesto de Sucesiones y Donaciones en toda España por ser un robo sobre bienes ya tributados.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone la supresion completa de los impuestos de Sucesiones y Donaciones. \"Sucesiones, Donaciones y Patrimonio: suprimidos. Heredar la casa de tus padres no es un hecho imponible.\"",
+          "fuente": "Programa SALF 29N, pag. 13"
         }
       }
     },
@@ -2870,9 +2870,9 @@
           "fuente": "Programa Laboral PP (2026)"
         },
         "PSIB": {
-          "valor": 1,
-          "cita": "Plantea adaptar la indemnización por despido improcedente a la Carta Social Europea dentro del diálogo social.",
-          "fuente": "Programa Laboral PSOE"
+          "valor": 2,
+          "cita": "Propone reformar el despido improcedente para asegurar una reparación disuasoria según las circunstancias y los daños causados, adaptándola a la Carta Social Europea. \"Reformar el despido improcedente para garantizar una reparación efectiva, proporcionada y disuasoria, teniendo en cuenta las circunstancias y los daños causados, y adecuar la normativa al artículo 24.b de la Carta Social Europea revisada y a las decisiones del Comité Europeo de Derechos Sociales.\"",
+          "fuente": "Programa PSOE 29N, pag. 42"
         },
         "VOX": {
           "valor": -2,
@@ -2885,9 +2885,9 @@
           "fuente": "Programa Frente Amplio / Ara Més"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone derogar las reformas laborales para encarecer drásticamente el despido improcedente y prohibir los ERE en empresas con beneficios.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone derogar las reformas laborales que han abaratado el despido para las empresas y dado prioridad al convenio de empresa. \"Derogación de las sucesivas reformas laborales que han fortalecido el despido libre y barato para las empresas y que posibilitan la primacía del convenio de empresa sobre los convenios sectoriales aun cuando perjudica al trabajador.\"",
+          "fuente": "Programa FO, pag. 9"
         },
         "PACMA": {
           "valor": 2,
@@ -2900,9 +2900,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": -2,
-          "cita": "Rechaza encarecer el despido y propone rebajar las cargas laborales que soportan las pymes.",
-          "fuente": "Ideario SALF"
+          "valor": -1,
+          "cita": "Plantea un contrato indefinido unico con indemnizacion creciente de 12 a 33 dias y una mochila individual del 1,53 %. \"Un solo contrato indefinido con indemnización creciente de 12 a 33 días, más la mochila del 1,53 %.\"",
+          "fuente": "Programa SALF 29N, pag. 31"
         }
       }
     },
@@ -2921,14 +2921,14 @@
           "fuente": "Programa PP 29N, pag. 56"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone ampliar los permisos de nacimiento a 20-24 semanas, remunerar semanas de cuidado y extender las ayudas por hijo a cargo.",
-          "fuente": "Programa PSOE Familia"
+          "valor": 1,
+          "cita": "Propone crear una prestación estatal por crianza para todos los hogares con menores de edad con un diseño fiscal redistributivo. \"Prestación estatal por crianza para todos los hogares con menores de edad, con un diseño fiscal redistributivo y una protección adicional para los hogares de renta baja integrada en el CAPI ya existente: un nuevo derecho para los 8 millones de niñas, niños y adolescentes de nuestro país.\"",
+          "fuente": "Programa PSOE 29N, pag. 57"
         },
         "VOX": {
           "valor": 1,
-          "cita": "Propone rebajas masivas en el IRPF según el número de hijos y cheques directos de natalidad para familias españolas.",
-          "fuente": "Programa VOX Familia"
+          "cita": "Plantea aumentar y extender progresivamente a todas las familias desde el primer hijo los beneficios actuales de las familias numerosas. \"Todos los beneficios que ahora existen para las familias numerosas se aumentarán y se extenderán a todas las familias de manera progresiva desde el primer hijo, intensificando las ayudas y bonificaciones en función del número de hijos.\"",
+          "fuente": "Programa VOX 29N, pag. 44"
         },
         "ARAMES": {
           "valor": 2,
@@ -2936,9 +2936,9 @@
           "fuente": "Acuerdos Frente Amplio (2026)"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone ayudas directas a la natalidad y vivienda pública para que los jóvenes trabajadores puedan formar una familia.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone ampliar los permisos de paternidad y maternidad y obligar a las empresas a flexibilizar horarios y teletrabajo para la conciliación. \"Se alargarán las bajas por paternidad y maternidad y se obligará a las empresas a ser flexibles parcialmente en cuanto al teletrabajo, reducción de jornada y modificación de horarios, para poder conciliar trabajo y el cuidado de los hijos.\"",
+          "fuente": "Programa FO, pag. 35"
         },
         "PACMA": {
           "valor": 2,
@@ -2973,13 +2973,13 @@
         },
         "PSIB": {
           "valor": -1,
-          "cita": "Defiende el sistema de cotización por ingresos reales pactado con las asociaciones de autónomos para mejorar sus futuras pensiones.",
-          "fuente": "Ministerio Seguridad Social PSOE"
+          "cita": "Plantea seguir avanzando en el sistema de cotización por ingresos reales para los trabajadores autónomos en lugar de eliminarlo. \"Actualizar el Estatuto del Trabajo Autónomo para adaptarlo a los cambios tecnológicos y las nuevas profesiones; seguir mejorando la protección social de las personas autónomas, atendiendo también a la conciliación de los cuidados, avanzando en la cotización por ingresos reales; simplificar el acceso a la prestación por cese de actividad; adaptar la prevención de riesgos laborales al trabajo autónomo y a sus necesidades; y garantizar la transición justa al RETA para profesionales de mutualidades alternativas.\"",
+          "fuente": "Programa PSOE 29N, pag. 43"
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone cuota cero para autónomos con ingresos inferiores al SMI y una cuota mínima reducida para el resto.",
-          "fuente": "Programa Económico VOX"
+          "cita": "Propone establecer una cuota de cero euros para los autónomos con ingresos inferiores al Salario Mínimo Interprofesional y una cuota progresiva desde 50 euros si lo superan. \"Cuota de cero euros si los ingresos no llegan al Salario Mínimo Interprofesional y, superado dicho umbral, una cuota progresiva desde los 50 euros en función de sus ingresos.\"",
+          "fuente": "Programa VOX 29N, pag. 7"
         },
         "ARAMES": {
           "valor": 0,
@@ -2988,8 +2988,8 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Propone eliminar la cuota fija de autónomos para quienes no lleguen al salario mínimo y perseguir la figura del falso autónomo.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone eliminar la cuota a los trabajadores autónomos con ingresos inferiores al salario mínimo y reducir el resto de cuotas. \"Eliminación de la cuota para los autónomos que no llegan al SMI e implementación de una bonificación total por baja. Cuotas más reducidas para los autónomos.\"",
+          "fuente": "Programa FO, pag. 9"
         },
         "PACMA": {
           "valor": 1,
@@ -3003,8 +3003,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone suprimir la cuota de autónomos para ingresos bajos y derogar el sistema de tramos actual.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone la eliminacion total y permanente de la cuota para todos los trabajadores autonomos. \"Cuota cero, total y para siempre: ningún autónomo vuelve a pagar cuota.\"",
+          "fuente": "Programa SALF 29N, pag. 13"
         }
       }
     },
@@ -3024,8 +3024,8 @@
         },
         "PSIB": {
           "valor": -1,
-          "cita": "Plantea incentivos para compatibilizar temporalmente el IMV con un empleo sin recortar la cobertura a las familias vulnerables.",
-          "fuente": "Programa PSOE Inclusión"
+          "cita": "Plantea automatizar y simplificar la concesión del Ingreso Mínimo Vital mediante pasarelas administrativas, en lugar de endurecer sus requisitos. \"Crear pasarelas que automaticen y simplifiquen la concesión del IMV, utilizando datos de renta y patrimonio más recientes. Se adecuarán las cuantías y umbrales al coste de la crianza para hogares perceptores con niñas y niños.\"",
+          "fuente": "Programa PSOE 29N, pag. 39"
         },
         "VOX": {
           "valor": 2,
@@ -3053,9 +3053,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Propone retirar de inmediato cualquier prestación o IMV a quien estando en edad laboral rechace ofertas de trabajo.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone retirar la prestacion tras rechazar dos ofertas adecuadas y aplicar un complemento para que el Ingreso Minimo baje 50 centimos por euro ganado. \"Rechazar dos ofertas adecuadas: fin de la prestación. Y complemento salarial para que el Ingreso Mínimo baje 50 céntimos por cada euro ganado, no uno a uno.\"",
+          "fuente": "Programa SALF 29N, pag. 33"
         }
       }
     },
@@ -3080,8 +3080,8 @@
         },
         "VOX": {
           "valor": 2,
-          "cita": "Propone que los vocales del CGPJ sean elegidos por los propios jueces y magistrados para sacar a los partidos del Poder Judicial.",
-          "fuente": "Programa VOX Justicia"
+          "cita": "Propone modificar la Ley Orgánica del Poder Judicial para que los doce vocales judiciales del CGPJ sean elegidos directamente por los propios jueces y magistrados. \"Modificar la Ley Orgánica del Poder Judicial para que los doce vocales de procedencia judicial del Consejo General del Poder Judicial sean elegidos mediante voto personal, directo y secreto por y entre los propios jueces y magistrados, terminando con el sistema de cuotas partidistas.\"",
+          "fuente": "Programa VOX 29N, pag. 48"
         },
         "ARAMES": {
           "valor": -2,
@@ -3089,9 +3089,9 @@
           "fuente": "Programa Frente Amplio"
         },
         "FO": {
-          "valor": 0,
-          "cita": "Critica tanto el reparto partidista del CGPJ como el corporativismo judicial y pide mecanismos de control popular.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Propone suprimir la elección gubernamental de miembros de los órganos judiciales y priorizar la carrera judicial en los órganos superiores. \"Garantizar la independencia judicial respecto al poder político, priorizando la membresía por carrera judicial en los órganos superiores. Supresión de la elección por parte del Gobierno de miembros para cualquier órgano judicial.\"",
+          "fuente": "Programa FO, pag. 58"
         },
         "PACMA": {
           "valor": 1,
@@ -3105,8 +3105,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone la independencia total del Poder Judicial mediante elección directa de los jueces sin intervención de los partidos.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone reformar la Constitucion para que el CGPJ se componga sin influencia politica mediante eleccion por jueces, antiguedad o sorteo. \"Reforma de la Constitución para garantizar la independencia del Consejo General del Poder Judicial, con composición determinada por criterios excluyentes de cualquier influencia política: elección por jueces y magistrados, antigüedad y/o sorteo.\"",
+          "fuente": "Programa SALF 29N, pag. 28"
         }
       }
     },
@@ -3140,9 +3140,9 @@
           "fuente": "Programa Ara Més - Front Ampli"
         },
         "FO": {
-          "valor": 2,
-          "cita": "Propone prohibir de forma permanente las puertas giratorias entre el Gobierno y los consejos de las empresas del IBEX 35.",
-          "fuente": "Programa Frente Obrero"
+          "valor": 1,
+          "cita": "Plantea establecer medidas para poner fin a las puertas giratorias en el sector energético. \"Establecer medidas para poner fin a los abusos de los oligopolios de la energía y a la práctica de las puertas giratorias.\"",
+          "fuente": "Programa FO, pag. 16"
         },
         "PACMA": {
           "valor": 2,
@@ -3155,9 +3155,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 2,
-          "cita": "Propone eliminar los aforamientos políticos, prohibir puertas giratorias y obligar a devolver hasta el último euro robado por corrupción.",
-          "fuente": "Ideario SALF"
+          "valor": 1,
+          "cita": "Propone establecer cinco anos de incompatibilidad para pasar a empresas reguladas y para presidir determinados organos de control. \"Cinco años de incompatibilidad para pasar a empresas reguladas y cinco para que un exministro o dirigente de partido presida el Poder Judicial, la sala constitucional del Supremo, el Banco de España, la CNMC o el Defensor del Pueblo.\"",
+          "fuente": "Programa SALF 29N, pag. 29"
         }
       }
     },
@@ -3197,8 +3197,8 @@
         },
         "PACMA": {
           "valor": 1,
-          "cita": "Propone una ley electoral más proporcional que no penalice a los partidos de ámbito estatal que suman cientos de miles de votos sin escaño.",
-          "fuente": "Programa PACMA"
+          "cita": "Propone reformar la ley electoral para implantar una circunscripción única con reparto proporcional, pero sin barrera electoral. \"Cambio a un sistema electoral de circunscripción única, sin barrera electoral y con un reparto de escaños proporcional al número de votos.\"",
+          "fuente": "Programa PACMA 29N, pag. 74"
         },
         "PCTE": {
           "valor": 1,
@@ -3227,14 +3227,14 @@
           "fuente": "Programa PP 29N, pag. 26"
         },
         "PSIB": {
-          "valor": 1,
-          "cita": "Defiende cumplir la senda del 2 % del PIB en seguridad y defensa acordada con los aliados europeos y de la OTAN.",
-          "fuente": "Posición Gobierno PSOE"
+          "valor": 0,
+          "cita": "Plantea mejorar la coordinación y eficiencia del gasto europeo en defensa y reforzar las capacidades comunes, sin fijar un objetivo superior al 2 % del PIB. \"Impulsar la Unión Europea de la defensa, reforzando la autonomía estratégica y militar de Europa, mejorando la coordinación y eficiencia del gasto en defensa, y fortaleciendo nuestra protección frente a amenazas híbridas y convencionales.\"",
+          "fuente": "Programa PSOE 29N, pag. 111"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone incrementar de forma decidida el presupuesto de las Fuerzas Armadas para garantizar la defensa de las fronteras y la soberanía nacional.",
-          "fuente": "Programa VOX Defensa"
+          "valor": 1,
+          "cita": "Plantea aumentar la inversión en Defensa y mejorar los sueldos y las ayudas a la movilidad geográfica y la vivienda. \"Aumento de la inversión en Defensa, sueldos dignos y ayudas a la movilidad geográfica y a la vivienda y alojamiento.\"",
+          "fuente": "Programa VOX 29N, pag. 41"
         },
         "ARAMES": {
           "valor": -2,
@@ -3243,8 +3243,8 @@
         },
         "FO": {
           "valor": 0,
-          "cita": "Defiende un ejército nacional fuerte para proteger la soberanía española, pero exige la salida de España de la OTAN.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Plantea reforzar el ejército nacional al tiempo que propone la salida inmediata de la OTAN. \"Salida inmediata de la OTAN y reforzamiento de nuestro ejército.\"",
+          "fuente": "Programa FO, pag. 11"
         },
         "PACMA": {
           "valor": -2,
@@ -3257,9 +3257,9 @@
           "fuente": "Programa Electoral PCTE"
         },
         "SALF": {
-          "valor": 1,
-          "cita": "Defiende dotar de mejores medios y sueldos a las Fuerzas Armadas para proteger las fronteras de España.",
-          "fuente": "Ideario SALF"
+          "valor": 0,
+          "cita": "Plantea mantener el gasto en defensa en el 2 % del PIB destinandolo a la industria nacional y al personal militar. \"Defensa: el 2 % se gasta en España y en sus militares.\"",
+          "fuente": "Programa SALF 29N, pag. 40"
         }
       }
     },
@@ -3278,9 +3278,9 @@
           "fuente": "Programa PP 29N, pag. 70"
         },
         "PSIB": {
-          "valor": 2,
-          "cita": "Propone consolidar la gratuidad de gafas y lentillas para menores y ampliar la cartera pública de dentista y salud mental.",
-          "fuente": "Programa Sanidad PSOE"
+          "valor": 1,
+          "cita": "Propone incorporar progresivamente a la sanidad pública tratamientos dentales básicos como empastes y endodoncias, así como mantener ayudas para gafas y lentillas infantiles. \"Incorporaremos progresivamente a la sanidad pública los tratamientos básicos para toda la población adulta, empezando por empastes, endodoncias, reconstrucciones y tratamientos periodontales. Mientras tanto, y siguiendo el esquema desplegado por el Plan Veo desplegado para gafas y lentillas de niños y niñas, crearemos una ayuda directa de hasta 200 euros anuales por persona, que empezará por los hogares de rentas medias y bajas, para cuidar tu boca.\"",
+          "fuente": "Programa PSOE 29N, pag. 50"
         },
         "VOX": {
           "valor": 1,
@@ -3294,13 +3294,13 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Propone incluir la odontología, la óptica y la salud mental de forma gratuita dentro de la Seguridad Social para los trabajadores.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone asegurar el cuidado y tratamiento bucodental, fisioterapéutico y oftalmológico gratuito en el sistema sanitario. \"Implantar la estructura adecuada para asegurar el cuidado y tratamiento bucodental, fisioterapéutico y oftalmológico gratuito.\"",
+          "fuente": "Programa FO, pag. 42"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Propone cobertura pública universal de odontología, salud visual, salud mental y fisioterapia.",
-          "fuente": "Programa Social PACMA"
+          "valor": 1,
+          "cita": "Propone impulsar una atención bucodental gratuita con asistencia dental básica para todas las personas, sin mencionar gafas ni lentillas. \"Desde PACMA defendemos el impulso de una atención bucodental gratuita, con una asistencia dental básica para todas las personas, un sistema terapéutico y preventivo para las que se encuentran en situación de vulnerabilidad, con la financiación de los elementos básicos para pacientes a los que les suponga una mejora en su calidad de vida.\"",
+          "fuente": "Programa PACMA 29N, pag. 59"
         },
         "PCTE": {
           "valor": 2,
@@ -3309,8 +3309,8 @@
         },
         "SALF": {
           "valor": 1,
-          "cita": "Plantea destinar el dinero de ministerios ideológicos a financiar tratamientos médicos, salud mental y enfermos de ELA.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone incorporar un psicologo clinico por cada 10.000 habitantes en centros de salud con atencion en un plazo maximo de 15 dias. \"Un psicólogo clínico por cada 10.000 habitantes en los centros de salud y atención en 15 días.\"",
+          "fuente": "Programa SALF 29N, pag. 25"
         }
       }
     },
@@ -3334,9 +3334,9 @@
           "fuente": "Programa Educación PSOE"
         },
         "VOX": {
-          "valor": -2,
-          "cita": "Defiende la educación concertada e impulsa el cheque escolar para que los padres elijan libremente cualquier centro público o privado.",
-          "fuente": "Programa VOX Educación"
+          "valor": -1,
+          "cita": "Plantea garantizar la libre elección de centro y modelo educativo en todos los niveles sin que la situación económica o social lo impida. \"Garantizar la libre elección de centro educativo en todos los niveles para que las familias elijan libremente el modelo educativo que desean, sin que su situación económica o social sea un impedimento para ello.\"",
+          "fuente": "Programa VOX 29N, pag. 35"
         },
         "ARAMES": {
           "valor": 2,
@@ -3345,13 +3345,13 @@
         },
         "FO": {
           "valor": 2,
-          "cita": "Propone eliminar las subvenciones públicas a la enseñanza privada-concertada y religiosa para reforzar la escuela pública estatal.",
-          "fuente": "Programa Frente Obrero"
+          "cita": "Propone eliminar las subvenciones a los centros educativos privados para reforzar la enseñanza pública. \"Eliminar las subvenciones a la escuela privada con el fin de fortalecer el sistema público de educación.\"",
+          "fuente": "Programa FO, pag. 22"
         },
         "PACMA": {
-          "valor": 2,
-          "cita": "Propone la eliminación progresiva de los conciertos educativos para destinar el 100 % de los recursos públicos a la educación pública.",
-          "fuente": "Programa PACMA Educación"
+          "valor": 0,
+          "cita": "Plantea revisar los criterios de los conciertos con la enseñanza privada para evitar la segregación, sin proponer su supresión. \"Revisión de los criterios de concertación con la enseñanza privada para garantizar que los conciertos respeten criterios de servicio público y evitar que se fomente la segregación.\"",
+          "fuente": "Programa PACMA 29N, pag. 61"
         },
         "PCTE": {
           "valor": 2,
@@ -3360,8 +3360,8 @@
         },
         "SALF": {
           "valor": -2,
-          "cita": "Defiende la libertad de los padres para elegir colegio concertado o privado mediante sistemas de cheque escolar.",
-          "fuente": "Ideario SALF"
+          "cita": "Rechaza suprimir los conciertos y propone un cheque escolar del mismo importe valido para centros publicos, concertados y privados. \"Cheque escolar válido en pública, concertada y privada, con el mismo importe por alumno y resultados públicos de cada centro.\"",
+          "fuente": "Programa SALF 29N, pag. 35"
         }
       }
     },
@@ -3381,13 +3381,13 @@
         },
         "PSIB": {
           "valor": -2,
-          "cita": "Defiende blindar y ampliar la Ley Integral contra la Violencia de Género frente a lo que considera negacionismo machista.",
-          "fuente": "Programa Igualdad PSOE"
+          "cita": "Rechaza sustituir la Ley Integral contra la Violencia de Género y plantea ampliarla para incorporar las violencias digitales más allá del ámbito de la pareja. \"Incorporar las violencias digitales a la Ley Integral contra la Violencia de Género, ampliando su alcance más allá de la pareja o expareja y actualizando los protocolos de atención frente al acoso en redes, la difusión de imágenes sin consentimiento, la suplantación de identidad y el control digital.\"",
+          "fuente": "Programa PSOE 29N, pag. 85"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone derogar la Ley de Violencia de Género y sustituirla por una Ley de Violencia Intrafamiliar que respete la presunción de inocencia e igualdad penal.",
-          "fuente": "Programa VOX"
+          "valor": 1,
+          "cita": "Propone derogar las leyes de género vigentes para sustituirlas por otras normas de protección. \"Derogar las leyes que han criminalizado a los hombres y desprotegido a las mujeres.\"",
+          "fuente": "Programa VOX 29N, pag. 26"
         },
         "ARAMES": {
           "valor": -2,
@@ -3400,9 +3400,9 @@
           "fuente": "Programa Frente Obrero"
         },
         "PACMA": {
-          "valor": -2,
-          "cita": "Defiende reforzar la Ley Integral contra la Violencia de Género y la educación en igualdad en todas las etapas.",
-          "fuente": "Programa Igualdad PACMA"
+          "valor": -1,
+          "cita": "Propone medidas específicas contra la violencia sobre la mujer, en sentido contrario a sustituir su marco protector por uno intrafamiliar indiferenciado. \"Además de las medidas de igualdad y equidad propuestas en anteriores epígrafes, desde PACMA proponemos medidas específicas contra la violencia sobre la mujer, como: - Programas educativos de prevención de violencia sobre la mujer en todas las etapas educativas.\"",
+          "fuente": "Programa PACMA 29N, pag. 76"
         },
         "PCTE": {
           "valor": -1,
@@ -3436,9 +3436,9 @@
           "fuente": "Posición PSOE Justicia"
         },
         "VOX": {
-          "valor": 2,
-          "cita": "Propone el cumplimiento íntegro de las penas, cadena perpetua para delitos de sangre y violación y prisión inmediata para multirreincidentes.",
-          "fuente": "Programa VOX Seguridad"
+          "valor": 1,
+          "cita": "Propone ampliar los supuestos de prisión permanente revisable para aplicar las máximas penas a los delitos más graves. \"Ampliación de la prisión permanente revisable. Los que cometen los peores delitos deben tener las máximas condenas.\"",
+          "fuente": "Programa VOX 29N, pag. 39"
         },
         "ARAMES": {
           "valor": -2,
@@ -3462,8 +3462,8 @@
         },
         "SALF": {
           "valor": 2,
-          "cita": "Propone cadena perpetua real y trabajos forzados en prisión para asesinos, violadores, pederastas y corruptos.",
-          "fuente": "Ideario SALF"
+          "cita": "Propone ampliar la prision permanente revisable a violaciones a menores o con lesiones graves y eliminar la suspension de pena tras tres condenas. \"Prisión permanente revisable por violación a menores o con lesiones graves. Tres condenas: prisión sin suspensión.\"",
+          "fuente": "Programa SALF 29N, pag. 8"
         }
       }
     }
