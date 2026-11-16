@@ -1,7 +1,7 @@
 {
   "metadata": {
     "elecciones": "Elecciones Generales 29N 2026 - Circunscripción Illes Balears",
-    "ultima_actualizacion": "2026-11-15",
+    "ultima_actualizacion": "2026-11-16",
     "version": "1.1.0",
     "partidos": [
       {
@@ -139,9 +139,9 @@
           "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Declarar el acceso a la vivienda emergencia nacional, aplicar zonas tensionadas y establecer alquileres indefinidos.",
-          "fuente": "Moción MÉS Vivienda (Oct 2026)"
+          "valor": 1,
+          "cita": "Plantea la declaración automática de zonas tensionadas cuando se cumplan los parámetros legales, activándose por el Ministerio de Vivienda si la comunidad autónoma se niega. \"La declaración de Zona de Mercado Residencial Tensionado (ZMRT) será obligatoria y automática en el momento en que una demarcación cumpla con los parámetros objetivos legalmente establecidos en la Ley de Vivienda (carga de vivienda >30 % de la renta media o incremento acumulado superior al IPC + 3 puntos). Si la comunidad autónoma correspondiente se negase a tramitar la declaración, el Ministerio de Vivienda actuará de forma subsidiaria activando la ZMRT de oficio o a solicitud expresa del Ayuntamiento afectado.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 17"
         },
         "FO": {
           "valor": 1,
@@ -199,9 +199,9 @@
           "fuente": "Programa VOX 29N, pag. 21"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Exigir un mínimo de años de residencia en Baleares para comprar vivienda y prohibir la compra a fondos de inversión.",
-          "fuente": "Acuerdos Ara Més - Front Ampli (Oct 2026)"
+          "valor": 1,
+          "cita": "Propone duplicar la tributación aplicable a las compras de vivienda no destinadas a uso habitual, incluidas las realizadas por personas físicas no residentes y extracomunitarias. \"Implantaremos un gravamen estatal extraordinario que duplicará (100 % de recargo) la tributación aplicable a las compras de vivienda no destinadas a uso habitual realizadas por compradores, incluidas las personas físicas no residentes y extracomunitarias.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 21"
         },
         "FO": {
           "valor": 2,
@@ -260,8 +260,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Prohibición de desahucios sin alternativa habitacional para personas vulnerables; el problema real es el rentismo.",
-          "fuente": "Programa Frente Amplio (Oct 2026)"
+          "cita": "Rechaza los desalojos de personas y familias vulnerables sin que las administraciones públicas faciliten previamente una alternativa habitacional. \"Prohibiremos de forma permanente y con rango de ley la ejecución de lanzamientos o desahucios de personas y familias en situación de vulnerabilidad económica o social sin que las administraciones públicas hayan proporcionado con carácter previo una alternativa habitacional digna, adecuada y estable.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 18"
         },
         "FO": {
           "valor": 0,
@@ -319,9 +319,9 @@
           "fuente": "Programa Económico VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Traspaso inmediato al IBAVI de todos los inmuebles de la Sareb, desarrollo de Son Busquets e inversión del 1 % del PIB.",
-          "fuente": "Propuestas MÉS / Frente Amplio (Oct 2026)"
+          "valor": 1,
+          "cita": "Plantea adscribir las fincas urbanas y suelos residenciales de la SAREB a la empresa pública estatal Casa 47. \"Paralelamente, adscribiremos obligatoriamente todas las fincas urbanas y suelos residenciales de la SAREB a la empresa pública Casa 47.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 13"
         },
         "FO": {
           "valor": 2,
@@ -379,9 +379,9 @@
           "fuente": "Programa VOX 29N, pag. 20"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Retirar 130.000 plazas turísticas a medio plazo y abolir progresivamente el alquiler turístico residencial.",
-          "fuente": "Propuestas Turísticas MÉS (Sept 2026)"
+          "valor": 1,
+          "cita": "Propone extinguir progresivamente en un plazo máximo de tres años las licencias de viviendas de uso turístico en edificios residenciales de zonas tensionadas. \"Tramitaremos la extinción progresiva y definitiva de todas las licencias de Viviendas de Uso Turístico (VUT) y alquileres de temporada fraudulentos en edificios residenciales en un plazo máximo de 3 años dentro de las zonas tensionadas, devolviendo las fincas al uso residencial estable.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 15"
         },
         "FO": {
           "valor": 1,
@@ -439,9 +439,9 @@
           "fuente": "Posición Congreso VOX (Oct 2026)"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Apoyo a gravar al máximo la vivienda turística, además de exigir duplicar el Impuesto de Turismo Sostenible (ITS).",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Propone aplicar el tipo general del IVA del 21 % a los pisos turísticos y establecer un recargo en el IBI de hasta el 150 %. \"La actividad económica de los pisos turísticos pasará a tributar al tipo general del IVA del 21 % y perderán toda deducción en el Impuesto sobre Sociedades e IRPF (gastos financieros, reformas y amortización), se elevará al 20 % la imputación de rentas en IRPF por periodos no ocupados y sufrirán un recargo en el IBI de hasta el 150 %.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 15"
         },
         "FO": {
           "valor": 1,
@@ -499,9 +499,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Transferencia y cogestión decisoria de puertos y aeropuertos para fijar un techo real de pasajeros y prohibir jets privados.",
-          "fuente": "Propuestas Soberanistas Ara Més"
+          "valor": 1,
+          "cita": "Propone establecer una limitación para la llegada de cruceros turísticos y electrificar los muelles. \"Electrificaremos infraestructuras portuarias mediante la instalación de sistemas de conexión eléctrica (Onshore Power Supply, OPS) en todos los muelles de cruceros y terminales de ferris para que los buques apaguen motores mientras están atracados. Estableceremos una limitación para la llegada de cruceros turísticos.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 75"
         },
         "FO": {
           "valor": -1,
@@ -559,9 +559,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Duplicar el Impuesto de Turismo Sostenible y destinar al menos el 25 % a diversificación económica y transición energética.",
-          "fuente": "Propuestas MÉS (Sept 2026)"
+          "valor": 1,
+          "cita": "Propone crear un gravamen turístico municipal para financiar servicios públicos afectados por el turismo, como la vivienda, la limpieza, los residuos y la protección ambiental. \"Proponemos la creación de un nuevo gravamen turístico, cuya recaudación municipal pueda destinarse a financiar los servicios públicos que se ven más afectados por el turismo, como la vivienda, la limpieza, la gestión de residuos o la protección del patrimonio histórico y ambiental.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 128"
         },
         "FO": {
           "valor": 1,
@@ -620,8 +620,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Apoyo firme a la regularización administrativa plena para acabar con la economía sumergida y la explotación laboral.",
-          "fuente": "Acuerdos Frente Amplio (2026)"
+          "cita": "Rechaza anular la regularización extraordinaria de 2026 y plantea resolver todas las solicitudes sin que nadie quede fuera por retrasos administrativos. \"Culminar la regularización extraordinaria de 2026: Resolveremos todas las solicitudes con medios suficientes, de modo que ninguna persona quede fuera por retrasos de la Administración.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 149"
         },
         "FO": {
           "valor": 1,
@@ -680,8 +680,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Vías legales y seguras, medios dignos de rescate humanitario y rechazo total a la militarización del Mediterráneo.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "cita": "Rechaza las devoluciones en frontera y propone derogar la disposición legal sobre el rechazo en frontera para garantizar el derecho de asilo. \"Derogaremos formalmente la disposición adicional décima de la Ley de Extranjería (relativa al «rechazo en frontera») por poner en riesgo el derecho de asilo al carecer de procedimientos y garantías procesales debidas.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 149"
         },
         "FO": {
           "valor": 1,
@@ -740,8 +740,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Acogida solidaria y corresponsable garantizando derechos de la infancia y financiación estatal justa para los Consells.",
-          "fuente": "Posición MÉS / Frente Amplio"
+          "cita": "Propone aprobar un acuerdo marco vinculante para un reparto equitativo entre comunidades autónomas de la infancia migrante no acompañada. \"Aprobaremos el Plan Integral de Atención, Protección e Inclusión de la Infancia Migrante (incluyendo jóvenes en tránsito a la vida adulta) con un acuerdo marco vinculante para un reparto solidario y equitativo entre comunidades autónomas.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 45"
         },
         "FO": {
           "valor": -2,
@@ -789,9 +789,9 @@
           "fuente": "Programa VOX 29N, pag. 13"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechazo a leyes penales de autor que criminalizan a la población migrante; igualdad ante la ley y reinserción.",
-          "fuente": "Programa Frente Amplio"
+          "valor": -1,
+          "cita": "Plantea reformar la legislación penal y de extranjería para favorecer la reinserción social y el acceso a medios abiertos de las personas extranjeras condenadas en España. \"Cambiaremos la legislación penal y de extranjería para eliminar las contradicciones entre la LO 4/2000 y la finalidad constitucional de reinserción social de las personas extranjeras que cumplan condena en nuestro país. Eliminaremos los obstáculos en la progresión de grados y el acceso a los medios abiertos (tercer grado y libertad condicional).\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 171"
         },
         "FO": {
           "valor": 2,
@@ -849,9 +849,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Moratoria total a las viviendas de lujo en el campo y prohibición absoluta de edificar nuevas viviendas en suelo rústico.",
-          "fuente": "Moción MÉS Territorio (Oct 2026)"
+          "valor": 1,
+          "cita": "Propone prohibir nuevas construcciones en terrenos con riesgo de inundación y en los primeros quinientos metros del litoral. \"Adaptación y protección frente al cambio climático prohibiendo nuevas construcciones en terrenos con riesgo de inundación y en los primeros 500 metros del litoral y un plan de retirada progresiva de infraestructuras críticas situadas en zonas de flujo preferente.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 81"
         },
         "FO": {
           "valor": 1,
@@ -909,9 +909,9 @@
           "fuente": "Programa VOX 29N, pag. 37"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Abolición definitiva de las corridas de toros y derogación de la ley estatal que impide a Baleares prohibirlas.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Propone derogar la ley de protección cultural de la tauromaquia para eliminar su financiación pública y promover alternativas culturales. \"Derogaremos la Ley 18/2013 de protección cultural y patrimonial de la tauromaquia, como paso imprescindible para acabar con la financiación pública de la tauromaquia, promoviendo a la vez alternativas culturales a los festejos taurinos.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 83"
         },
         "FO": {
           "valor": -1,
@@ -960,8 +960,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Cierre definitivo de las nucleares y transición 100 % renovable distribuida en tejados y zonas antropizadas sin consumir suelo rústico.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "cita": "Rechaza alargar la vida útil de las centrales nucleares y plantea cumplir el calendario previsto para su cierre. \"Cumpliremos el calendario de cierre de las centrales nucleares. Almaraz I y II cerrarán en los plazos previstos (2027-2028), sin beneficios fiscales, con la gestión de los residuos a cargo de las empresas y con recursos para la transición justa de sus trabajadores y la reactivación de las comarcas afectadas.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 71"
         },
         "FO": {
           "valor": 2,
@@ -1059,9 +1059,9 @@
           "fuente": "Programa Económico VOX"
         },
         "ARAMES": {
-          "valor": 1,
-          "cita": "Simplificación fiscal para pequeños autónomos locales y reforma progresiva para que paguen según beneficios reales.",
-          "fuente": "Programa Frente Amplio"
+          "valor": 2,
+          "cita": "Propone transponer la directiva europea del IVA franquiciado para eximir de liquidaciones periódicas a los autónomos y pequeñas empresas que facturen menos de 85.000 euros anuales. \"Transpondremos de inmediato la directiva europea del IVA franquiciado para autónomos y pequeñas empresas. Aquellos que facturen menos de 85.000 euros anuales quedarán exentos de liquidaciones periódicas y solo tendrán que presentar una declaración informativa anual.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 103"
         },
         "FO": {
           "valor": 2,
@@ -1109,9 +1109,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Reclamación de un tipo de IVA diferenciado para Baleares y soberanía fiscal plena mediante un concierto económico balear.",
-          "fuente": "Propuestas Económicas MÉS (Sept 2026)"
+          "valor": 1,
+          "cita": "Plantea estudiar medidas que compensen el sobrecoste del consumo en las islas. \"Estudiaremos medidas que compensen el sobrecoste del consumo en las islas, que golpea sobre todo a las clases populares y trabajadoras.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 110"
         },
         "FO": {
           "valor": -1,
@@ -1160,8 +1160,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Aumento de los impuestos a las grandes fortunas, grandes tenedores y viviendas de lujo para redistribuir la riqueza.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "cita": "Propone mantener el Impuesto de Solidaridad de las Grandes Fortunas como tributo estatal complementario para impedir que las bonificaciones autonómicas vacíen la tributación de los grandes patrimonios. \"El impuesto mantendrá su carácter estatal y complementario del Impuesto sobre el Patrimonio, con deducción de las cuotas efectivamente satisfechas por este último y con el objetivo de impedir que las bonificaciones autonómicas vacíen la tributación de las grandes fortunas.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 50"
         },
         "FO": {
           "valor": 2,
@@ -1260,8 +1260,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Reducción inmediata a 37,5 horas por ley como paso hacia la jornada de 32 horas semanales sin pérdida de salario.",
-          "fuente": "Programa Frente Amplio / Ara Més"
+          "cita": "Propone implantar de forma inmediata la jornada de 37,5 horas en 2026 y de 35 horas en el sector público, prohibiendo su compensación mediante horas extraordinarias. \"Implantación inmediata a 37,5 horas en 2026 y 35 horas en el sector público, prohibiendo la compensación mediante horas extraordinarias y exigiendo la subida proporcional del salario hora en contratos a tiempo parcial.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 61"
         },
         "FO": {
           "valor": 1,
@@ -1310,8 +1310,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Actualización urgente de la indemnización por residencia estatal y creación de un Salario Mínimo Interprofesional propio balear más alto.",
-          "fuente": "Propuestas Ara Més"
+          "cita": "Propone reforzar el plus de residencia en los puestos estatales de las islas para compensar el sobrecoste de la vida y de la vivienda. \"Haremos atractivos los puestos de los servicios estatales en las islas, reforzando medidas como el plus de residencia, para compensar el sobrecoste de la vida y de la vivienda y evitar que queden vacantes.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 110"
         },
         "FO": {
           "valor": 2,
@@ -1360,8 +1360,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Blindaje de las pensiones conforme al IPC, subida de las mínimas y reversión de los recortes en la edad de jubilación.",
-          "fuente": "Programa Frente Amplio"
+          "cita": "Propone devolver la edad ordinaria de jubilación a los 65 años. \"Devolveremos la edad de jubilación a los 65 años, que nos fue arrebatada sin diálogo ni justificación en la reforma realizada en 2011.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 63"
         },
         "FO": {
           "valor": 1,
@@ -1609,9 +1609,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Apuesta por un horizonte republicano, plurinacional y por el derecho de autodeterminación democrática.",
-          "fuente": "Ideario Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Plantea avanzar hacia una República Federal donde se elija democráticamente la Jefatura del Estado. \"Nuestro horizonte es avanzar hacia una República Federal que nos permita alcanzar una democracia real en la que también elijamos la Jefatura del Estado.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 167"
         },
         "FO": {
           "valor": 1,
@@ -1659,9 +1659,9 @@
           "fuente": "Programa VOX 29N, pag. 32"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Blindaje 100 % público de la sanidad, fin de las externalizaciones y ampliación de cartera a dentista y óptica pública.",
-          "fuente": "Programa Frente Amplio / Ara Més"
+          "valor": 1,
+          "cita": "Propone aprobar una ley para consagrar la gestión pública directa en la sanidad y derogar la Ley 15/1997, dejando los modelos de gestión indirecta como estrictamente excepcionales. \"Apostaremos de nuevo por una Ley de Gestión Pública e Integridad del Sistema Nacional de Salud para consagrar la gestión pública directa como la vía general para los centros y servicios del Sistema Nacional de Salud (SNS). Derogaremos expresamente la Ley 15/1997, sobre habilitación de nuevas formas de gestión del SNS, que había abierto la puerta a la colaboración con entidades privadas, y los modelos de gestión indirecta pasarán a ser estrictamente excepcionales.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 30"
         },
         "FO": {
           "valor": 2,
@@ -1809,9 +1809,9 @@
           "fuente": "Programa VOX 29N, pag. 8"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Obligación de Servicio Público (OSP) con precios máximos fijos en vuelos con la Península y entre islas para que las aerolíneas no absorban el descuento.",
-          "fuente": "Propuestas Conectividad Ara Més"
+          "valor": 1,
+          "cita": "Propone mantener de forma indefinida el régimen especial y las ayudas al transporte de Illes Balears. \"Mantendremos de forma indefinida el régimen especial de Illes Balears y las ayudas al transporte de Illes Balears y Canarias, y promoveremos políticas fiscales que mejoren las condiciones derivadas del hecho insular.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 110"
         },
         "FO": {
           "valor": 2,
@@ -1860,9 +1860,9 @@
           "fuente": "Programa VOX 29N, pag. 20"
         },
         "ARAMES": {
-          "valor": -1,
-          "cita": "Plantea que los avales hipotecarios engordan el negocio bancario y prioriza destinar esos recursos a alquiler público del IBAVI.",
-          "fuente": "Propuestas Vivienda Ara Més"
+          "valor": 1,
+          "cita": "Propone la exención total del Impuesto sobre Transmisiones Patrimoniales para adquirir la primera vivienda habitual dentro de unos topes de ingresos y precio. \"En el marco del Impuesto sobre Transmisiones Patrimoniales (ITP), se fijará la exención total del tributo para la adquisición de la primera vivienda habitual de familias e individuos definiendo un tope máximo de ingresos y de precio de la vivienda, al tiempo que se aplicará un recargo del 200 % en la adquisición de la segunda propiedad y del 1.000 % a partir de la tercera vivienda.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 21"
         },
         "FO": {
           "valor": 1,
@@ -1911,9 +1911,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone movilizar forzosamente las viviendas vacías de grandes tenedores y rebajar el umbral de gran tenedor a 3 inmuebles.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Propone aprobar una ley de expropiación progresiva de viviendas a propietarios corporativos privados a partir de cincuenta inmuebles. \"Aprobación de la Ley de Expropiación de Viviendas a Propietarios Corporativos Privados: El proceso afectará en primera fase al stock residencial de entidades poseedoras de más de 1.000 viviendas (como Blackstone o CaixaBank), en segunda fase a tenedores de más de 700 viviendas y en tercera fase a empresas propietarias de más de 50 inmuebles.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 13"
         },
         "FO": {
           "valor": 2,
@@ -1962,9 +1962,9 @@
           "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechaza desclasificar nuevo suelo o desregular el urbanismo; propone crecer cero en horizontal y rehabilitar lo construido.",
-          "fuente": "Programa Territorio Ara Més"
+          "valor": -1,
+          "cita": "Plantea expropiar automáticamente o revertir a suelo no urbanizable el suelo urbanizable para vivienda que permanezca inactivo durante dos años. \"El suelo urbanizable adscrito a vivienda que permanezca inactivo o sin ejecutar durante 2 años se expropiará automáticamente o revertirá a suelo no urbanizable.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 13"
         },
         "FO": {
           "valor": 0,
@@ -2013,9 +2013,9 @@
           "fuente": "Programa VOX 29N, pag. 19"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechaza regalar rebajas fiscales en el IRPF a los rentistas caseros y exige regular precios por ley.",
-          "fuente": "Acuerdos Frente Amplio / Ara Més"
+          "valor": 1,
+          "cita": "Propone limitar las deducciones del IRPF al alquiler a los arrendadores que ofrezcan contratos indefinidos y precios al menos un 5 % por debajo del índice estatal. \"Limitaremos las reducciones y deducciones del IRPF sobre rendimientos del alquiler de vivienda a los arrendadores que cumplan simultáneamente dos requisitos: que ofrezcan contratos de arrendamiento indefinidos y que los precios del alquiler de la vivienda estén como mínimo un 5 % por debajo del precio del índice estatal.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 52"
         },
         "FO": {
           "valor": -2,
@@ -2064,9 +2064,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone reducir drásticamente las escalas a un máximo de un megacrucero diario en Palma e Ibiza hacia su eliminación.",
-          "fuente": "Propuestas Turísticas Ara Més"
+          "valor": 1,
+          "cita": "Plantea regular de forma restrictiva la llegada de megacruceros a los puertos y penalizar a los buques que utilicen combustibles contaminantes. \"Regulación restrictiva a la llegada masiva de megacruceros en los puertos para reducir la contaminación, penalizando a los buques que emplean combustibles nocivos (como el fueloil pesado) por ser más ineficientes y generar más emisiones contaminantes para evitar la saturación de los servicios públicos urbanos.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 75"
         },
         "FO": {
           "valor": 1,
@@ -2115,9 +2115,9 @@
           "fuente": "Posición VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone el reconocimiento inmediato de enfermedades profesionales, jubilación anticipada y límite legal de habitaciones por día.",
-          "fuente": "Programa Laboral Ara Més"
+          "valor": 1,
+          "cita": "Propone reducir a los 60 años la edad de jubilación para profesiones con especial esfuerzo físico, como las camareras de piso. \"Reduciremos la edad de jubilación en determinados oficios y profesiones por su especial penosidad. Construcción, limpieza, ayuda a domicilio, camareras de piso y la pesca deben poder acceder a los 60 años por su especial esfuerzo físico y el elevado riesgo de siniestralidad.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 63"
         },
         "FO": {
           "valor": 2,
@@ -2217,9 +2217,9 @@
           "fuente": "Posición Congreso VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Apoya el veto vecinal y propone ir más allá prohibiendo directamente el alquiler turístico en todos los edificios plurifamiliares.",
-          "fuente": "Programa Ara Més"
+          "valor": 1,
+          "cita": "Propone extinguir progresivamente en un plazo máximo de tres años las licencias de viviendas de uso turístico en edificios residenciales de zonas tensionadas. \"Tramitaremos la extinción progresiva y definitiva de todas las licencias de Viviendas de Uso Turístico (VUT) y alquileres de temporada fraudulentos en edificios residenciales en un plazo máximo de 3 años dentro de las zonas tensionadas, devolviendo las fincas al uso residencial estable.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 15"
         },
         "FO": {
           "valor": 2,
@@ -2268,9 +2268,9 @@
           "fuente": "Programa VOX 29N, pag. 16"
         },
         "ARAMES": {
-          "valor": -1,
-          "cita": "Plantea exigir residencia en Baleares para acceder a VPO frente a compradores de fuera, pero rechaza recortar ayudas sociales a migrantes vulnerables.",
-          "fuente": "Programa Ara Més"
+          "valor": -2,
+          "cita": "Rechaza imponer trabas administrativas y propone suprimir barreras de acceso a derechos básicos mediante un empadronamiento flexible. \"Suprimiremos trabas administrativas para el acceso efectivo a derechos mediante un empadronamiento flexible, la garantía de acceso a una cuenta bancaria de pago básica, la aceleración y agilización del procedimiento de homologación de títulos académicos y el reconocimiento obligatorio de la documentación de las personas migrantes por parte de empresas y administraciones públicas.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 149"
         },
         "FO": {
           "valor": 1,
@@ -2472,9 +2472,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone prohibir el llenado de piscinas y el riego de campos de golf con agua potable y cobrar tarifas progresivas al gran consumidor turístico.",
-          "fuente": "Programa Ecología Ara Més"
+          "valor": 1,
+          "cita": "Propone garantizar la prioridad del abastecimiento y los caudales ecológicos frente a los usos agrícolas e industriales, deteniendo demandas turísticas de alto consumo. \"Garantizaremos la prioridad de usos establecida en la Ley de Aguas, caudales ecológicos y abastecimiento frente a los agrícolas e industriales. Detendremos el crecimiento de las demandas de regadío y las promociones urbanísticas y turísticas más despilfarradoras.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 81"
         },
         "FO": {
           "valor": 2,
@@ -2523,9 +2523,9 @@
           "fuente": "Programa VOX 29N, pag. 29"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone democratizar la energía instalando renovables solo en tejados y zonas antropizadas, prohibiendo megaparques especulativos en rústico.",
-          "fuente": "Programa Transición Ecológica Ara Més"
+          "valor": 1,
+          "cita": "Plantea priorizar el autoconsumo, las cubiertas y los espacios ya transformados frente a la ocupación de nuevos suelos para energías renovables. \"Impulsaremos la transición energética para reducir la dependencia de los combustibles fósiles, priorizando el autoconsumo, las comunidades energéticas, las instalaciones en cubiertas y espacios ya transformados, así como la repotenciación de parques existentes frente a una ocupación indiscriminada de nuevos suelos.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 68"
         },
         "FO": {
           "valor": 1,
@@ -2574,9 +2574,9 @@
           "fuente": "Programa VOX 29N, pag. 28"
         },
         "ARAMES": {
-          "valor": -1,
-          "cita": "Defiende la transición hacia la soberanía alimentaria y agricultura ecológica local, exigiendo compensar los costes de insularidad en la PAC.",
-          "fuente": "Programa Sector Primario Ara Més"
+          "valor": -2,
+          "cita": "Rechaza abandonar los objetivos climáticos y plantea impulsar el cumplimiento de los compromisos del Pacto Verde Europeo y del Acuerdo de París. \"Promoveremos la justicia global en sus dimensiones climática y de derechos laborales a través del impulso de la descarbonización de la economía, la provisión de energías renovables, la justicia climática global y el cumplimiento de los compromisos del Acuerdo de París y del Pacto Verde Europeo.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 157"
         },
         "FO": {
           "valor": 2,
@@ -2625,9 +2625,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone limitar el número de megayates en aguas baleares, prohibir su fondeo libre y sancionar severamente los daños a la posidonia.",
-          "fuente": "Programa Medio Ambiente Ara Més"
+          "valor": 1,
+          "cita": "Propone elevar al 30 % las áreas marinas protegidas del Mediterráneo para conservar la posidonia con restricciones de fondeo. \"Elevaremos al 30 % la protección del mar Mediterráneo en áreas marinas estratégicas para la conservación de la posidonia (con restricciones de fondeo y sobreexplotación pesquera), creando además una Estrategia Nacional de Conservación de la Posidonia Oceánica.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 78"
         },
         "FO": {
           "valor": 2,
@@ -2677,8 +2677,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Propone hacer permanentes y más elevados los impuestos a la banca, energéticas y grandes cadenas hoteleras.",
-          "fuente": "Programa Fiscal Ara Més - Front Ampli"
+          "cita": "Propone mantener con carácter estructural el gravamen específico sobre las entidades bancarias. \"Mantendremos de forma estructural el gravamen específico sobre las entidades bancarias para garantizar una contribución adicional del sector financiero.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 49"
         },
         "FO": {
           "valor": 2,
@@ -2728,8 +2728,8 @@
         },
         "ARAMES": {
           "valor": 1,
-          "cita": "Propone un IVA superreducido para alimentos frescos y de proximidad junto con topes legales a los márgenes de las grandes distribuidoras.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "cita": "Propone hacer progresivo el IVA de la electricidad desde el 0 % para consumos bajos, hogares vulnerables y autoconsumo. \"El IVA de la electricidad dependerá del consumo por persona: empezará en el 0 % para los consumos más bajos y personas en situación de vulnerabilidad y el autoconsumo y subirá de forma progresiva en los tramos altos hasta el 21 %.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 52"
         },
         "FO": {
           "valor": 1,
@@ -2778,9 +2778,9 @@
           "fuente": "VOX Baleares"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone subvencionar el 100 % del transporte de mercancías para productores locales y reclamar a la UE ampliar el techo de ayudas de minimis.",
-          "fuente": "Programa Económico Ara Més"
+          "valor": 1,
+          "cita": "Propone mantener de forma indefinida el régimen especial de Illes Balears y las ayudas al transporte, promoviendo medidas fiscales frente a la insularidad. \"Mantendremos de forma indefinida el régimen especial de Illes Balears y las ayudas al transporte de Illes Balears y Canarias, y promoveremos políticas fiscales que mejoren las condiciones derivadas del hecho insular.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 110"
         },
         "FO": {
           "valor": 2,
@@ -2830,8 +2830,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Propone recuperar el Impuesto de Sucesiones en Baleares para las herencias millonarias, manteniendo exentas las herencias medias y bajas.",
-          "fuente": "Programa Fiscal Ara Més"
+          "cita": "Rechaza suprimir el Impuesto de Sucesiones y Donaciones y propone fijar por ley un mínimo común de tributación en todo el territorio. \"El Impuesto sobre el Patrimonio se computará en el sistema por lo que se recaudaría sin las bonificaciones de cada comunidad, y el de Sucesiones y Donaciones por un valor normativo actualizado. Además, fijaremos por ley un mínimo común de tributación en ambos impuestos en todo el territorio.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 119"
         },
         "FO": {
           "valor": -1,
@@ -2881,8 +2881,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Propone establecer un despido restaurativo y disuasorio que recupere al menos los 45 días por año trabajado.",
-          "fuente": "Programa Frente Amplio / Ara Més"
+          "cita": "Propone reformar la indemnización por despido improcedente para que repare el daño real causado y disuada de los despidos injustificados. \"Reformaremos la indemnización por despido improcedente para que repare el daño real causado a la persona trabajadora y disuada de los despidos injustificados, en línea con el artículo 24 de la Carta Social Europea revisada y con lo concluido por el Comité Europeo de Derechos Sociales sobre el sistema español de indemnización tasada.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 58"
         },
         "FO": {
           "valor": 1,
@@ -2931,9 +2931,9 @@
           "fuente": "Programa VOX 29N, pag. 44"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone implantar de inmediato la prestación universal de 200 euros mensuales por hijo y permisos de nacimiento de 24 semanas.",
-          "fuente": "Acuerdos Frente Amplio (2026)"
+          "valor": 1,
+          "cita": "Propone aprobar una prestación universal por crianza de 200 euros al mes por cada menor de 18 años a cargo. \"Aprobaremos la Ley de Prestación Universal por Crianza que concederá 200 € al mes por cada menor de 18 años a cargo.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 25"
         },
         "FO": {
           "valor": 1,
@@ -2982,9 +2982,9 @@
           "fuente": "Programa VOX 29N, pag. 7"
         },
         "ARAMES": {
-          "valor": 0,
-          "cita": "Plantea rebajar la cuota a los autónomos con menores ingresos reales subiendo la aportación de los tramos de mayor facturación.",
-          "fuente": "Programa Frente Amplio"
+          "valor": 1,
+          "cita": "Propone una cotización fija bonificada sin pérdida de derechos de protección para los autónomos con ingresos reales inferiores al SMI anual por causas objetivas. \"Cuando los ingresos reales percibidos por la persona trabajadora autónoma sean inferiores al SMI anual por causas objetivas, tales como las condiciones del mercado o el inicio de actividad, se podrá acoger a una cotización fija bonificada sin pérdida de derechos de protección.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 103"
         },
         "FO": {
           "valor": 2,
@@ -3033,9 +3033,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechaza estigmatizar a los perceptores y propone simplificar requisitos para avanzar hacia una Renta Básica garantizada.",
-          "fuente": "Programa Frente Amplio / Ara Més"
+          "valor": -1,
+          "cita": "Plantea conceder de oficio el Ingreso Mínimo Vital mediante el cruce automatizado de datos, suprimiendo trámites burocráticos. \"Transformaremos de forma radical el Ingreso Mínimo Vital (IMV) para ser concedido de oficio a través de la interconexión automatizada de datos fiscales y de la Seguridad Social, suprimiendo el laberinto burocrático actual.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 26"
         },
         "FO": {
           "valor": 2,
@@ -3085,8 +3085,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Defiende la elección parlamentaria para evitar el corporativismo conservador de la cúpula judicial y pide descentralizar el Poder Judicial.",
-          "fuente": "Programa Frente Amplio"
+          "cita": "Rechaza la elección directa por los jueces y propone mantener la elección parlamentaria de los vocales del Consejo General del Poder Judicial. \"Reformaremos la Ley Orgánica del Poder Judicial para que ningún partido pueda volver a bloquear la renovación del Consejo General del Poder Judicial. Los vocales del turno judicial se seguirán eligiendo por mayoría de tres quintos, pero si en dos meses no hay acuerdo, las Cámaras podrán elegirlos en segunda votación por mayoría absoluta.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 175"
         },
         "FO": {
           "valor": 1,
@@ -3135,9 +3135,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone prohibir las puertas giratorias ampliando a 10 años la incompatibilidad de altos cargos e inhabilitar a empresas corruptoras.",
-          "fuente": "Programa Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Plantea endurecer la regulación de incompatibilidades y establecer un estatuto especial para los expresidentes del Gobierno. \"Regulación más estricta de las incompatibilidades estableciendo un estatuto especial para los expresidentes del Gobierno.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 169"
         },
         "FO": {
           "valor": 1,
@@ -3186,9 +3186,9 @@
           "fuente": "Programa VOX"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechaza frontalmente cualquier barrera estatal o circunscripción única que silencie la voz propia de las Islas Baleares en Madrid.",
-          "fuente": "Programa Ara Més"
+          "valor": 0,
+          "cita": "Plantea reformar el sistema electoral para lograr la proporcionalidad directa a nivel nacional, sin proponer barreras para excluir a partidos autonómicos. \"Reformaremos el sistema electoral para lograr la proporcionalidad directa a nivel nacional.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 168"
         },
         "FO": {
           "valor": 2,
@@ -3238,8 +3238,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Rechaza el aumento del gasto militar y el rearme de la OTAN, exigiendo destinar esos miles de millones a sanidad, educación y vivienda.",
-          "fuente": "Programa Frente Amplio / Ara Més"
+          "cita": "Rechaza incrementar el gasto militar en el marco de la OTAN y propone reducir las partidas militares para reorientarlas a gasto social y protección civil. \"Rechazaremos de forma explícita el compromiso de destinar el 5 % del PIB a gasto militar en el marco de la OTAN, impulsando una reducción efectiva de las partidas militares, reorientando los recursos presupuestarios hacia la seguridad humana, la protección civil, emergencias climáticas, sanidad y educación.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 155"
         },
         "FO": {
           "valor": 0,
@@ -3288,9 +3288,9 @@
           "fuente": "Programa VOX Sanidad"
         },
         "ARAMES": {
-          "valor": 2,
-          "cita": "Propone incorporar dentista, óptica y psicólogos 100 % públicos y gratuitos en todos los centros de salud del IB-Salut.",
-          "fuente": "Programa Sanidad Ara Més - Front Ampli"
+          "valor": 1,
+          "cita": "Propone universalizar la gratuidad de gafas y lentillas a todos los grupos de edad de la población residente. \"Universalizaremos el «Plan Veo» (gafas y lentillas gratuitas) a todos los grupos de edad de la población residente (ampliando la medida inicial para menores de 16 años).\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 31"
         },
         "FO": {
           "valor": 2,
@@ -3340,8 +3340,8 @@
         },
         "ARAMES": {
           "valor": 2,
-          "cita": "Propone reducir progresivamente los conciertos educativos e integrar los centros en una red única 100 % pública y laica.",
-          "fuente": "Programa Educación Ara Més - Front Ampli"
+          "cita": "Propone una hoja de ruta progresiva para ampliar plazas públicas con el objetivo de destinar el 100 % de los fondos públicos a la educación pública. \"Crearemos de forma prioritaria plazas públicas en todas las etapas —incluyendo de 0 a 3 años— e implantaremos una hoja de ruta progresiva que avance para que todo el alumnado pueda disfrutar de la educación pública. En el periodo de coexistencia con centros concertados se prohibirán de forma inmediata las cuotas obligatorias en centros sostenidos con fondos públicos, sancionando incumplimientos. El objetivo es que el 100 % de los fondos públicos vayan destinados a la educación pública.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 35"
         },
         "FO": {
           "valor": 2,
@@ -3391,8 +3391,8 @@
         },
         "ARAMES": {
           "valor": -2,
-          "cita": "Defiende reforzar las leyes feministas contra la violencia machista y ampliar los recursos de atención a las víctimas en Baleares.",
-          "fuente": "Programa Feminismos Ara Més"
+          "cita": "Rechaza sustituir la legislación contra la violencia de género y propone incrementar la partida contra las violencias machistas y blindar el Pacto de Estado. \"Aumentaremos un 10 % (con carácter adicional anual) la partida contra las violencias machistas y blindaremos con carácter plurianual las partidas estructurales del Pacto de Estado contra la Violencia de Género para asegurar su estabilidad.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 42"
         },
         "FO": {
           "valor": 1,
@@ -3441,9 +3441,9 @@
           "fuente": "Programa VOX 29N, pag. 39"
         },
         "ARAMES": {
-          "valor": -2,
-          "cita": "Rechaza el populismo punitivo y pide derogar la prisión permanente revisable por ser contraria al principio constitucional de reinserción.",
-          "fuente": "Programa Justicia Frente Amplio"
+          "valor": -1,
+          "cita": "Plantea ampliar el uso de las penas no privativas de libertad y el medio abierto para los delitos de mediana gravedad. \"Ampliaremos el uso de las penas no privativas de libertad y el medio abierto para los delitos de mediana gravedad.\"",
+          "fuente": "Programa Frente Amplio 29N, pag. 176"
         },
         "FO": {
           "valor": 2,
