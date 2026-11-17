@@ -11,7 +11,10 @@ import {
   loadPersistedState,
   savePersistedState,
 } from './engine/storage';
-import { calculateAffinityReport } from './engine/affinity';
+import {
+  calculateAffinityReport,
+  sortQuestionsSystemLast,
+} from './engine/affinity';
 import { HomeScreen } from './components/HomeScreen';
 import { QuizScreen } from './components/QuizScreen';
 import { ResultsScreen } from './components/ResultsScreen';
@@ -52,15 +55,16 @@ export const App: React.FC = () => {
     savePersistedState(persisted);
   }, [persisted]);
 
-  // Preguntas activas para la tanda y bloques seleccionados
+  // Preguntas activas para la tanda y bloques seleccionados (con evaluacion_sistema siempre al final)
   const activeQuestions = useMemo(() => {
     if (!data) return [];
-    return data.preguntas.filter(
+    const filtered = data.preguntas.filter(
       (q) =>
         q.tanda === persisted.activeTanda &&
         (persisted.selectedBlocks.length === 0 ||
           persisted.selectedBlocks.includes(q.bloque))
     );
+    return sortQuestionsSystemLast(filtered);
   }, [data, persisted.activeTanda, persisted.selectedBlocks]);
 
   const safeCurrentIndex = Math.min(

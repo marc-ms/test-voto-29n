@@ -10,6 +10,7 @@ import {
 } from '../types';
 import { AuditAccordion } from './AuditAccordion';
 import { PoliticalCompass } from './PoliticalCompass';
+import { isSystemEvaluationQuestion } from '../engine/affinity';
 import {
   BTN_PRIMARY,
   CARD,
@@ -121,7 +122,9 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
     nextTandaQuestionsCount > 0;
 
   const relevantQuestions = data.preguntas.filter(
-    (q) => selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque)
+    (q) =>
+      !isSystemEvaluationQuestion(q) &&
+      (selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque))
   );
   const coveredQuestionsCount = relevantQuestions.filter(
     (q) => completedTandas.includes(q.tanda) || answers[q.id] !== undefined
@@ -145,6 +148,71 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({
           ¿Cómo funciona?
         </button>
       </div>
+
+      {/* Diagnóstico secreto de Voto en Blanco */}
+      {report.votoEnBlancoDetectado && (
+        <section className="bg-paper border border-ink rounded-[4px] p-1">
+          <div className="border border-ink p-5 flex flex-col gap-4">
+            <div>
+              <span className="block font-sans text-[11px] font-semibold uppercase tracking-widest text-stone">
+                DIAGNÓSTICO DE RECHAZO AL SISTEMA DE PARTIDOS
+              </span>
+              <h2 className="font-serif text-[26px] leading-[1.15] font-bold tracking-tight text-ink mt-1.5">
+                Tu afinidad real apunta al Voto en Blanco
+              </h2>
+              <p className="font-sans text-sm text-ink leading-relaxed mt-3">
+                Has mostrado un acuerdo total con el diagnóstico de deterioro
+                institucional, clientelismo y falta de voluntad regeneradora de
+                la partitocracia actual. Aunque abajo puedes consultar tu
+                coincidencia programática con las 8 candidaturas de Baleares,
+                tu postura encaja con el voto en blanco como protesta activa.
+              </p>
+            </div>
+
+            <div className="pt-4 border-t border-line grid grid-cols-1 gap-3">
+              <div className="bg-card border border-line rounded-[4px] p-3.5">
+                <h3 className="font-serif text-[15px] font-semibold text-ink leading-snug">
+                  Qué expresa (Diferencia con la abstención)
+                </h3>
+                <p className="font-sans text-xs text-stone leading-relaxed mt-1.5">
+                  A diferencia de la abstención (quedarse en casa y
+                  desentenderse) o del voto nulo, el voto en blanco (sobre
+                  vacío) queda registrado oficialmente como un ciudadano que sí
+                  acude a las urnas y defiende la democracia, pero rechaza
+                  todas las listas presentadas.
+                </p>
+              </div>
+
+              <div className="bg-card border border-line rounded-[4px] p-3.5">
+                <h3 className="font-serif text-[15px] font-semibold text-ink leading-snug">
+                  El efecto matemático en España (La contrapartida)
+                </h3>
+                <p className="font-sans text-xs text-stone leading-relaxed mt-1.5">
+                  Según el artículo 96.5 y 163 de la Ley Electoral (LOREG), el
+                  voto en blanco se suma al total de votos válidos. Esto eleva
+                  la barrera electoral del 3 % necesaria para entrar al reparto
+                  de escaños (Ley D&apos;Hondt), perjudicando matemáticamente a
+                  los partidos pequeños o emergentes y abaratando el coste por
+                  escaño de los grandes partidos.
+                </p>
+              </div>
+
+              <div className="bg-card border border-line rounded-[4px] p-3.5">
+                <h3 className="font-serif text-[15px] font-semibold text-ink leading-snug">
+                  Alternativa de escaño vacío
+                </h3>
+                <p className="font-sans text-xs text-stone leading-relaxed mt-1.5">
+                  Existen candidaturas instrumentales (como Escaños en Blanco,
+                  cuando concurren en la circunscripción) cuyo único punto es
+                  dejar vacíos y sin sueldo los asientos obtenidos, evitando
+                  así que los escaños se repartan entre los partidos
+                  tradicionales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Resultado principal */}
       {topWinner && (

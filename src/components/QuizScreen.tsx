@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   BlockMeta,
   LikertValue,
@@ -6,6 +6,7 @@ import {
   TandaNumber,
   UserAnswer,
 } from '../types';
+import { sortQuestionsSystemLast } from '../engine/affinity';
 import { CARD, KICKER, LINK, LINK_MUTED } from './ui';
 
 interface QuizScreenProps {
@@ -68,7 +69,11 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
   onExitToHome,
   onOpenHelp,
 }) => {
-  const question = questions[currentIndex];
+  const orderedQuestions = useMemo(
+    () => sortQuestionsSystemLast(questions),
+    [questions]
+  );
+  const question = orderedQuestions[currentIndex];
   const existingAnswer = question ? answers[question.id] : undefined;
 
   const [isDoubleWeight, setIsDoubleWeight] = useState<boolean>(
@@ -87,7 +92,9 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
   }
 
   const blockMeta = blocks.find((b) => b.id === question.bloque);
-  const progressPct = Math.round(((currentIndex + 1) / questions.length) * 100);
+  const progressPct = Math.round(
+    ((currentIndex + 1) / orderedQuestions.length) * 100
+  );
 
   const handleSelectOption = (val: LikertValue) => {
     const weight: 1 | 2 = isDoubleWeight ? 2 : 1;
@@ -113,7 +120,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
 
         <div className="flex items-baseline justify-between gap-3 mb-2">
           <span className={KICKER}>
-            Tanda {tanda} · Pregunta {currentIndex + 1} de {questions.length}
+            Tanda {tanda} · Pregunta {currentIndex + 1} de {orderedQuestions.length}
           </span>
           <span className="text-xs text-stone tabular-nums">{progressPct} %</span>
         </div>
@@ -152,9 +159,6 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
           <div className="flex items-baseline justify-between gap-3">
             <span className={KICKER}>
               {blockMeta ? blockMeta.nombre : question.bloque}
-            </span>
-            <span className="text-[11px] text-stone/70 tabular-nums">
-              {question.id}
             </span>
           </div>
 

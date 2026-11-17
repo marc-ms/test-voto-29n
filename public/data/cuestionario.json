@@ -3466,6 +3466,46 @@
           "fuente": "Programa SALF 29N, pag. 8"
         }
       }
+    },
+    {
+      "id": "sis_01",
+      "tanda": 1,
+      "bloque": "modelo_estado",
+      "subtema": "instituciones.corrupcion",
+      "tipo": "evaluacion_sistema",
+      "enunciado": "Es muy injusto que un ciudadano tenga que preparar oposiciones o encadenar trabajos precarios para llegar a fin de mes, mientras los partidos usan las instituciones y empresas públicas para colocar a dedo a sus amigos sin experencia y asesores con sueldos pagados por todos.",
+      "contexto_opcional": "En los últimos años se han multiplicado los casos de enchufismo de familiares y afines políticos en organismos y empresas públicas sin exigir mérito ni capacidad.",
+      "posturas": {}
+    },
+    {
+      "id": "sis_02",
+      "tanda": 1,
+      "bloque": "modelo_estado",
+      "subtema": "instituciones.sistema-electoral",
+      "tipo": "evaluacion_sistema",
+      "enunciado": "Cada euro que la clase política roba en mordidas o despilfarra en sus privilegios es dinero que nos quitan directamente de las urgencias de los hospitales, de las becas escolares o del arreglo de nuestras carreteras. Ya que todos han demostrado ser iguales, lo más digno es darles donde más les duele, en las urnas.",
+      "contexto_opcional": "La corrupción y el clientelismo no solo dañan la imagen de las instituciones, sino que restan recursos directos a los servicios públicos esenciales.",
+      "posturas": {}
+    },
+    {
+      "id": "sis_03",
+      "tanda": 2,
+      "bloque": "modelo_estado",
+      "subtema": "instituciones.corrupcion",
+      "tipo": "evaluacion_sistema",
+      "enunciado": "Gobierne quien gobierne, los políticos llevan años turnándose solo para repartirse el pastel: se pelean en televisión para dividirnos, pero a la hora de la verdad ninguno recorta sus privilegios ni soluciona los problemas reales de la gente.",
+      "contexto_opcional": "El debate enfrenta el rigor fiscal y legal que se aplica al ciudadano corriente frente a la impunidad, los indultos y la desprotección de quienes destapan tramas corruptas.",
+      "posturas": {}
+    },
+    {
+      "id": "sis_04",
+      "tanda": 3,
+      "bloque": "modelo_estado",
+      "subtema": "instituciones.administracion",
+      "tipo": "evaluacion_sistema",
+      "enunciado": "En España existen dos varas de medir: al ciudadano normal o al autónomo Hacienda le inspecciona y multa al céntimo, mientras los políticos se blindan con aforamientos, controlan a los jueces y arruinan la vida a los funcionarios valientes que se atreven a denunciar la corrupción desde dentro.",
+      "contexto_opcional": "Muchos votantes perciben que tanto los partidos tradicionales como los nuevos terminan reproduciendo los mismos abusos en cuanto tocan poder.",
+      "posturas": {}
     }
   ]
 }

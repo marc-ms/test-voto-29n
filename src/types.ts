@@ -47,11 +47,12 @@ export interface Question {
   id: string;
   tanda: TandaNumber;
   bloque: BlockId;
+  subtema?: string;
   tipo: string;
   enunciado: string;
   contexto_opcional?: string;
   debate_prensa?: PressDebate;
-  posturas: Record<PartyId, PartyPosition>;
+  posturas: Partial<Record<PartyId, PartyPosition>>;
 }
 
 export interface QuestionnaireData {
@@ -111,6 +112,7 @@ export interface AffinityReport {
   rankings: PartyResult[];
   topPartyByBlock: Record<BlockId, { party: PartyMeta; percentage: number }[]>;
   userCompass: CompassCoordinates;
+  votoEnBlancoDetectado: boolean;
   totalAnsweredQuestions: number;
   totalSkippedQuestions: number;
   totalKeyQuestions: number;

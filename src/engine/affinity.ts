@@ -133,6 +133,30 @@ export function calculateQuestionAffinity(
 }
 
 /**
+ * Determina si una pregunta pertenece a la evaluación del sistema ("Voto en Blanco")
+ * o carece de posturas de partidos y debe aislarse matemáticamente del cálculo de afinidad.
+ */
+export function isSystemEvaluationQuestion(q: Question): boolean {
+  return (
+    q.tipo === 'evaluacion_sistema' ||
+    !q.posturas ||
+    Object.keys(q.posturas).length === 0
+  );
+}
+
+/**
+ * Ordena una lista de preguntas situando siempre las de `evaluacion_sistema` al final,
+ * preservando el orden relativo original del resto.
+ */
+export function sortQuestionsSystemLast(questions: Question[]): Question[] {
+  return [...questions].sort((a, b) => {
+    const aSys = isSystemEvaluationQuestion(a) ? 1 : 0;
+    const bSys = isSystemEvaluationQuestion(b) ? 1 : 0;
+    return aSys - bSys;
+  });
+}
+
+/**
  * Calcula el porcentaje de coincidencia (0-100%) en una pregunta individual sin ponderar.
  */
 export function calculateSingleQuestionMatchPercent(
@@ -153,12 +177,46 @@ export function calculateAffinityReport(
   completedTandasCount: number,
   selectedBlocks: BlockId[] = []
 ): AffinityReport {
+  // Aislamiento matemático total: excluir preguntas de evaluación del sistema o con posturas vacías
   const activeQuestions = data.preguntas.filter((q) => {
+    if (isSystemEvaluationQuestion(q)) return false;
     const matchesBlock =
       selectedBlocks.length === 0 || selectedBlocks.includes(q.bloque);
     const ans = answers[q.id];
     return matchesBlock && ans !== undefined;
   });
+
+  // Detección de Voto en Blanco basada exclusivamente en las preguntas `evaluacion_sistema`
+  const systemQuestions = data.preguntas.filter(
+    (q) => q.tipo === 'evaluacion_sistema'
+  );
+
+  const playedTandas = new Set<number>();
+  for (const q of data.preguntas) {
+    if (answers[q.id] !== undefined) {
+      playedTandas.add(q.tanda);
+    }
+  }
+  for (let t = 1; t <= completedTandasCount; t++) {
+    playedTandas.add(t);
+  }
+
+  const systemQuestionsInPlayedTandas = systemQuestions.filter((q) =>
+    playedTandas.has(q.tanda)
+  );
+
+  const answeredSystemQuestions = systemQuestionsInPlayedTandas.filter((q) => {
+    const ans = answers[q.id];
+    return ans !== undefined && ans.weight > 0 && ans.value !== null;
+  });
+
+  const votoEnBlancoDetectado =
+    answeredSystemQuestions.length >= 2 &&
+    systemQuestionsInPlayedTandas.length >= 2 &&
+    systemQuestionsInPlayedTandas.every((q) => {
+      const ans = answers[q.id];
+      return ans !== undefined && ans.weight > 0 && ans.value === 2;
+    });
 
   const validAnsweredQuestions: { question: Question; answer: UserAnswer }[] = [];
   let totalSkippedQuestions = 0;
@@ -324,6 +382,7 @@ export function calculateAffinityReport(
     rankings,
     topPartyByBlock,
     userCompass,
+    votoEnBlancoDetectado,
     totalAnsweredQuestions,
     totalSkippedQuestions,
     totalKeyQuestions,

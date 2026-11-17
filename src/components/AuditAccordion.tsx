@@ -6,7 +6,10 @@ import {
   QuestionnaireData,
   UserAnswer,
 } from '../types';
-import { calculateSingleQuestionMatchPercent } from '../engine/affinity';
+import {
+  calculateSingleQuestionMatchPercent,
+  isSystemEvaluationQuestion,
+} from '../engine/affinity';
 import { CARD, KICKER, SECTION_TITLE } from './ui';
 
 interface AuditAccordionProps {
@@ -46,6 +49,7 @@ export const AuditAccordion: React.FC<AuditAccordionProps> = ({
   const [openQuestionId, setOpenQuestionId] = useState<string | null>(null);
 
   const answeredQuestions = data.preguntas.filter((q) => {
+    if (isSystemEvaluationQuestion(q)) return false;
     const ans = answers[q.id];
     const isAnswered = ans !== undefined;
     const matchesBlock = selectedBlock === 'ALL' || q.bloque === selectedBlock;
